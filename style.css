@@ -1,0 +1,1145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    /* scroll-behavior: smooth; */
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+/* .border{
+    border: 2px solid red;
+} */
+
+:root{
+    --text-color: #000000 ;
+    --background: white;
+    --hover: #cdc0e56b;
+    --width: 150px ;
+}
+/* header styling*/
+header{
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-link[aria-current ="page"]{
+    border-bottom: 3px solid var(--hover);
+    background-color: red;
+    padding-bottom: 2px;
+}
+/* media link styling*/
+.media{
+    width: 100%;
+    background: #ebebef;
+    /* background: linear-gradient(6deg, #8045f0 0%); */
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.112);
+}
+.media-link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.media-link li{
+    padding: 0.5rem;
+    text-align: center;
+}
+.fa-brands{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.fa-tiktok:hover{
+    color: #0000ff82;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.fa-instagram:hover{
+    color: #ee0909c1;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.fa-x-twitter:hover{
+    color: var(--text-color);
+    transform: scale(1.5);
+}
+.fa-youtube:hover{
+    color: red;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+/*ends here*/
+
+/* navigation bar starts*/
+nav{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 300px;
+    max-height: 120px;
+    object-fit: cover;
+}
+.nav-link{
+    width:100%;
+    /* border: 2px solid red; */
+}
+.nav-link ul{
+    display: flex;
+    align-items: center;
+    /* width: 40%; */
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}
+.nav-link ul li{
+    padding: 1rem;
+}
+.nav-link ul li a{
+    color: var(--text-color);
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.hero{
+    width: 100%;
+    /* display: flex; */
+    /* height: 700px; */
+    /* flex-direction: row; */
+    position: relative;
+    cursor: pointer;
+    background: #b5bbe0;
+    background: linear-gradient(130deg, rgba(241,241,241,1) 0%, rgba(181,187,224,1) 10%);
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 2px solid red; */
+}
+.hero-body{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    place-items: center;
+}
+.hero .hero-content{
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+    /* flex-wrap: wrap; */
+    gap: 3rem;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 4.5rem;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    color: transparent ;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hero p{
+    /* border: none; */
+    color: var(--text-color);
+    white-space: nowrap;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    overflow: hidden;
+    /* border-right: 2px solid black; */
+    animation: typing 3s steps(20) ;
+}
+@keyframes typing{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.hero-content button{
+    width: 100%;
+    max-width: 350px;
+    word-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.3rem 0.75rem;
+    background-color: var(--text-color);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transform: scale();
+    transition: 0.5s ;
+}
+.hero-content button a{
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.hero-content button i{
+    font-size: 1.3rem;
+    color: white;
+}
+.hero-content button:hover{
+    background:transparent;
+    color: var(--text-color);
+    transform: scale(1.05);
+    border: 0.5px solid var(--text-color);
+}
+.hero-content button:hover a,.hero-content button:hover i{
+    color: var(--text-color);
+}
+.hero-flex{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: grid;
+    /* border: 2px solid red; */
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 570px));
+}
+.hero-flex img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* hero section ends*/
+
+/*Gallery Styling*/
+
+article,.about,.faq{
+    /* border: 2px solid red; */
+    margin-top: 4rem ;
+    padding: 2rem 8rem;
+    width: 100%;  
+}
+/* article{
+    background-color: #ebebef;
+} */
+article h2{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+/* Swiper section */
+
+/* .mySwiper .second{
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 250px;
+    opacity: 0.7;
+} */
+
+.swiper-body{
+    padding: 2rem 4rem;
+    border: 0.5px solid gray;
+    box-shadow: 12px 16px var(--text-color);
+    background: rgb(241,241,241);
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
+}
+.swiper {
+    width: 50%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #b5bbe0; */
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+.swiper-slide img,.swiper-slide video {
+    display: block;
+    width: 100%;
+    border: 5px double white;
+    border-radius: 30px;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mySwiper2 {
+    height: 100vh;
+    max-height: 600px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 450px;
+  }
+.mySwiper {
+    height: 200px;
+    padding: 0.8rem 0 0 0;
+}
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    filter: grayscale();
+    /* opacity: 0.8; */
+    /* border-radius: 30px; */
+}
+.mySwiper .swiper-slide:hover, .mySwiper .swiper-slide-thumb-active{
+    filter: none;
+}
+
+/* who we are section*/
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.about-content{
+    padding: 3rem;
+    text-wrap: wrap;
+    border: 0.5px solid gray;
+    text-align: center;
+    display: grid;
+    width: 100%;
+    place-items: center;
+    background: rgb(241,241,241);
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
+    /* position: relative; */
+    /* max-height: 700px; */
+    box-shadow: 12px 16px var(--text-color);
+}
+.about h2{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.about-content p{
+    line-height: 35px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.about-content span p{
+    text-align: center;
+    line-height: 35px;
+}
+.about-button {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem ;
+    /* border: 2px solid red; */
+}
+.about-button span {
+    cursor: pointer;
+    padding: 1.3rem 1.5rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    transition: 0.5s;
+    outline: none;
+    transform: scale();
+    border: none;
+    background-color: var(--text-color);
+}
+.about-button span a{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #f1f1f1;
+}
+.about-button span i{
+    color: white;
+    font-size: 1rem;
+}
+.about-button span:hover{
+    transform: scale(1.05);
+    background: transparent;
+    border: 0.5px solid var(--text-color);
+}
+.about-button span:hover a,.about-button span:hover i{
+    color: var(--text-color);
+}
+
+/*Frequently asked questions*/
+
+.faq h2{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.faq .accordion{
+    width: 100%;
+}
+.faq .accordion li{
+    width: 100%;
+    padding: 0.5rem;
+}
+.faq .accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #b5bbe0;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+.faq .accordion label::after{
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.faq .accordion .content{
+    background-color: var(--text-color);
+    text-align: start;
+    padding: 0 15px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+}
+.content p{
+    color: white;
+}
+.content p a{
+    color: #b5bbe0;
+    border-bottom: 1px solid #b5bbe0;
+}
+.faq .accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.faq .accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+/*Footer section*/
+.footer-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    /* border-top: 0.5px solid #b5bbe0; */
+    background: #b5bbe0;
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
+    /* padding-top: 5rem; */
+    padding: 5rem 0;
+}
+.footer-body h2{
+    font-size: 2.3rem;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    color: transparent ;
+    /* color: #000000; */
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.footer-media .footer{
+   gap: 3rem;
+}
+.footer .fa-brands{
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    color: #0000ff82;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.footer .fa-instagram:hover{
+    color: #ee0909c1;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.footer .fa-x-twitter:hover{
+    color: var(--text-color);
+    transform: scale(1.5);
+}
+.footer .fa-youtube:hover{
+    color: red;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.footer-info p{
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 1rem;
+    color: var(--text-color);
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--text-color);
+}
+/*All media queries starts here */
+
+@media (max-width:250px){
+    header{
+        display: none;
+    }
+    .hero-body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero .hero-content{
+        gap: 0.8rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 1.8rem;
+    }
+    .hero p{
+        font-size: 0.46rem;
+        text-align: center;
+        overflow: hidden;
+        animation: typing 2s steps(20);
+    }
+    .hero-content button{
+        max-width: 150px;
+        gap: 0.5rem;
+        padding: 0.7rem 0.9rem;
+    }
+    .hero-content button a{
+        font-size: 0.65rem;
+    }
+    .hero-content button i{
+        font-size: 0.55rem;
+    }
+    .hero-flex{
+        height: 310px;
+        overflow: visible;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 280px));
+    }
+    .hero-flex img{
+        object-fit: cover;
+        width: 100%;
+        height: 310px;
+    }
+    /* hero section ends*/
+    
+    /*Gallery Styling*/
+    
+    article,.about,.faq{
+        margin-top: 0.3rem ;
+        padding: 1rem;
+        width: 100%;
+    }
+    article h2{
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+    .swiper-body{
+        padding: 2rem 1rem;
+        box-shadow: 6px 10px var(--text-color);
+    }
+    /* .swiper {
+        width: 100%;
+        height: 100%;
+    } */
+    .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySwiper2 {
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .swiper .swiper-button-next, .swiper-button-prev{
+        font-size: 0.5px;
+        /* color: #000000; */
+    }
+
+    /*i have to use another type of carousel for the mobile side from here*/
+    .swiper-slide img,.swiper-slide video {
+        display: block;
+        width: 100%;
+        border: 5px double white;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    .mySwiper {
+        max-height: 300px;
+        height: 100%;
+        width: 100%;
+        padding: 0.8rem 0 0 0;
+    }
+    .mySwiper .swiper-slide {
+        width: 100%;
+        /* max-width: 300px; */
+        height: 100%;
+        filter: grayscale();
+    }
+    /*be back*/
+}
+
+/* who we are section*/
+
+.about-container{
+    padding-top: 1rem;
+}
+.about-content{
+    padding: 1rem 0.5rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.15rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 18px;
+    font-size: 0.75rem;
+}
+.about-content span p{
+    line-height: 18px;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.8rem;
+    gap: 0.6rem;
+    max-width: 150px;
+}
+.about-button span a{
+    font-size: 0.65rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 0.6rem;
+}
+
+/*Frequently asked questions*/
+
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.2rem;
+}
+.faq .accordion li label{
+    font-size: 0.7rem;
+    padding: 0.8rem 0.5rem;
+}
+.faq .accordion label::after{
+    content: "+";
+    font-size: 0.8rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    text-align: start;
+    padding: 0 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+}
+.accordion .content p{
+    font-size: 0.65rem;
+}
+.faq .accordion input[type="radio"]:checked + label + .content{
+    max-height: 300px;
+    padding: 0.8rem;
+}
+
+/*Footer responsiveness*/
+
+@media (max-width:250px){
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 0.9rem;
+    }
+    .footer-media .footer{
+       gap: 0.5rem;
+    }
+    .footer .fa-brands{
+        font-size: 1rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.2);
+    }
+    .footer-info p{
+        font-size: 0.7rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.7rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+@media (min-width:251px) and (max-width:390px){
+    header{
+        display: none;
+    }
+    .hero-body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero .hero-content{
+        gap: 0.8rem;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero p{
+        font-size: 0.78rem;
+        text-align: center;
+        overflow: hidden;
+        animation: typing 2s steps(20);
+    }
+    .hero-content button{
+        max-width: 200px;
+        gap: 0.5rem;
+        padding: 0.9rem 1rem;
+    }
+    .hero-content button a{
+        font-size: 0.85rem;
+    }
+    .hero-content button i{
+        font-size: 0.7rem;
+    }
+    .hero-flex{
+        height: 100%;
+        /* height: 310px; */
+        overflow: visible;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px,450px));
+    }
+    .hero-flex img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        /* height: 310px; */
+    }
+    /* hero section ends*/
+    
+    /*Gallery Styling*/
+    
+    article,.about,.faq{
+        margin-top: 1rem ;
+        padding: 1rem;
+        width: 100%;
+    }
+    article h2{
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+    .swiper-body{
+        padding: 2rem 1rem;
+        box-shadow: 6px 10px var(--text-color);
+    }
+    /* .swiper {
+        width: 100%;
+        height: 100%;
+    } */
+    /* .swiper {
+        width: 100%;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    .mySwiper2 {
+        max-height: 350px;
+        object-fit: cover;
+    }
+    .swiper .swiper-button-next, .swiper-button-prev{
+        font-size: 0.5px;
+        /* color: #000000; */
+    }
+
+    /*i have to use another type of carousel for the mobile side from here*/
+    .swiper-slide img,.swiper-slide video {
+        display: block;
+        width: 100%;
+        border: 5px double white;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    .mySwiper {
+        height: 100px;
+        /* height: 100%; */
+        width: 100%;
+        object-fit: cover;
+        padding: 0.8rem 0 0 0;
+    }
+    .mySwiper .swiper-slide {
+        width: 100%;
+        /* max-width: 300px; */
+        height: 100%;
+        filter: grayscale();
+    }
+    /*be back*/
+}
+
+/* who we are section*/
+
+.about-container{
+    padding-top: 1rem;
+}
+.about-content{
+    padding: 1rem 0.5rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 1.1rem;
+    font-size: 0.8rem;
+}
+.about-content span p{
+    line-height: 1.1rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.8rem 0.6rem;
+    gap: 0.6rem;
+    max-width: 200px;
+}
+.about-button span a{
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 0.7rem;
+}
+
+/*Frequently asked questions*/
+
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.3rem;
+}
+.faq .accordion li label{
+    font-size: 0.9rem;
+    padding: 0.9rem 0.7rem;
+}
+.faq .accordion label::after{
+    content: "+";
+    font-size: 1.2rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    text-align: start;
+    padding: 0 8px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+}
+.accordion .content p{
+    font-size: 0.9rem;
+}
+.faq .accordion input[type="radio"]:checked + label + .content{
+    max-height: 300px;
+    padding: 1rem;
+}
+
+/*Footer responsiveness*/
+
+@media (min-width:251px) and (max-width:390px){
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 1.3rem;
+    }
+    .footer-media .footer{
+       gap: 0.5rem;
+    }
+    .footer .fa-brands{
+        font-size: 1.25rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.2);
+    }
+    .footer-info p{
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.8rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+@media (min-width:391px) and (max-width:480px){
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 1.4rem;
+    }
+    .footer-media .footer{
+       gap: 0.5rem;
+    }
+    .footer .fa-brands{
+        font-size: 1.25rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.2);
+    }
+    .footer-info p{
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.8rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+@media (min-width:481px) and (max-width:767px){
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 1.5rem;
+    }
+    .footer-media .footer{
+       gap: 0.5rem;
+    }
+    .footer .fa-brands{
+        font-size: 1.5rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.2);
+    }
+    .footer-info p{
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.8rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 1.85rem;
+    }
+    .footer-media .footer{
+       gap: 0.5rem;
+    }
+    .footer .fa-brands{
+        font-size: 1.55rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.2);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.2);
+    }
+    .footer-info p{
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.8rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 2.1rem;
+    }
+    .footer-media .footer{
+       gap: 0.9rem;
+    }
+    .footer .fa-brands{
+        font-size: 1.65rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.4);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.4);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.4);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.4);
+    }
+    .footer-info p{
+        font-size: 0.9rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.9rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+@media (min-width:1200px) and (max-width:1300px) {
+    .footer-body{
+        gap: 1.7rem;
+        padding-top: 2rem;
+    }
+    .footer-body h2{
+        font-size: 2.1rem;
+    }
+    .footer-media .footer{
+       gap: 0.9rem;
+    }
+    .footer .fa-brands{
+        font-size: 1.65rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .footer .fa-tiktok:hover{
+        transform: scale(1.4);
+    }
+    .footer .fa-instagram:hover{
+        transform: scale(1.4);
+    }
+    .footer .fa-x-twitter:hover{
+        transform: scale(1.4);
+    }
+    .footer .fa-youtube:hover{
+        transform: scale(1.4);
+    }
+    .footer-info p{
+        font-size: 0.9rem;
+        color: var(--text-color);
+    }
+    .footer-info p a{
+        font-size: 0.9rem;
+        color: var(--text-color);
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid var(--text-color);
+    }
+}

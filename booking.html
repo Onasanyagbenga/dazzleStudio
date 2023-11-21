@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazzle Studio</title>
+    <script src="https://kit.fontawesome.com/42b14e7f04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="media border">
+            <ul class="media-link border">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="nav-link border">
+                <ul>
+                    <li><a aria-current="page" href="index.html">home</a></li>
+                    <li><a href="booking.html">bookings</a></li>
+                </ul>
+            </div>
+            <span class="logo border">
+                <a href="index.html">
+                    <img src="Dazzle.png" alt="logo">
+                </a>
+            </span>
+            <div class="nav-link border">
+                <ul>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="services.html">services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="form-section">
+        <div class="form-header">
+            <div class="header-flex">
+                <span><h2>make a booking</h2></span>
+                <span><i class="fa-regular fa-calendar-check"></i></span>
+            </div>
+            <p>Please fill in the form below to get an appointment reserved.</p>
+        </div>
+        <div class="form-content">
+            <form action="https://formspree.io/f/mdorjopz" method="post" class="form">
+                    <label for="clientName">
+                        <input type="text" name="clientName" id="clientName" placeholder="" pattern="[A-Za-z]{3,}" required>
+                        <span class="name"><span><i class="fa-regular fa-user icon"></i></span> Name</span>
+                    </label>
+                <!-- <span> Minimum 3 letters</span> -->
+                <label for="Telephone">
+                    <input type="text" name="Telephone" id="Telephone" placeholder="" pattern="[0-9]{11,}" required >
+                    <span class="name"><span><i class="fa-solid fa-phone icon"></i></span> Phone Number</span>
+                </label>
+                <select name="appt-type" id="appt-type" required>
+                    <optgroup label="Select Appointment Type">
+                        <option value="Hair Appointment" id="HairApt">Hair Appointment</option>
+                        <option value="Makeover Appointment" id="MakeupApt">Makeover Appointment</option>
+                    </optgroup>
+                </select>
+                <select name="service" id="service" required>
+                    <optgroup label="MAKEUP" id="makeup">
+                        <option value="Regular-SoftGlam">Regular Soft Glam</option>
+                        <option value="Birthday-Makeup">Birthday Makeup</option>
+                        <option value="Bridal-Makeup">Bridal Makeup (Price varies)</option>
+                    </optgroup>
+                    <optgroup label="LOCS" id="locs">
+                        <option value="Crochet-instant-full">Crotchet ( instant locs ) Full head</option>
+                        <option value="Crochet-instant-half">Crotchet ( instant locs ) Half head</option>
+                        <option value="Comb-Coils-Full head">Comb-Coils ( Full head )</option>
+                        <option value="Comb-Coils-Half head">Comb-Coils ( Half head )</option>
+                        <option value="Crotchet-maintenance">Crotchet maintenance</option>
+                        <option value="Two-strand-twists-palmrolling">Two strand twists & palmrolling</option>
+                    </optgroup>
+                    <optgroup label="Additional Services" id="addt-service">
+                        <option value="Corncrows">Cornrows ( Including Didi )</option>
+                        <option value="Natural-twist">Natural twist without extension</option>
+                        <option value="Loc-styling">Loc Styling</option>
+                        <option value="Hair-Coloring">Hair Coloring</option>
+                        <option value="Loc-Repair">Loc Repair</option>
+                        <option value="home-service">Home Service ( Rates apply )</option>
+                    </optgroup>
+                </select>
+                <span class="date">
+                    <input type="date" value="2023-01-01" placeholder="Select Date" required>
+                </span>
+                <span class="time">
+                    <input type="time" value="8:00" placeholder="Select Time" required>
+                </span>
+                <label for="message">
+                    <textarea name="message" id="message" placeholder=" "></textarea>
+                    <span class="name"><span><i class="fa-solid fa-message icon"></i></span>
+                    Message</span>
+                </label>
+                <button>Submit</button>
+            </form>
+        </div>
+        <span>
+            <p>Kindly Note Appointment times are only from 9am - 6pm . Click <a href="services.html">ME</a> to view my services and booking policy.</p>
+        </span>
+    </section>
+    <!--will be back after i am done with the responsiveness-->
+    <div class="modal">
+        <div class="modal-body">
+            <div class="modal-header"></div>
+        </div>
+    </div>
+    <!--will be back after i am done with the responsiveness-->
+    <footer>
+        <div class="footer-body">
+            <h2>Kindly follow us on Social media for Latest trends</h2>
+            <div class="footer-media">
+                <ul class="media-link footer border">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p> &copy 2023 Dazzle Studio. Powered by <a href="#">JohnsonDev</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
