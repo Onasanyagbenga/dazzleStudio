@@ -443,6 +443,7 @@ input[type="radio"]{
 }
 
 /*Footer section*/
+
 .footer-body{
     display: flex;
     justify-content: center;
@@ -501,6 +502,7 @@ input[type="radio"]{
     padding-bottom: 0.2rem;
     border-bottom: 1px solid var(--text-color);
 }
+
 /*All media queries starts here */
 
 @media (max-width:250px){
@@ -605,87 +607,85 @@ input[type="radio"]{
         filter: grayscale();
     }
     /*be back*/
-}
 
-/* who we are section*/
+    /* who we are section*/
 
-.about-container{
-    padding-top: 1rem;
-}
-.about-content{
-    padding: 1rem 0.5rem;
-    text-wrap: wrap;
-    max-height: 350px;
-    overflow-y: auto;
-    scrollbar-width: none;
-    box-shadow: 5px 8px var(--text-color);
-}
-.about h2{
-    font-size: 1.15rem;
-    text-transform: capitalize;
-}
-.about-content p{
-    line-height: 18px;
-    font-size: 0.75rem;
-}
-.about-content span p{
-    line-height: 18px;
-}
-.about-button {
-    padding: 1rem;
-    margin-top: 1rem ;
-}
-.about-button span {
-    padding: 0.8rem;
-    gap: 0.6rem;
-    max-width: 150px;
-}
-.about-button span a{
-    font-size: 0.65rem;
-    text-transform: capitalize;
-}
-.about-button span i{
-    font-size: 0.6rem;
-}
+    .about-container{
+        padding-top: 1rem;
+    }
+    .about-content{
+        padding: 1rem 0.5rem;
+        text-wrap: wrap;
+        max-height: 350px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        box-shadow: 5px 8px var(--text-color);
+    }
+    .about h2{
+        font-size: 1.15rem;
+        text-transform: capitalize;
+    }
+    .about-content p{
+        line-height: 18px;
+        font-size: 0.75rem;
+    }
+    .about-content span p{
+        line-height: 18px;
+    }
+    .about-button {
+        padding: 1rem;
+        margin-top: 1rem ;
+    }
+    .about-button span {
+        padding: 0.8rem;
+        gap: 0.6rem;
+        max-width: 150px;
+    }
+    .about-button span a{
+        font-size: 0.65rem;
+        text-transform: capitalize;
+    }
+    .about-button span i{
+        font-size: 0.6rem;
+    }
+    
+    /*Frequently asked questions*/
+    
+    .faq h2{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        word-wrap: nowrap;
+        text-transform: capitalize;
+    }
+    .faq .accordion li{
+        padding: 0.2rem;
+    }
+    .faq .accordion li label{
+        font-size: 0.7rem;
+        padding: 0.8rem 0.5rem;
+    }
+    .faq .accordion label::after{
+        content: "+";
+        font-size: 0.8rem;
+        right: 10px;
+    }
+    .faq .accordion .content{
+        text-align: start;
+        padding: 0 5px;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s;
+    }
+    .accordion .content p{
+        font-size: 0.65rem;
+    }
+    .faq .accordion input[type="radio"]:checked + label + .content{
+        max-height: 300px;
+        padding: 0.8rem;
+    }
 
-/*Frequently asked questions*/
+    /*Footer responsiveness*/
 
-.faq h2{
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    word-wrap: nowrap;
-    text-transform: capitalize;
-}
-.faq .accordion li{
-    padding: 0.2rem;
-}
-.faq .accordion li label{
-    font-size: 0.7rem;
-    padding: 0.8rem 0.5rem;
-}
-.faq .accordion label::after{
-    content: "+";
-    font-size: 0.8rem;
-    right: 10px;
-}
-.faq .accordion .content{
-    text-align: start;
-    padding: 0 5px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
-}
-.accordion .content p{
-    font-size: 0.65rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 0.8rem;
-}
-
-/*Footer responsiveness*/
-
-@media (max-width:250px){
     .footer-body{
         gap: 1.7rem;
         padding-top: 2rem;
@@ -724,6 +724,8 @@ input[type="radio"]{
         border-bottom: 1px solid var(--text-color);
     }
 }
+
+
 @media (min-width:251px) and (max-width:390px){
     header{
         display: none;
@@ -829,87 +831,84 @@ input[type="radio"]{
         filter: grayscale();
     }
     /*be back*/
-}
 
-/* who we are section*/
+    /* who we are section*/
 
-.about-container{
-    padding-top: 1rem;
-}
-.about-content{
-    padding: 1rem 0.5rem;
-    text-wrap: wrap;
-    max-height: 350px;
-    overflow-y: auto;
-    scrollbar-width: none;
-    box-shadow: 5px 8px var(--text-color);
-}
-.about h2{
-    font-size: 1.25rem;
-    text-transform: capitalize;
-}
-.about-content p{
-    line-height: 1.1rem;
-    font-size: 0.8rem;
-}
-.about-content span p{
-    line-height: 1.1rem;
-}
-.about-button {
-    padding: 1rem;
-    margin-top: 1rem ;
-}
-.about-button span {
-    padding: 0.8rem 0.6rem;
-    gap: 0.6rem;
-    max-width: 200px;
-}
-.about-button span a{
-    font-size: 0.85rem;
-    text-transform: capitalize;
-}
-.about-button span i{
-    font-size: 0.7rem;
-}
+    .about-container{
+        padding-top: 1rem;
+    }
+    .about-content{
+        padding: 1rem 0.5rem;
+        text-wrap: wrap;
+        max-height: 350px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        box-shadow: 5px 8px var(--text-color);
+    }
+    .about h2{
+        font-size: 1.25rem;
+        text-transform: capitalize;
+    }
+    .about-content p{
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+    }
+    .about-content span p{
+        line-height: 1.1rem;
+    }
+    .about-button {
+        padding: 1rem;
+        margin-top: 1rem ;
+    }
+    .about-button span {
+        padding: 0.8rem 0.6rem;
+        gap: 0.6rem;
+        max-width: 200px;
+    }
+    .about-button span a{
+        font-size: 0.85rem;
+        text-transform: capitalize;
+    }
+    .about-button span i{
+        font-size: 0.7rem;
+    }
 
-/*Frequently asked questions*/
+    /*Frequently asked questions*/
 
-.faq h2{
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    word-wrap: nowrap;
-    text-transform: capitalize;
-}
-.faq .accordion li{
-    padding: 0.3rem;
-}
-.faq .accordion li label{
-    font-size: 0.9rem;
-    padding: 0.9rem 0.7rem;
-}
-.faq .accordion label::after{
-    content: "+";
-    font-size: 1.2rem;
-    right: 10px;
-}
-.faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
-}
-.accordion .content p{
-    font-size: 0.9rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1rem;
-}
+    .faq h2{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        word-wrap: nowrap;
+        text-transform: capitalize;
+    }
+    .faq .accordion li{
+        padding: 0.3rem;
+    }
+    .faq .accordion li label{
+        font-size: 0.9rem;
+        padding: 0.9rem 0.7rem;
+    }
+    .faq .accordion label::after{
+        content: "+";
+        font-size: 1.2rem;
+        right: 10px;
+    }
+    .faq .accordion .content{
+        text-align: start;
+        padding: 0 8px;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s;
+    }
+    .accordion .content p{
+        font-size: 0.9rem;
+    }
+    .faq .accordion input[type="radio"]:checked + label + .content{
+        max-height: 300px;
+        padding: 1rem;
+    }
 
 /*Footer responsiveness*/
-
-@media (min-width:251px) and (max-width:390px){
     .footer-body{
         gap: 1.7rem;
         padding-top: 2rem;
@@ -948,6 +947,9 @@ input[type="radio"]{
         border-bottom: 1px solid var(--text-color);
     }
 }
+
+/*Not done with other screen responsiveness*/
+
 @media (min-width:391px) and (max-width:480px){
     .footer-body{
         gap: 1.7rem;
