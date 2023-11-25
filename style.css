@@ -227,7 +227,6 @@ article,.about,.faq{
     padding: 2rem 6rem;
     width: 100%;  
 }
-
 article h2{
     margin-bottom: 2rem;
     font-size: 1.75rem;
@@ -237,50 +236,57 @@ article h2{
 article .slider{
     width: 100%;
     height: 500px;
-    border-radius: 20px;
-    /* border-radius: 15px; */
+    border-radius: 25px;
+    overflow: hidden;
     /* aspect-ratio: 150/70; */
-    background-color: #b5bbe0;
-    border: 1px solid #b5bbe0;
+    border: 5px dashed #b5bbe0;
 }
 #images{
     width: 100%;
     height: 100%;
-    padding: 0.5rem;
-    /* object-fit: contain; */
+    background-color: #b5bbe0;
 }
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
 }
-.slider span{
+.link-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#gallery-link{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #000000;
+    max-width: 250px;
     width: 100%;
+    transition: 0.5s;
     text-transform: capitalize;
     margin-top: 2rem;
 }
-.slider span a{
-    border-bottom: 1px solid var(--text-color);
-    color: var(--text-color);
-    padding-bottom: 0.1rem;
+#gallery-link:hover{
+    background: rgb(241,241,241);
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+#gallery-link a{
+    color: white;
     font-size: 1.2rem;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
-.slider span a:hover{
-    color: #b5bbe0;
-    border-bottom: 1px solid #b5bbe0;
+#gallery-link:hover a,#gallery-link:hover i{
+    color: black;
 }
-.slider span i{
-    color: var(--text-color);
-    font-size: 1.2rem;
-}
-.slider span:hover i {
-    color: #b5bbe0;
+#gallery-link i{
+    color: white;
+    font-size: 1.1rem;
 }
 
 /* who we are section*/
@@ -288,7 +294,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 .about-content{
     padding: 3rem;
@@ -537,26 +543,24 @@ input[type="radio"]{
     }
     article .slider{
         height: 300px;
-        border-radius: 20px;
         margin-bottom: 2rem;
     }
-    #images{
-        padding: 0.25rem;
+    #gallery-link{
+        margin-top: 0.7rem;
+        padding: 0.5rem 0;
+        max-width: 140px;
     }
-    .slider span{
-        margin-top: 1rem;
-    }
-    .slider span a{
+    #gallery-link a{
         padding-bottom: 0.1rem;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         transition: 0.5s;
     }
-    .slider span a:hover{
+    #gallery-link a:hover{
         color: #b5bbe0;
         border-bottom: 1px solid #b5bbe0;
     }
-    .slider span i{
-        font-size: 0.9rem;
+    #gallery-link i{
+        font-size: 0.8rem;
     }
 
     /* who we are section*/
@@ -743,26 +747,19 @@ input[type="radio"]{
         border-radius: 20px;
         margin-bottom: 2rem;
     }
-    #images{
-        padding: 0.25rem;
+    #gallery-link{
+        margin-top: 0;
+        max-width: 200px;
+        gap: 1rem;
+        padding: 0.8rem 0;
     }
-    .slider span{
-        margin-top: 1rem;
-    }
-    .slider span a{
+    #gallery-link a{
         padding-bottom: 0.1rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
         transition: 0.5s;
     }
-    .slider span a:hover{
-        color: #b5bbe0;
-        border-bottom: 1px solid #b5bbe0;
-    }
-    .slider span i{
+    #gallery-link i{
         font-size: 1rem;
-    }
-    .slider span:hover i {
-        color: #b5bbe0;
     }
 
     /* who we are section*/
@@ -940,17 +937,16 @@ input[type="radio"]{
         border-radius: 20px;
         margin-bottom: 2rem;
     }
-    #images{
-        padding: 0.25rem;
+    #gallery-link{
+        margin: 0;
+        padding: 0.8rem 0;
+        max-width: 200px;
     }
-    .slider span{
-        margin-top: 1rem;
-    }
-    .slider span a{
+    #gallery-link a{
         padding-bottom: 0.1rem;
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
-    .slider span i{
+    #gallery-link i{
         font-size: 0.9rem;
     }
 
@@ -1128,17 +1124,16 @@ input[type="radio"]{
         border-radius: 20px;
         margin-bottom: 2rem;
     }
-    #images{
-        padding: 0.25rem;
+    #gallery-link{
+        margin: 0;
+        padding: 0.7rem 0;
+        max-width: 250px;
     }
-    .slider span{
-        margin-top: 1rem;
-    }
-    .slider span a{
+    #gallery-link a{
         padding-bottom: 0.1rem;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
     }
-    .slider span i{
+    #gallery-link i{
         font-size: 1rem;
     }
 
@@ -1220,9 +1215,6 @@ input[type="radio"]{
     }
 
     /* footer responsiveness */
-    footer{
-        margin-top: 2rem;
-    }
     .footer-body{
         gap: 1.7rem;
         padding-top: 2rem;
@@ -1318,17 +1310,16 @@ input[type="radio"]{
         border-radius: 20px;
         margin-bottom: 2rem;
     }
-    #images{
-        padding: 0.25rem;
+    #gallery-link{
+        margin: 0;
+        padding: 0.7rem 0;
+        max-width: 250px;
     }
-    .slider span{
-        margin-top: 1rem;
-    }
-    .slider span a{
+    #gallery-link a{
         padding-bottom: 0.1rem;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
-    .slider span i{
+    #gallery-link i{
         font-size: 1rem;
     }
 
@@ -1509,17 +1500,14 @@ input[type="radio"]{
         border-radius: 20px;
         margin-bottom: 2rem;
     }
-    #images{
-        padding: 0.25rem;
-    }
-    .slider span{
+    #gallery-link{
         margin-top: 1rem;
     }
-    .slider span a{
+    #gallery-link a{
         padding-bottom: 0.1rem;
         font-size: 1.2rem;
     }
-    .slider span i{
+    #gallery-link i{
         font-size: 1rem;
     }
 
@@ -1660,17 +1648,14 @@ article .slider{
     border-radius: 20px;
     margin-bottom: 2rem;
 }
-#images{
-    padding: 0.25rem;
-}
-.slider span{
+#gallery-link{
     margin-top: 1rem;
 }
-.slider span a{
+#gallery-link a{
     padding-bottom: 0.1rem;
     font-size: 1.3rem;
 }
-.slider span i{
+#gallery-link i{
     font-size: 1.1rem;
 }
 
