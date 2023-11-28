@@ -30,7 +30,8 @@ header{
     background-color: var(--background);
     position: sticky;
     top: 0;
-    z-index: 3;
+    transition: 0.5s;
+    z-index: 2;
 }
 /* responsive hamburger styling */
 .ham-container{
@@ -62,12 +63,12 @@ header{
     height: 3px;
     transition: width 400ms, background-color 300ms;
 }
-#hamburger:hover span{
+/* #hamburger:hover span{
     width: 70%;
-}
-#hamburger:hover::after{
+} */
+/* #hamburger:hover::after{
     width: 30%;
-}
+} */
 #hamburger.active span{
     background-color: #b5bbe0;
 }
@@ -94,9 +95,12 @@ nav .film,.hide{
 /* media link styling*/
 .media{
     width: 100%;
-    /* background: #ebebef; */
-    background-color: var(--off-white);
-    /* background: linear-gradient(6deg, #8045f0 0%); */
+    background: #ebebef;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 3;
+    /* background-color: var(--off-white); */
     border-bottom: 0.25px solid #0000001d;
 }
 .media-link{
@@ -865,7 +869,10 @@ input[type="radio"]{
         width: 100%;
         display: flex;
         margin: 0;
-        height: 20vh;
+        height: 15vh;
+        position: sticky;
+        /* top: 10px; */
+        position: -webkit-sticky;
         gap: 5rem;
         /* border: 2px solid black; */
         flex-direction: row;
@@ -892,7 +899,7 @@ input[type="radio"]{
     .nav-link{
         position: fixed;
         right: 100%;
-        top: 210px;
+        top: 180px;
         gap: 0;
         /* backdrop-filter: blur(27px); */
         display: flex;
@@ -943,7 +950,7 @@ input[type="radio"]{
     /* header ends */
 
     .hero{
-        height: 50vh;
+        height: 60vh;
     }
     .hero-body{
         display: flex;

@@ -644,8 +644,8 @@ span p a:hover{
     .form-section{
         width: 100%;
         padding: 2rem 1rem;
-        background-color: var(--off-white);
-        /* background-color: #ebebef; */
+        /* background-color: var(--off-white); */
+        background-color: #ebebef;
     }
     .form-header{
         line-height: 20px;

@@ -442,8 +442,8 @@
         border-bottom: 1px solid gray;
     }
     .policy-body{
-        background-color: var(--off-white);
-        /* background-color: #ebebef; */
+        /* background-color: var(--off-white); */
+        background-color: #ebebef;
         padding: 0.5rem 1rem;
     }
     .policy{

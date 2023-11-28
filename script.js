@@ -13,6 +13,22 @@ document.querySelectorAll('nav-menu').forEach(n => n.
   }))
 //
 
+//user scroll 
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        // Scrolling up
+        document.getElementById('site-header').style.top = '0';
+    } else {
+        // Scrolling down
+        document.getElementById('site-header').style.top = '-135px'; // Adjust the height of your header
+    }
+
+    prevScrollPos = currentScrollPos;
+};
 
 // image highlights
 var img = document.getElementById('images') ;
