@@ -24,7 +24,7 @@ window.onscroll = function() {
         document.getElementById('site-header').style.top = '0';
     } else {
         // Scrolling down
-        document.getElementById('site-header').style.top = '-135px'; // Adjust the height of your header
+        document.getElementById('site-header').style.top = '-125px'; 
     }
 
     prevScrollPos = currentScrollPos;
