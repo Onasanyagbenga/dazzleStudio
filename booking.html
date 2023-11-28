@@ -23,25 +23,39 @@
             </ul>
         </div>
         <nav>
+            <div class="ham-container">
+                <button id="hamburger">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
             <div class="nav-link border">
-                <ul>
+                <ul class="nav-menu">
                     <li><a aria-current="page" href="index.html">home</a></li>
                     <li><a href="booking.html">bookings</a></li>
+                    <!-- this section doesnt show on larger screens.only for responsiveness -->
+                    <li class="hide"><a href="contact.html">contact</a></li>
+                    <li class="hide"><a href="services.html">services</a></li>
+                    <!-- ends here -->
                 </ul>
             </div>
             <span class="logo border">
                 <a href="index.html">
-                    <img src="Dazzle.png" alt="logo">
+                    <img src="Pictures/Dazzle.png" alt="dazzle logo">
                 </a>
             </span>
             <div class="nav-link border">
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="contact.html">contact</a></li>
                     <li><a href="services.html">services</a></li>
                 </ul>
             </div>
+            <!-- only shows on mobile -->
+            <span class="film"><a href="gallery.html"><i class="fa-solid fa-photo-film"></i></a></span>
+            <!-- ends here -->
         </nav>
     </header>
+    <!-- have to redesign these whole form as well -->
     <section class="form-section">
         <div class="form-header">
             <div class="header-flex">
@@ -101,17 +115,30 @@
                     <span class="name"><span><i class="fa-solid fa-message icon"></i></span>
                     Message</span>
                 </label>
-                <button>Submit</button>
+                <button id="openModalBtn">Submit</button>
             </form>
         </div>
         <span>
             <p>Kindly Note Appointment times are only from 9am - 6pm . Click <a href="services.html">ME</a> to view my services and booking policy.</p>
         </span>
     </section>
-    <!--will be back after i am done with the responsiveness-->
-    <div class="modal">
+    <!--will be back after i am done with the responsiveness, not done with the modal yet-->
+    <div id="booking-modal" class="modal">
         <div class="modal-body">
-            <div class="modal-header"></div>
+            <div class="modal-header">
+                <h2>Booking Reserved</h2>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="modal-content">
+                <span id="closeModalBtn">&times;</span>
+                <p>Appointment confirmation will be sent via Contact number provided.</p>
+                <p>Thank you for booking me. Hope to see you soon :)</p>
+                <p>Dazzle Studio ~</p>
+                <div class="modal-button">
+                    <span><a href="index.html">Home</a></span>
+                    <span><a href="gallery.html">See Gallery</a></span>
+                </div>
+            </div>
         </div>
     </div>
     <!--will be back after i am done with the responsiveness-->
@@ -132,4 +159,5 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>

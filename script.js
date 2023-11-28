@@ -1,20 +1,20 @@
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 10,
-//   slidesPerView: 8,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-// var swiper2 = new Swiper(".mySwiper2", {
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: swiper,
-//   },
-// });
+// Hamburger
+const hamburger = document.getElementById('hamburger') ;
+const navLink = document.querySelector('.nav-link') ;
+hamburger.addEventListener('click', () =>{
+  hamburger.classList.toggle('active');
+  navLink.classList.toggle('active') ;
+})
 
+document.querySelectorAll('nav-menu').forEach(n => n.
+  addEventListener('click', () => {
+    hamburger.classList.remove('active') ;
+    navLink.classList.remove('active') ;
+  }))
+//
+
+
+// image highlights
 var img = document.getElementById('images') ;
 var slides = ['Pictures/IMG_0372.JPG','Pictures/IMG_0373.JPG','Pictures/IMG_0375.JPG','Pictures/IMG_6506.png','Pictures/IMG_7794.png'] ;
 var start = 0 ;
@@ -30,7 +30,19 @@ function slider(){
 }
 setInterval(slider,4000)
 
+// modal display
 
+const closeModal = document.getElementById('closeModalBtn') ;
+const openModal = document.getElementById('openModalBtn') ;
+const bookingModal = document.getElementById('booking-modal')
+
+closeModal.addEventListener('click', () => {
+  bookingModal.style.display = 'none' ;
+})
+openModal.addEventListener('click', () => {
+  openModal.classList.add('active')
+  bookingModal.style.display = 'block' ;
+})
 
 // function eventHandler(index) {
 //     img.forEach((card, i) => {
@@ -51,24 +63,6 @@ setInterval(slider,4000)
 // });
 
 
-// var swiper = new Swiper(".mySwiper", {
-//     watchSlidesProgress: true,
-//     effect:"autoplay",
-//     slidesPerView: 3,
-//     grabCursor: true,
-//     autoplay: {
-//         delay: false,
-//         disableOnInteraction: false,
-//     },
-//     autoplayEffect:{
-//         pauseOnMouseEnter: true,
-//     },
-//     centeredSlides: true,
-//     pagination: {
-//      el: ".swiper-pagination",
-//     clickable: true,
-//     }
-//   });
 
 //   document.querySelectorAll('.nav-link').forEach(link => {
 //     if(link.href === window.location.href){
