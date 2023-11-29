@@ -13,7 +13,8 @@ document.querySelectorAll('nav-menu').forEach(n => n.
     hamburger.classList.remove('active') ;
     navLink.classList.remove('active') ;
   }))
-//
+// Hamburger ends
+
 // if(hamburger.classList.remove('active')){
 //   siteHeader.style.position = 'fixed'
 // }
@@ -35,9 +36,10 @@ window.onscroll = function() {
         // Scrolling down
         siteHeader.style.top = '-125px'; 
     }
-    
+
     prevScrollPos = currentScrollPos;
 };
+//user scroll ends
 
 // image highlights
 var img = document.getElementById('images') ;
@@ -68,6 +70,7 @@ openModal.addEventListener('click', () => {
   openModal.classList.add('active')
   bookingModal.style.display = 'block' ;
 })
+//modal ends
 
 // function eventHandler(index) {
 //     img.forEach((card, i) => {
