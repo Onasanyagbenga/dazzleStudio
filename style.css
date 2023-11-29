@@ -921,7 +921,7 @@ input[type="radio"]{
         height: 100vh;
         background-color: var(--off-white);
         width: 100%;
-        border-top: 2px solid #b5bbe0;
+        border-top: 3px solid #b5bbe0;
         border-bottom: 2px solid #b5bbe0;
         text-align: center;
         transition: 0.5s;
@@ -976,7 +976,7 @@ input[type="radio"]{
     }
     .hero .hero-content{
         gap: 1.3rem;
-        background-color: #80808058;
+        background-color: rgba(128, 128, 128, 0.506);
         /* backdrop-filter: blur(1px); */
         height: 100%;
         padding: 1.5rem 0.5rem 2.5rem 0.5rem;

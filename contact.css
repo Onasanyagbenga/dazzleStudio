@@ -214,13 +214,14 @@
 }
 @media (min-width:251px) and (max-width:390px){
     /* header */
+
     .fa-brands{
         font-size: 1.4rem;
     }
     .ham-container{
         padding: 0.8rem;
         display: block;
-        /* width: 33.3%; */
+        width: 33.3%;
         /* border: 2px solid black; */
     }
     #hamburger{
@@ -239,25 +240,26 @@
         width: 100%;
         display: flex;
         margin: 0;
-        height: 20vh;
-        gap: 5rem;
+        height: 15vh;
+        /* gap: 5rem; */
         /* border: 2px solid black; */
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
     }
     .logo{
-        width: 150px;
+        width: 33.3%;
+        /* width: 150px; */
         /* border: 2px solid black; */
     }
     nav .film{
         display: flex;
-        /* padding-left: 2.5rem; */
+        padding-left: 2.7rem;
         align-items: center;
         overflow: hidden;
         /* border: 2px solid black; */
-        justify-content:flex-start;
-        width: 15%;
+        justify-content:center;
+        width: 33.3%;
     }
     nav .film a{
         font-size: 1.65rem;
@@ -266,14 +268,14 @@
     .nav-link{
         position: fixed;
         right: 100%;
-        top: 210px;
+        top: 160px;
         gap: 0;
         /* backdrop-filter: blur(27px); */
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #FAF9F6;
+        background-color: var(--off-white);
         width: 100%;
         border-top: 2px solid #b5bbe0;
         border-bottom: 2px solid #b5bbe0;
@@ -500,7 +502,7 @@ nav .film a{
 }
 @media (min-width:481px) and (max-width:767px){
     /* header */
-    
+
     .ham-container{
         padding: 0.8rem;
         display: block;
