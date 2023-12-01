@@ -356,7 +356,7 @@
         height: 100vh;
         background-color: var(--off-white);
         width: 100%;
-        border-top: 2px solid #b5bbe0;
+        border-top: 3px solid #b5bbe0;
         border-bottom: 2px solid #b5bbe0;
         text-align: center;
         transition: 0.5s;

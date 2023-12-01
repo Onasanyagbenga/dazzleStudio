@@ -465,7 +465,10 @@ input[type="radio"]{
     text-align: start;
     padding: 0 15px;
     overflow: hidden;
-    max-height: 0;
+    /* display: none; */
+    max-height: 600px;
+    padding: 30px 20px;
+    /* max-height: 0; */
     transition: all 0.5s;
 }
 .content p{
@@ -475,13 +478,18 @@ input[type="radio"]{
     color: #b5bbe0;
     border-bottom: 1px solid #b5bbe0;
 }
-.faq .accordion input[type="radio"]:checked + label + .content{
+#faq-item.active .content{
+    /* display: block; */
+    max-height: 600px;
+
+}
+/* .faq .accordion input[type="radio"]:checked + label + .content{
     max-height: 600px;
     padding: 30px 20px;
 }
 .faq .accordion input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
-}
+} */
 
 /*Footer section*/
 
@@ -916,6 +924,7 @@ input[type="radio"]{
         gap: 0;
         /* backdrop-filter: blur(27px); */
         display: flex;
+        z-index: 10;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -977,7 +986,7 @@ input[type="radio"]{
     .hero .hero-content{
         gap: 1.3rem;
         background-color: rgba(128, 128, 128, 0.506);
-        /* backdrop-filter: blur(1px); */
+        backdrop-filter: blur(17px);
         height: 100%;
         padding: 1.5rem 0.5rem 2.5rem 0.5rem;
         flex-direction: column;
@@ -1221,7 +1230,7 @@ nav .film a{
 .nav-link{
     position: fixed;
     right: 100%;
-    top: 160px;
+    top: 165px;
     gap: 0;
     /* backdrop-filter: blur(27px); */
     display: flex;
@@ -1230,7 +1239,7 @@ nav .film a{
     height: 100vh;
     background-color: var(--off-white);
     width: 100%;
-    border-top: 2px solid #b5bbe0;
+    border-top: 3px solid #b5bbe0;
     border-bottom: 2px solid #b5bbe0;
     text-align: center;
     transition: 0.5s;
@@ -1520,7 +1529,7 @@ nav .film a{
     .nav-link{
         position: fixed;
         right: 100%;
-        top: 160px;
+        top: 150px;
         gap: 0;
         /* backdrop-filter: blur(27px); */
         display: flex;
@@ -1529,7 +1538,7 @@ nav .film a{
         height: 100vh;
         background-color: var(--off-white);
         width: 100%;
-        border-top: 2px solid #b5bbe0;
+        border-top: 3px solid #b5bbe0;
         border-bottom: 2px solid #b5bbe0;
         text-align: center;
         transition: 0.5s;

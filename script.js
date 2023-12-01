@@ -72,6 +72,31 @@ openModal.addEventListener('click', () => {
 })
 //modal ends
 
+//faq active class
+const faqItem = document.querySelectorAll('#faq-item') ;
+// const content = document.querySelector('.content')
+for(i = 0 ; i > faqItem.length; i++){
+  faqItem[i].addEventListener('click', function(){
+    this.classList.toggle('active')
+  })
+}
+
+// faqItem.forEach(item =>
+//   item.addEventListener('click', () => {
+//     const isItemOpen = item.classList.contains('content');
+//     faqItem.forEach(item => item.classList.remove('content'));
+//     if(isItemOpen){
+//       item.classList.toggle('content')
+//     }
+//   } ))
+
+// faqItem.addEventListener('click', () => {
+//   faqItem.classList.add('active')
+//   content.style.display = 'block'
+// })
+
+
+
 // function eventHandler(index) {
 //     img.forEach((card, i) => {
 //         card.classList.remove('active');
