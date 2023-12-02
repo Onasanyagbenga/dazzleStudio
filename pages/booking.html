@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 <body>
@@ -68,12 +68,12 @@
         </div>
         <!--THis form needs formsubmit.co-->
         <div class="form-content">
-            <form action="https://formspree.io/f/mdorjopz" method="post" class="form">
-                    <label for="clientName">
-                        <input type="text" name="clientName" id="clientName" placeholder="" pattern="[A-Za-z]{3,}" required>
-                        <span class="name"><span><i class="fa-regular fa-user icon"></i></span> Name</span>
-                    </label>
-                <!-- <span> Minimum 3 letters</span> -->
+            <form action="https://formsubmit.co/ei@nsisong.com" method="post" class="form">
+                <input type="hidden" name="_next" value="URL-TO-REDIRECT-AFTER-SUBMISSION">
+                <label for="clientName">
+                    <input type="text" name="clientName" id="clientName" placeholder="" pattern="[A-Za-z]{3,}" required>
+                    <span class="name"><span><i class="fa-regular fa-user icon"></i></span> Name</span>
+                </label>
                 <label for="Telephone">
                     <input type="text" name="Telephone" id="Telephone" placeholder="" pattern="[0-9]{11,}" required >
                     <span class="name"><span><i class="fa-solid fa-phone icon"></i></span> Phone Number</span>
@@ -85,27 +85,7 @@
                     </optgroup>
                 </select>
                 <select name="service" id="service" required>
-                    <optgroup label="MAKEUP" id="makeup">
-                        <option value="Regular-SoftGlam">Regular Soft Glam</option>
-                        <option value="Birthday-Makeup">Birthday Makeup</option>
-                        <option value="Bridal-Makeup">Bridal Makeup (Price varies)</option>
-                    </optgroup>
-                    <optgroup label="LOCS" id="locs">
-                        <option value="Crochet-instant-full">Crotchet ( instant locs ) Full head</option>
-                        <option value="Crochet-instant-half">Crotchet ( instant locs ) Half head</option>
-                        <option value="Comb-Coils-Full head">Comb-Coils ( Full head )</option>
-                        <option value="Comb-Coils-Half head">Comb-Coils ( Half head )</option>
-                        <option value="Crotchet-maintenance">Crotchet maintenance</option>
-                        <option value="Two-strand-twists-palmrolling">Two strand twists & palmrolling</option>
-                    </optgroup>
-                    <optgroup label="Additional Services" id="addt-service">
-                        <option value="Corncrows">Cornrows ( Including Didi )</option>
-                        <option value="Natural-twist">Natural twist without extension</option>
-                        <option value="Loc-styling">Loc Styling</option>
-                        <option value="Hair-Coloring">Hair Coloring</option>
-                        <option value="Loc-Repair">Loc Repair</option>
-                        <option value="home-service">Home Service ( Rates apply )</option>
-                    </optgroup>
+                    <!-- Add your other options here -->
                 </select>
                 <span class="date">
                     <input type="date" value="2023-01-01" placeholder="Select Date" required>
@@ -118,12 +98,13 @@
                     <span class="name"><span><i class="fa-solid fa-message icon"></i></span>
                     Message</span>
                 </label>
-                <button id="openModalBtn">Submit</button>
+                <button id="openModalBtn" type="submit">Request Booking</button>
             </form>
+            
         </div>
         <!--COncerned about wtf this is-->
         <span>
-            <p>Kindly Note Appointment times are only from 9am - 6pm . Click <a href="services.html">ME</a> to view my services and booking policy.</p>
+            <p>Kindly Note Appointment times are only from 9am - 6pm . Click <a href="/pages/services.html">ME</a> to view my services and booking policy.</p>
         </span>
     </section>
     <!--will be back after i am done with the responsiveness, not done with the modal yet-->
@@ -138,7 +119,7 @@
                 <p>Booking confirmation will be sent via Contact number provided.</p>
                 <p>Thank you for booking me. Hope to see you soon :)</p>
                 <div class="modal-button">
-                    <span id="home"><a href="index.html">Home</a></span>
+                    <span id="home"><a href="../index.html">Home</a></span>
                     <span id="gall"><a href="gallery.html">See Gallery</a></span>
                 </div>
                 <p>Dazzle Studio ~</p>
@@ -163,5 +144,5 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
