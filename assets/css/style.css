@@ -657,71 +657,79 @@ input[type="radio"]{
     }
     /* header ends */
 
-    /* hero section */
-    .hero{
-        height: 40vh;
-    }
+/* hero section */
+.hero {
+    height: 40vh;
+}
 
-    .hero-body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: none; */
-        background: url('Pictures/Styling\ Artistry.png') no-repeat center center ;
-        background-size: contain;
-        height: 100%;
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for opacity */
-    }
+.hero-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Pictures/Styling\ Artistry.png') no-repeat center center;
+    background-size: contain;
+    height: 100%;
+    position: relative; /* Add position relative to enable absolute positioning inside */
+}
 
-    .hero .hero-content{
-        gap: 0.8rem;
-        padding: 1rem;
-        height: 100%;
-        background-color: #80808058;
-        /* backdrop-filter: blur(1px); */
-        flex-direction: column;
-    }
-    .hero h1{
-        font-size: 1.8rem;
-        color: #000000;
-    }
-    .hero p{
-        font-size: 0.46rem;
-        text-align: center;
-        overflow: hidden;
-        color: white;
-        animation: typing 2s steps(20);
-    }
-    .hero-content button{
-        max-width: 150px;
-        gap: 0.5rem;
-        padding: 0.7rem 0.9rem;
-    }
-    .hero-content button a{
-        font-size: 0.65rem;
-    }
-    .hero-content button i{
-        font-size: 0.55rem;
-    }
-    .hero-flex{
-        height: 310px;
-        display: none;
-        overflow: visible;
-    }
-    .hero-flex img{
-        object-fit: cover;
-        width: 100%;
-        height: 310px;
-    }
-    /* hero section ends*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.35); /* Adjust the last value for opacity */
+}
+
+.hero .hero-content {
+    gap: 0.8rem;
+    padding: 1rem;
+    height: 100%;
+    background-color: #80808058;
+    /* backdrop-filter: blur(1px); */
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 0.46rem;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    animation: typing 2s steps(20);
+}
+
+.hero-content button {
+    max-width: 150px;
+    gap: 0.5rem;
+    padding: 0.7rem 0.9rem;
+}
+
+.hero-content button a {
+    font-size: 0.65rem;
+}
+
+.hero-content button i {
+    font-size: 0.55rem;
+}
+
+.hero-flex {
+    height: 310px;
+    display: none;
+    overflow: visible;
+}
+
+.hero-flex img {
+    object-fit: cover;
+    width: 100%;
+    height: 310px;
+}
+/* hero section ends*/
+
     
     /*Gallery Styling*/
     
