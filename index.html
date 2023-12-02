@@ -12,6 +12,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Josefin+Slab:wght@100&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hero-section {
+            position: relative;
+            height: 100vh; /* Adjust as needed */
+            background-image: url('path/to/your-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for opacity */
+        }
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff; /* Adjust text color */
+        }
+    </style>
 </head>
 <body>
     <header id="site-header">
