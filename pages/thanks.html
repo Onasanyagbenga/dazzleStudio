@@ -33,6 +33,22 @@ p {
     margin: 0;
 }
 
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #4caf50;
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -40,8 +56,8 @@ p {
         <div class="thanks-content">
             <h2>Thanks for Booking!</h2>
             <p>Your appointment has been confirmed.</p>
-            <p>We look forward to serving you.</p>
-            <button href="../index.html">Go to Home</button>
+            <p>We look forward to serving you.</p><br>
+            <a href="../index.html" class="home-button">Go to Home</a>
         </div>
     </div>
 </body>
