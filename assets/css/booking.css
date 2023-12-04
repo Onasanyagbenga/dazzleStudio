@@ -188,8 +188,8 @@ span p a:hover{
     left: 0;
     background-color: #8080807d;
     height: 100%;
-    z-index: 4;
-    display: none;
+    z-index: 8;
+    display: block;
 }
 .modal-body{
     border-radius: 10px;
@@ -357,7 +357,7 @@ span p a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 100vh;
         background-color: white;
         width: 100%;
         border-top: 2px solid #b5bbe0;

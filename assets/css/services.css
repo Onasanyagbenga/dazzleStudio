@@ -156,7 +156,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 100vh;
         background-color: white;
         width: 100%;
         border-top: 2px solid #b5bbe0;
@@ -243,6 +243,7 @@
         text-align: center;
         padding: 0.5rem 0 0 0;
         font-size: 1rem;
+        text-transform: capitalize;
     }
     .card ul{
         line-height: 20px;
@@ -272,7 +273,7 @@
         text-align: center;
         padding: 1rem 0 0.2rem 1rem;
         /* color: var(--text-color); */
-        /* text-transform: capitalize; */
+        text-transform: capitalize;
         font-size: 1.1rem;
     }
     .policy ul{
@@ -400,13 +401,12 @@
     .service-section{
         /* padding: 1.5rem; */
         padding: 2rem 0.2rem 0.5rem 0.2rem;
-        background-color: var(--off-white);
     }
     .service-section h2{
         font-size: 1.2rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding-bottom: 1.5rem;
-        padding-left: 0.5rem;
+        padding-left: 1rem;
     }
     .service-content{
         gap: 2.5rem;
@@ -437,7 +437,7 @@
         width: 100%;
     }
     .card ul li{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         padding: 0.3rem 0;
         word-wrap: wrap;
         align-items: first baseline;
@@ -469,7 +469,7 @@
         list-style-type: disc;
         line-height: 20px;
         padding: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .policy ul li a{
         color: #ebebef;
@@ -590,9 +590,9 @@ nav .film a{
     }
     .service-section h2{
         font-size: 1.3rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding-bottom: 1.5rem;
-        padding-left: 0.5rem;
+        padding-left: 1.1rem;
     }
     .service-content{
         gap: 2.5rem;
@@ -866,9 +866,9 @@ nav .film a{
     }
     .service-section h2{
         font-size: 1.5rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding-bottom: 1.5rem;
-        padding-left: 0.5rem;
+        padding-left: 1.2rem;
     }
     .service-content{
         gap: 3rem;

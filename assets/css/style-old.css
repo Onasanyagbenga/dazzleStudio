@@ -466,9 +466,9 @@ input[type="radio"]{
     padding: 0 15px;
     overflow: hidden;
     /* display: none; */
-    max-height: 600px;
-    padding: 30px 20px;
-    /* max-height: 0; */
+    /* max-height: 600px;
+    padding: 30px 20px; */
+    max-height: 0;
     transition: all 0.5s;
 }
 .content p{
@@ -483,13 +483,13 @@ input[type="radio"]{
     max-height: 600px;
 
 }
-/* .faq .accordion input[type="radio"]:checked + label + .content{
+.faq .accordion input[type="radio"]:checked + label + .content{
     max-height: 600px;
     padding: 30px 20px;
 }
 .faq .accordion input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
-} */
+}
 
 /*Footer section*/
 
@@ -598,7 +598,7 @@ input[type="radio"]{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 100vh;
         background-color: var(--off-white);
         width: 100%;
         border-top: 2px solid #b5bbe0;
@@ -666,15 +666,25 @@ input[type="radio"]{
         justify-content: center;
         align-items: center;
         /* background-color: none; */
-        background: url('Pictures/Styling\ Artistry.png') no-repeat center center ;
+        background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
         background-size: contain;
         height: 100%;
+        position: relative;
     }
+    /* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.555);  
+
+} */
     .hero .hero-content{
         gap: 0.8rem;
         padding: 1rem;
         height: 100%;
-        background-color: #80808058;
+        background-color: rgba(128, 128, 128, 0.455);
         /* backdrop-filter: blur(1px); */
         flex-direction: column;
     }
@@ -701,14 +711,7 @@ input[type="radio"]{
         font-size: 0.55rem;
     }
     .hero-flex{
-        height: 310px;
         display: none;
-        overflow: visible;
-    }
-    .hero-flex img{
-        object-fit: cover;
-        width: 100%;
-        height: 310px;
     }
     /* hero section ends*/
     
@@ -979,14 +982,14 @@ input[type="radio"]{
         justify-content: center;
         align-items: center;
         /* background-color: none; */
-        background: url('Pictures/Styling\ Artistry.png') no-repeat center center ;
+        background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
         background-size: contain;
         height: 100%;
     }
     .hero .hero-content{
         gap: 1.3rem;
-        background-color: rgba(128, 128, 128, 0.506);
-        backdrop-filter: blur(17px);
+        background-color: rgba(128, 128, 128, 0.375);
+        /* backdrop-filter: blur(17px); */
         height: 100%;
         padding: 1.5rem 0.5rem 2.5rem 0.5rem;
         flex-direction: column;
@@ -1015,14 +1018,7 @@ input[type="radio"]{
         font-size: 0.7rem;
     }
     .hero-flex{
-        height: 100%;
-        overflow: visible;
         display: none;
-    }
-    .hero-flex img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
     }
     /* hero section ends*/
     
@@ -1288,7 +1284,7 @@ nav .film a{
     justify-content: center;
     align-items: center;
     /* background-color: none; */
-    background: url('Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
     background-size: contain;
     height: 100%;
 }
@@ -1321,14 +1317,7 @@ nav .film a{
         font-size: 0.7rem;
     }
     .hero-flex{
-        height: 100%;
         display: none;
-        overflow: hidden;
-    }
-    .hero-flex img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
     }
     /* hero section ends*/
     
@@ -1587,7 +1576,7 @@ nav .film a{
         justify-content: center;
         align-items: center;
         /* background-color: none; */
-        background: url('Pictures/Styling\ Artistry.png') no-repeat center center ;
+        background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
         background-size: contain;
         height: 100%;
     }
@@ -1619,14 +1608,7 @@ nav .film a{
         font-size: 0.95rem;
     }
     .hero-flex{
-        height: 100%;
         display: none;
-        overflow: hidden;
-    }
-    .hero-flex img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
     }
     /* hero section ends*/
     
