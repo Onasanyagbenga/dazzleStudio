@@ -1014,11 +1014,12 @@ input[type="radio"]{
         padding: 0.9rem 1rem;
     }
     .hero-content button a{
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         color: #000000;
     }
     .hero-content button i{
         font-size: 0.7rem;
+        color: #000000;
     }
     .hero-flex{
         display: none;
