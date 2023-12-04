@@ -1009,10 +1009,13 @@ input[type="radio"]{
     .hero-content button{
         max-width: 200px;
         gap: 0.5rem;
+        background-color: transparent;
+        border: 2px solid black;
         padding: 0.9rem 1rem;
     }
     .hero-content button a{
         font-size: 0.85rem;
+        color: #000000;
     }
     .hero-content button i{
         font-size: 0.7rem;

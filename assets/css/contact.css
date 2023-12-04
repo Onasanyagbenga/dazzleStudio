@@ -327,7 +327,7 @@
         width: 100%;
     }
     .contact .contact-body h2{
-        font-size: 2.85rem;
+        font-size: 2.8rem;
         padding-bottom: 1rem;
     }
     .contact-body p{
@@ -335,7 +335,7 @@
         font-size: 0.85rem;
     }
     .contact-button button p a{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .contact-button{
         gap: 2rem;
@@ -344,7 +344,7 @@
         /* border: 2px solid red; */
     }
     .contact-button button{
-        padding: 0.3rem 0.7rem ;
+        padding: 0.5rem 0.8rem ;
         gap: 0.5rem;
         width: 100%;
         max-width: 110px;
@@ -353,7 +353,7 @@
         transform: scale(1.03);
     }
     .contact-button button i{
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
 }
 @media (min-width:391px) and (max-width:480px){
