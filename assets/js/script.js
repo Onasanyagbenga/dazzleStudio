@@ -66,10 +66,31 @@ const bookingModal = document.getElementById('booking-modal')
 closeModal.addEventListener('click', () => {
   bookingModal.style.display = 'none' ;
 })
-openModal.addEventListener('click', () => {
-  openModal.classList.add('active')
-  bookingModal.style.display = 'block' ;
-})
+// openModal.addEventListener('click', () => {
+//   openModal.classList.add('active')
+//   bookingModal.style.display = 'block' ;
+// })
+//  function showModal() {
+//   bookingModal.style.display = 'block' ;
+//  }
+
+//  function isFormValid(){
+//   document.getElementById('clientName');
+//   document.getElementById('telephone');
+//   document.getElementById('makeupApt');
+//   document.getElementById('datepicker');
+//   document.getElementById('timepicker');
+//  }
+
+// openModal.addEventListener('click', function(){
+//   if(isFormValid() === ''){
+//     alert('Please fill out all required fields.')
+//   }
+//   else{
+//     showModal() ;
+//   }
+// })
+
 //modal ends
 
 //faq active class
@@ -94,28 +115,6 @@ for(i = 0 ; i > faqItem.length; i++){
 //   faqItem.classList.add('active')
 //   content.style.display = 'block'
 // })
-
-
-
-// function eventHandler(index) {
-//     img.forEach((card, i) => {
-//         card.classList.remove('active');
-//         slideBtns[i].classList.remove('active');
-//     });
-//     img[index].classList.add('active');
-//     slideBtns[index].classList.add('active');
-// }
-
-// img.forEach((card, i) => {
-//     card.addEventListener("click", () => eventHandler(i)
-//     )
-// });
-
-// slideBtns.forEach((btn, i) => {
-//     btn.addEventListener("click", () => eventHandler(i));
-// });
-
-
 
 //   document.querySelectorAll('.nav-link').forEach(link => {
 //     if(link.href === window.location.href){

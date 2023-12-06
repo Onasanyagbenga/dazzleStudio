@@ -189,7 +189,7 @@ span p a:hover{
     background-color: #8080807d;
     height: 100%;
     z-index: 8;
-    display: block;
+    display: none;
 }
 .modal-body{
     border-radius: 10px;

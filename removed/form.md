@@ -1,4 +1,5 @@
             <form action="https://formspree.io/f/mdorjopz" method="post" class="form">
+            <input type="hidden" name="_next" value="https://dashing-taffy-3457cd.netlify.app/pages/thanks">
                     <label for="clientName">
                         <input type="text" name="clientName" id="clientName" placeholder="" pattern="[A-Za-z]{3,}" required>
                         <span class="name"><span><i class="fa-regular fa-user icon"></i></span> Name</span>
