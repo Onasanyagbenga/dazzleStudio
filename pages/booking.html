@@ -74,22 +74,25 @@
                 <form action="https://formsubmit.co/Johnsondev19@outlook.com" method="post" class="form">
                     <input type="hidden" name="_next" value="https://dashing-taffy-3457cd.netlify.app/pages/thanks">
                     <input type="hidden" name="_captcha" value="false">
-                            <label for="clientName">
-                                <input type="text" name="clientName" id="clientName" placeholder="" pattern="[A-Za-z]{3,}" required>
-                                <span class="name"><span><i class="fa-regular fa-user icon"></i></span> Name</span>
-                            </label>
-                        <!-- <span> Minimum 3 letters</span> -->
-                        <label for="Telephone">
-                            <input type="tel" name="Telephone" id="Telephone" placeholder="" pattern="[0-9]{11,}" required >
-                            <span class="name"><span><i class="fa-solid fa-phone icon"></i></span> Phone Number</span>
-                        </label>
-                        <select name="appt-type" id="appt-type" required>
+
+                    <div class="input-control">
+                        <label for="clientName">Name</label>
+                        <input type="text" name="clientName" id="clientName" placeholder="Enter Name" pattern="[A-Za-z]{3,}" required>
+                    </div>
+
+                    <div class="input-control">
+                       <label for="Telephone">Phone Number</label>
+                        <input type="tel" name="Telephone" id="Telephone" placeholder="Type Phone number" pattern="[0-9]{11,}" required>
+                    </div>
+
+                    <select name="appt-type" id="appt-type" required>
                             <optgroup label="Select Appointment Type">
                                 <option value="Hair Appointment" id="HairApt">Hair Appointment</option>
                                 <option value="Makeover Appointment" id="MakeupApt">Makeover Appointment</option>
                             </optgroup>
                         </select>
                         <select name="service" id="service" required>
+                            <option value="" disabled selected>Select Service</option>
                             <optgroup label="MAKEUP" id="makeup">
                                 <option value="Regular-SoftGlam">Regular Soft Glam</option>
                                 <option value="Birthday-Makeup">Birthday Makeup</option>
@@ -112,17 +115,26 @@
                                 <option value="home-service">Home Service ( Rates apply )</option>
                             </optgroup>
                         </select>
-                        <span class="date">
-                            <input type="date" id="datepicker" value="2023-01-01" placeholder="Select Date" required>
-                        </span>
-                        <span class="time">
-                            <input type="time" id="timepicker" value="8:00" placeholder="Select Time" required>
-                        </span>
-                        <label for="message">
+
+                        <div class="input-control">
+                            <label for="">Select Date</label>
+                            <span class="date">
+                                <input type="date" id="datepicker" value="2023-01-01" placeholder="Select Date" required>
+                            </span>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="">Select Time</label>
+                            <span class="time">
+                                <input type="time" id="timepicker" value="8:00" placeholder="Select Time" required>
+                            </span>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="message">Message (optional) :</label>
                             <textarea name="message" id="message" placeholder=" "></textarea>
-                            <span class="name"><span><i class="fa-solid fa-message icon"></i></span>
-                            Message</span>
-                        </label>
+                        </div>
+                            
                         <button type="submit" id="openModalBtn">Submit</button>
                     </form>
         <span>
@@ -153,6 +165,7 @@
         flatpickr("#datepicker", {
             enableTime: false, // Date only
             dateFormat: "Y-m-d",
+            defaultDate: "2023-12-01",
             minDate: "today"
         });
     
