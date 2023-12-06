@@ -4,12 +4,10 @@
     background-color: #ededf0;
 }
 .form-header{
-    /* border: 2px solid red; */
     line-height: 20px;
 }
 .form-header .header-flex{
     display: flex;
-    /* border: 2px solid red; */
     justify-content: flex-start;
     width: 100%;
     line-height: 30px;
@@ -46,9 +44,70 @@
 }
 .form {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 2rem;
-    /* cursor: pointer; */
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 90%;
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+    .form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.date,
+.time {
+    display: block;
+}
+
+
+
+/* .form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .form label {
     position:relative;
@@ -79,7 +138,6 @@ textarea:focus + .name, text:not(:placeholder-shown) + .name{
     transform: scale(0.75) translateY(-45%) translateX(-10px);
 }
 .form label input{
-    /* height: 48px; */
     padding: 1rem 0.5rem;
     width: 100%;
     border: none;
@@ -108,13 +166,6 @@ textarea:focus{
     padding: 2rem 0.5rem;
 }
 
-/* .form input:invalid{
-    border: 1px solid blue;
-}
-.form input:not(:placeholder-shown):valid{
-    border: 1px solid green;
-} */
-
 select{
     padding-left: 1rem;
     outline: none;
@@ -141,13 +192,10 @@ select{
 }
 .form input::placeholder{
     font-size: 1rem;
-    /* padding-left: 1rem; */
 }
 .form button{
     font-size: 1.2rem;
     color: white;
-    /* background: rgb(241,241,241);
-    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
     background-color: var(--text-color);
     padding: 1rem 0.1rem;
     width: 100%;
@@ -162,9 +210,8 @@ select{
     color: var(--text-color);
     background: rgb(241,241,241);
     background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
-    /* background: var(--text-color); */
     transform: scale(1.05);
-}
+} */
 span p{
     padding-top: 3rem;
     font-size: 1.1rem;
@@ -180,6 +227,7 @@ span p a:hover{
     color: white;
     border-bottom: 1.5px solid white;
 }
+
 /* modal display */
 .modal{
     width: 100%;

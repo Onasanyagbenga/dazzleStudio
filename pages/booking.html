@@ -15,25 +15,6 @@
     <link rel="stylesheet" href="/assets/css/booking.css">
     <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
-    <!-- <style>
-        .frame-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; 
-}
-
-    </style> -->
-
-
 </head>
 <body>
     <header id="site-header">
@@ -99,7 +80,7 @@
                             </label>
                         <!-- <span> Minimum 3 letters</span> -->
                         <label for="Telephone">
-                            <input type="text" name="Telephone" id="Telephone" placeholder="" pattern="[0-9]{11,}" required >
+                            <input type="tel" name="Telephone" id="Telephone" placeholder="" pattern="[0-9]{11,}" required >
                             <span class="name"><span><i class="fa-solid fa-phone icon"></i></span> Phone Number</span>
                         </label>
                         <select name="appt-type" id="appt-type" required>
@@ -131,15 +112,6 @@
                                 <option value="home-service">Home Service ( Rates apply )</option>
                             </optgroup>
                         </select>
-                        <!-- <label for="datepicker">
-                            <span class="name"><span><i class="fa-solid fa-calendar-alt icon"></i></span> Select Date</span><br>
-                            <input type="date" id="datepicker" placeholder="Select Date" required>
-                        </label>
-                    
-                        <label for="timepicker">
-                            <span class="name"><span><i class="fa-solid fa-clock icon"></i></span> Select Time</span><br>
-                            <input type="time" id="timepicker" placeholder="Select Time" required>
-                        </label> -->
                         <span class="date">
                             <input type="date" id="datepicker" value="2023-01-01" placeholder="Select Date" required>
                         </span>
@@ -151,74 +123,12 @@
                             <span class="name"><span><i class="fa-solid fa-message icon"></i></span>
                             Message</span>
                         </label>
-                        <button id="openModalBtn">Submit</button>
+                        <button type="submit" id="openModalBtn">Submit</button>
                     </form>
-                <!-- <form action="https://formsubmit.co/natuwuti@mailgolem.com" method="post" class="form">
-                    <input type="hidden" name="_next" value="https://dashing-taffy-3457cd.netlify.app/pages/thanks">
-                    <input type="hidden" name="_captcha" value="false">
-                    <label for="clientName">
-                        <span class="name"><span><i class="fa-regular fa-user icon"></i></span> Name</span><br>
-                        <input type="text" name="clientName" id="clientName" placeholder="Enter Your Name" required>
-                    </label><br><br>
-                
-                    <label for="Telephone">
-                        <span class="name"><span><i class="fa-solid fa-phone icon"></i></span> Phone Number</span><br>
-                        <input type="text" name="telephone" id="telephone" placeholder="Enter Phone Number" pattern="[0-9]{11,}" required>
-                    </label><br><br>
-                
-                    <label for="appt-type">
-                        <span class="name"><span><i class="fa-solid fa-calendar-check icon"></i></span> Select Appointment Type</span><br>
-                        <select name="appt-type" id="appt-type" required>
-                            <option value="Hair Appointment" id="HairApt">Hair Appointment</option>
-                            <option value="Makeover Appointment" id="makeupApt">Makeover Appointment</option>
-                        </select>
-                    </label><br><br>
-                
-                    <label for="datepicker">
-                        <span class="name"><span><i class="fa-solid fa-calendar-alt icon"></i></span> Select Date</span><br>
-                        <input type="text" id="datepicker" placeholder="Select Date" required>
-                    </label><br><br>
-                
-                    <label for="timepicker">
-                        <span class="name"><span><i class="fa-solid fa-clock icon"></i></span> Select Time</span><br>
-                        <input type="text" id="timepicker" placeholder="Select Time" required>
-                    </label><br><br>
-                
-                    <label for="message">
-                        <span class="name"><span><i class="fa-solid fa-message icon"></i></span> Message</span><br>
-                        <textarea name="message" id="message" placeholder=" "></textarea>
-                    </label><br><br>
-                
-                    <button id="openModalBtn" type="submit">Request Booking</button>
-                </form>
-            </div>            
-        </div> -->
-
-        <!--COncerned about wtf this is-->
         <span>
             <p>Kindly Note Appointment times are only from 9am - 6pm . Click <a href="/pages/services.html">ME</a> to view my services and booking policy.</p>
         </span>
     </section>
-    <!--will be back after i am done with the responsiveness, not done with the modal yet-->
-    <!-- <div id="booking-modal" class="modal">
-        <div class="modal-body">
-            <div class="modal-header">
-                <h2>booking reserved</h2>
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <div class="modal-content">
-                <span id="closeModalBtn">&times;</span>
-                <p>Booking confirmation will be sent via Contact number provided.</p>
-                <p>Thank you for booking me. Hope to see you soon :)</p>
-                <div class="modal-button">
-                    <span id="home"><a href="/index.html">Home</a></span>
-                    <span id="gall"><a href="/pages/gallery.html">See Gallery</a></span>
-                </div>
-                <p>Dazzle Studio ~</p>
-            </div>
-        </div>
-    </div> -->
-    <!--will be back after i am done with the responsiveness-->
     <footer>
         <div class="footer-body">
             <h2>Kindly follow us on Social media for Latest trends</h2>
