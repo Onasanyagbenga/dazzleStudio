@@ -138,7 +138,7 @@ select,#datepicker,#timepicker{
 }
 .input-control input::placeholder{
     font-size: 1rem;
-    color: var(--text-color);
+    color: gray;
     padding-left: 0.5rem;
 }
 .form button{
