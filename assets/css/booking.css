@@ -189,7 +189,7 @@ span p a:hover{
     background-color: #8080807d;
     height: 100%;
     z-index: 8;
-    display: none;
+    display: block;
 }
 .modal-body{
     border-radius: 10px;
@@ -222,12 +222,12 @@ span p a:hover{
     font-size: 2rem;
     text-transform: capitalize;
 }
-.modal-header i{
+.modal-header .modal-check{
     font-size: 2.5rem;
     /* background-color: green; */
     background-color: #b5bbe0;
     height: 80px;
-    /* color: white  ; */
+    color: black  !important;
     border-radius: 50%;
     border: 1px solid #b5bbe0;
     width: 80px;
