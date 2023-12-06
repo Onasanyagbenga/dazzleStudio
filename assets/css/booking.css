@@ -186,7 +186,8 @@ span p a:hover{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #8080807d;
+    background-color: #b5bbe0;
+    /* background-color: #8080807d; */
     height: 100%;
     z-index: 8;
     display: block;
@@ -227,7 +228,7 @@ span p a:hover{
     /* background-color: green; */
     background-color: #b5bbe0;
     height: 80px;
-    color: black  !important;
+    color: black ;
     border-radius: 50%;
     border: 1px solid #b5bbe0;
     width: 80px;
