@@ -82,54 +82,56 @@
                         <input type="tel" name="telephone" id="telephone" placeholder="Type Phone number" pattern="[0-9]{11,}" required>
                     </div>
 
-                    <select name="appt-type" id="appt-type" required>
+                    <div class="options">
+                        <select name="appt-type" id="appt-type" required>
                             <optgroup label="Select Appointment Type">
                                 <option value="Hair Appointment" id="HairApt">Hair Appointment</option>
                                 <option value="Makeover Appointment" id="MakeupApt">Makeover Appointment</option>
                             </optgroup>
                         </select>
-                        <select name="service" id="service" required>
-                            <option value="" disabled selected>Select Service</option>
-                            <optgroup label="MAKEUP" id="makeup">
-                                <option value="Regular-SoftGlam">Regular Soft Glam</option>
-                                <option value="Birthday-Makeup">Birthday Makeup</option>
-                                <option value="Bridal-Makeup">Bridal Makeup (Price varies)</option>
-                            </optgroup>
-                            <optgroup label="LOCS" id="locs">
-                                <option value="Crochet-instant-full">Crotchet ( instant locs ) Full head</option>
-                                <option value="Crochet-instant-half">Crotchet ( instant locs ) Half head</option>
-                                <option value="Comb-Coils-Full head">Comb-Coils ( Full head )</option>
-                                <option value="Comb-Coils-Half head">Comb-Coils ( Half head )</option>
-                                <option value="Crotchet-maintenance">Crotchet maintenance</option>
-                                <option value="Two-strand-twists-palmrolling">Two strand twists & palmrolling</option>
-                            </optgroup>
-                            <optgroup label="Additional Services" id="addt-service">
-                                <option value="Corncrows">Cornrows ( Including Didi )</option>
-                                <option value="Natural-twist">Natural twist without extension</option>
-                                <option value="Loc-styling">Loc Styling</option>
-                                <option value="Hair-Coloring">Hair Coloring</option>
-                                <option value="Loc-Repair">Loc Repair</option>
-                                <option value="home-service">Home Service ( Rates apply )</option>
-                            </optgroup>
-                        </select>
+                    </div>
+                    <select name="service" id="service" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <optgroup label="MAKEUP" id="makeup">
+                            <option value="Regular-SoftGlam">Regular Soft Glam</option>
+                            <option value="Birthday-Makeup">Birthday Makeup</option>
+                            <option value="Bridal-Makeup">Bridal Makeup (Price varies)</option>
+                        </optgroup>
+                        <optgroup label="LOCS" id="locs">
+                            <option value="Crochet-instant-full">Crotchet ( instant locs ) Full head</option>
+                            <option value="Crochet-instant-half">Crotchet ( instant locs ) Half head</option>
+                            <option value="Comb-Coils-Full head">Comb-Coils ( Full head )</option>
+                            <option value="Comb-Coils-Half head">Comb-Coils ( Half head )</option>
+                            <option value="Crotchet-maintenance">Crotchet maintenance</option>
+                            <option value="Two-strand-twists-palmrolling">Two strand twists & palmrolling</option>
+                        </optgroup>
+                        <optgroup label="Additional Services" id="addt-service">
+                            <option value="Corncrows">Cornrows ( Including Didi )</option>
+                            <option value="Natural-twist">Natural twist without extension</option>
+                            <option value="Loc-styling">Loc Styling</option>
+                            <option value="Hair-Coloring">Hair Coloring</option>
+                            <option value="Loc-Repair">Loc Repair</option>
+                            <option value="home-service">Home Service ( Rates apply )</option>
+                        </optgroup>
+                    </select>
 
-                        <div class="input-control">
-                            <label for="date">Select Date</label><br>
-                            <input type="date" name="date" id="datepicker" value="2023-01-01" placeholder="Select Date" required>
-                        </div>
+                    <div class="input-control">
+                        <label for="date">Select Date</label><br>
+                        <input type="date" name="date" id="datepicker" value="2023-12-01" placeholder="Select Date" required>
+                    </div>
 
-                        <div class="input-control">
-                            <label for="time">Select Time</label><br>
-                            <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required>
-                        </div>
+                    <div class="input-control">
+                        <label for="time">Select Time</label><br>
+                        <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required>
+                    </div>
 
-                        <div class="input-control">
-                            <label for="message">Message (optional) :</label>
-                            <textarea name="message" id="message" placeholder="Write your messages here..."></textarea>
-                        </div><br>
-                            
-                        <button type="submit" id="openModalBtn">Submit</button>
-                    </form>
+                    <div class="input-control">
+                        <label for="message">Message (optional) :</label>
+                        <textarea name="message" id="message" placeholder="Write your messages here..."></textarea>
+                    </div><br>
+
+                    <button type="submit" id="openModalBtn">Submit</button>
+                </form>
         <span>
             <p>Kindly Note Appointment times are only from 9am - 6pm . Click <a href="/pages/services.html">ME</a> to view my services and booking policy.</p>
         </span>

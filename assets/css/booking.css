@@ -49,6 +49,7 @@
 .form input{
     padding: 1rem;
     width: 100%;
+    color: black;
     transition: border 0.5s;
     border: 1px solid black;
     font-size: 1.1rem;
@@ -76,18 +77,24 @@ textarea:focus{
     border-radius: 5px;
     box-shadow: 0 0 10px #80808084;
 }
-
-select,#datepicker,#timepicker{
-    outline: none;
+.options{
+    width: 100%;
     border: 1px solid black;
-    outline: 0;
+    padding: 1rem 0.5rem;
     border-radius: 3px;
     text-align: center;
-    color: black;
-    padding: 1rem 0.5rem;
+    /* font-size: 1rem; */
+    cursor: pointer;
+}
+select,#datepicker,#timepicker{
+    outline: none;
+    border: none;
+    /* border-radius: 3px; */
+    text-align: center;
+    /* color: black; */
     width: 100%;
     font-size: 1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .input-control input::placeholder{
     font-size: 1rem;
@@ -593,19 +600,22 @@ span p a:hover{
     }
     
     .form input{
-        padding: 0.8rem;
+        padding: 0.75rem;
         font-size: 0.95rem;
     }
     .form input:focus{
         border: 1.5px solid black;
         border-radius: 5px;
     }
-
+    .options{
+        border: 1px solid black;
+        padding: 0.3rem 0;
+    }
     select,#datepicker,#timepicker{
         text-align: center;
         padding: 0.5rem;
         width: 100%;
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
     .input-control input::placeholder{
         font-size: 0.95rem;
