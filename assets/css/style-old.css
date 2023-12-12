@@ -237,6 +237,7 @@ nav{
     max-width: 350px;
     word-wrap: nowrap;
     display: flex;
+    border-radius: 5px;
     justify-content: center;
     gap: 2rem;
     align-items: center;
@@ -323,8 +324,10 @@ img{
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: #000000;
+    background: transparent;
     max-width: 250px;
     width: 100%;
     transition: 0.5s;
@@ -332,21 +335,18 @@ img{
     margin-top: 2rem;
 }
 #gallery-link:hover{
-    background: rgb(241,241,241);
-    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
-    border: 1px solid black;
+    background: black;
     transform: scale(1.05);
 }
 #gallery-link a{
-    color: white;
+    color: black;
     font-size: 1.2rem;
-    /* transition: 0.5s; */
 }
 #gallery-link:hover a,#gallery-link:hover i{
-    color: black;
+    color: white;
 }
 #gallery-link i{
-    color: white;
+    color: black;
     font-size: 1.1rem;
 }
 
@@ -998,28 +998,32 @@ input[type="radio"]{
         font-size: 2.45rem;
         text-wrap: nowrap;
         color: black;
+        color: white;
     }
     .hero p{
         font-size: 0.75rem;
         text-align: center;
         overflow: hidden;
         color: white;
+        /* color: #000000; */
         animation: typing 2s steps(20);
     }
     .hero-content button{
-        max-width: 200px;
+        max-width: 280px;
         gap: 0.5rem;
-        background-color: transparent;
-        border: 2px solid black;
+        background-color: #000000e7;
+        /* border: 2px solid white; */
         padding: 0.9rem 1rem;
     }
     .hero-content button a{
-        font-size: 0.95rem;
-        color: #000000;
+        font-size: 1.1rem;
+        /* color: #000000; */
+        color: white;
     }
     .hero-content button i{
-        font-size: 0.7rem;
-        color: #000000;
+        font-size: 1rem;
+        color: white;
+        /* color: #000000; */
     }
     .hero-flex{
         display: none;
@@ -1045,8 +1049,9 @@ input[type="radio"]{
     #gallery-link{
         margin-top: 0;
         max-width: 200px;
-        gap: 1rem;
-        padding: 0.8rem 0;
+        gap: 0.8rem;
+        border: 1px solid black;
+        padding: 0.7rem 0;
     }
     #gallery-link a{
         padding-bottom: 0.1rem;
@@ -1087,14 +1092,15 @@ input[type="radio"]{
     .about-button span {
         padding: 0.8rem 0.2rem;
         gap: 0.6rem;
-        max-width: 250px;
+        border-radius: 4px;
+        /* max-width: 250px; */
     }
     .about-button span a{
-        font-size: 0.85rem;
+        font-size: 1rem;
         text-transform: capitalize;
     }
     .about-button span i{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     /*Frequently asked questions*/
