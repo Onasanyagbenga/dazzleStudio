@@ -63,10 +63,10 @@
     <section class="form-section">
                 <div class="form-header">
                     <div class="header-flex">
-                        <h2>Make a Booking</h2>
-                        <i class="fa-regular fa-calendar"></i>                      
+                        <h2>request a booking</h2>
+                        <!-- <i class="fa-regular fa-calendar"></i>                       -->
                     </div>
-                    <p>Please fill in the form below to get an appointment reserved.</p>
+                    <p>Kindly fill in the form below to get an appointment reserved.</p>
                 </div><br>
                 <form action="https://formsubmit.co/Johnsondev19@outlook.com" method="post" class="form">
                     <input type="hidden" name="_next" value="https://dashing-taffy-3457cd.netlify.app/pages/thanks">
@@ -79,7 +79,7 @@
 
                     <div class="input-control">
                        <label for="Telephone">Phone Number</label>
-                        <input type="tel" name="Telephone" id="Telephone" placeholder="Type Phone number" pattern="[0-9]{11,}" required>
+                        <input type="tel" name="telephone" id="telephone" placeholder="Type Phone number" pattern="[0-9]{11,}" required>
                     </div>
 
                     <select name="appt-type" id="appt-type" required>
@@ -114,22 +114,18 @@
                         </select>
 
                         <div class="input-control">
-                            <label for="formsubmit">Select Date</label>
-                            <span class="date">
-                                <input type="date" id="datepicker" value="2023-01-01" placeholder="Select Date" required>
-                            </span>
+                            <label for="date">Select Date</label><br>
+                            <input type="date" name="date" id="datepicker" value="2023-01-01" placeholder="Select Date" required>
                         </div>
 
                         <div class="input-control">
-                            <label for="formsubmit">Select Time</label>
-                            <span class="time">
-                                <input type="time" id="timepicker" value="8:00" placeholder="Select Time" required>
-                            </span>
+                            <label for="time">Select Time</label><br>
+                            <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required>
                         </div>
 
                         <div class="input-control">
                             <label for="message">Message (optional) :</label>
-                            <textarea name="message" id="message" placeholder="Write your messages here"></textarea>
+                            <textarea name="message" id="message" placeholder="Write your messages here..."></textarea>
                         </div><br>
                             
                         <button type="submit" id="openModalBtn">Submit</button>
@@ -170,7 +166,7 @@
             enableTime: true, // Time only
             noCalendar: true,
             dateFormat: "H:i",
-            defaultDate: "8:00",
+            defaultDate: "09:00",
             minTime: "09:00",
             maxTime: "18:00",
             time_24hr: true

@@ -15,14 +15,13 @@
 }
 .form-header .header-flex h2{
     font-size: 3rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: black;
     text-transform: uppercase;
 }
 .header-flex i{
     font-size: 2.2rem;
     color: var(--text-color);
-    /* color: #b5bbe0; */
 }
 .form-header p{
     color: var(--text-color);
@@ -120,7 +119,6 @@ select,#datepicker,#timepicker{
     font-size: 1.1rem;
     text-align: center;
     color: var(--text-color);
-    font-style: italic;
 }
 span p a{
     color: #b5bbe0;
@@ -838,10 +836,7 @@ nav .film a{
         border-radius: none;
         font-size: 0.9rem;
     }
-    .date , .time{
-        width: 100%;
-    }
-    .form .date input,.form .time input{
+    .form input{
         padding-left: 1rem;
         text-align: center;
         padding: 0.5rem;
@@ -1071,10 +1066,7 @@ nav .film a{
         border-radius: none;
         font-size: 1rem;
     }
-    .date , .time{
-        width: 100%;
-    }
-    .form .date input,.form .time input{
+    .form input{
         padding-left: 1rem;
         text-align: center;
         padding: 0.5rem;
@@ -1206,10 +1198,7 @@ nav .film a{
         border-radius: none;
         font-size: 1rem;
     }
-    .date , .time{
-        width: 100%;
-    }
-    .form .date input,.form .time input{
+    .form input{
         padding-left: 1rem;
         text-align: center;
         padding: 0.5rem;
