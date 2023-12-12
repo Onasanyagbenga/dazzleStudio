@@ -989,8 +989,8 @@ input[type="radio"]{
     .hero .hero-content{
         gap: 1.3rem;
         background-color: rgba(128, 128, 128, 0.375);
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
         height: 100%;
         padding: 1.5rem 0.5rem 2.5rem 0.5rem;
         flex-direction: column;
