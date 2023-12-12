@@ -262,7 +262,7 @@ nav{
     background:transparent;
     color: var(--text-color);
     transform: scale(1.05);
-    border: 0.5px solid var(--text-color);
+    border: 1.5px solid var(--text-color);
 }
 .hero-content button:hover a,.hero-content button:hover i{
     color: var(--text-color);
@@ -989,7 +989,7 @@ input[type="radio"]{
     .hero .hero-content{
         gap: 1.3rem;
         background-color: rgba(128, 128, 128, 0.375);
-        /* backdrop-filter: blur(17px); */
+        backdrop-filter: blur(1px);
         height: 100%;
         padding: 1.5rem 0.5rem 2.5rem 0.5rem;
         flex-direction: column;
@@ -1005,25 +1005,21 @@ input[type="radio"]{
         text-align: center;
         overflow: hidden;
         color: white;
-        /* color: #000000; */
         animation: typing 2s steps(20);
     }
     .hero-content button{
         max-width: 280px;
         gap: 0.5rem;
         background-color: #000000e7;
-        /* border: 2px solid white; */
         padding: 0.9rem 1rem;
     }
     .hero-content button a{
         font-size: 1.1rem;
-        /* color: #000000; */
         color: white;
     }
     .hero-content button i{
         font-size: 1rem;
         color: white;
-        /* color: #000000; */
     }
     .hero-flex{
         display: none;
