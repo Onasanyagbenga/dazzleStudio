@@ -462,8 +462,8 @@ span p a:hover{
         /* border: 2px solid black; */
     }
     #hamburger{
-        width: 25px;
-        height: 18px;
+        width: 30px;
+        height: 20px;
     }
     #hamburger.active span:nth-of-type(1){
         width: 100%;

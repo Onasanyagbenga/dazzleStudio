@@ -53,9 +53,9 @@ function slider(){
   else{
     start = 1 ;
   }
-  img.innerHTML = "<img src=" + "slides[start-1]" + ">";
+  img.innerHTML = "<img src=" + slides[start-1] + ">";
 }
-setInterval(slider,4000)
+setInterval(slider,5000)
 
 // modal display
 
@@ -63,9 +63,9 @@ const closeModal = document.getElementById('closeModalBtn') ;
 const openModal = document.getElementById('openModalBtn') ;
 const bookingModal = document.getElementById('booking-modal')
 
-// closeModal.addEventListener('click', () => {
-//   bookingModal.style.display = 'none' ;
-// })
+closeModal.addEventListener('click', () => {
+  bookingModal.style.display = 'none' ;
+})
 // openModal.addEventListener('click', () => {
 //   openModal.classList.add('active')
 //   bookingModal.style.display = 'block' ;
