@@ -305,8 +305,8 @@
         /* border: 2px solid black; */
     }
     #hamburger{
-        width: 30px;
-        height: 25px;
+        width: 25px;
+        height: 18px;
     }
     #hamburger.active span:nth-of-type(1){
         width: 100%;
@@ -490,8 +490,8 @@
     /* border: 2px solid black; */
 }
 #hamburger{
-    width: 30px;
-    height: 25px;
+    width: 25px;
+    height: 18px;
 }
 #hamburger.active span:nth-of-type(1){
     width: 100%;
