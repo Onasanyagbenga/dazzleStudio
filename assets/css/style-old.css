@@ -679,7 +679,6 @@ input[type="radio"]{
     }
     .hero h1{
         font-size: 1.8rem;
-        color: white;
     }
     .hero p{
         font-size: 0.46rem;
@@ -977,7 +976,6 @@ input[type="radio"]{
     }
     .hero h1{
         font-size: 1.8rem;
-        color: white;
     }
     .hero p{
         font-size: 0.49rem;
@@ -1280,9 +1278,6 @@ input[type="radio"]{
     }
     .hero h1{
         font-size: 2.45rem;
-        text-wrap: nowrap;
-        color: black;
-        color: white;
     }
     .hero p{
         font-size: 0.75rem;
@@ -1590,7 +1585,6 @@ nav .film a{
     }
     .hero h1{
         font-size: 2.7rem;
-        color: white;
     }
     .hero p{
         font-size: 0.8rem;
@@ -1883,7 +1877,6 @@ nav .film a{
     }
     .hero h1{
         font-size: 3.7rem;
-        color: white;
     }
     .hero p{
         font-size: 1rem;
