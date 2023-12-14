@@ -673,7 +673,7 @@ span p a:hover{
     background-color: #ededf0;
     justify-content: center;
     border-radius: 10px;
-    /* gap: 4rem; */
+    gap: 2rem;
     padding: 0.6rem;
     height: 100vh;
     border: none;
