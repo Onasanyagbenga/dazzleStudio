@@ -151,7 +151,7 @@ span p a:hover{
     width: 100%;
     background-color: var(--off-white);
     transform: translate(-50%, -50%);
-    border: 5px dashed #b5bbe0;
+    border: 3px dashed #b5bbe0;
 }
 .modal-header{
     display: flex;
@@ -159,7 +159,6 @@ span p a:hover{
     padding: 0.5rem ;
     justify-content: center;
     gap: 0.2rem;
-    border-bottom: 2px dashed #b5bbe0;
     align-items: center;
     flex-direction: column-reverse;
 }
@@ -183,6 +182,11 @@ span p a:hover{
     inset: 0;
     background: none;
     border: 3px solid #b5bbe0;
+}
+.content-info{
+    padding: 1rem 0;
+    border-top: 1px dashed #b5bbe0 ;
+    border-bottom: 1px dashed #b5bbe0 ;
 }
 .modal-content .content-info p{
     font-size: 1rem;
@@ -445,38 +449,57 @@ span p a:hover{
 /* modal display */
 
 .modal-body{
-    border-radius: 10px;
-    padding: 0.8rem;
-    border: 2px dashed #b5bbe0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem;
+    height: 100vh;
+    border: none;
 }
 .modal-header{
     gap: 0.3rem;
     padding: 0.4rem;
 }
 .modal-header h2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .modal-header .modal-check{
-    font-size: 1.5rem;
-    height: 60px;
-    width: 60px;
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
 }
-.modal-content p{
-    font-size: 0.85rem;
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-evenly;
+}
+.content-info{
+    margin-top: 0.5rem;
+}
+.modal-content .content-info p{
+    font-size: 0.9rem;
     padding-top: 0.4rem;
 }
-.modal-content p:last-child{
+.modal-content > p{
     font-size: 0.7rem;
+    padding: 0;
 }
 .modal-button{
     padding: 0.6rem 0;
-    gap: 1rem;
+    gap: 1.5rem;
+    /* margin-bottom: -4rem; */
+    flex-direction: column;
 }
 .modal-button button:nth-child(2),.modal-button button:nth-child(1){
-    padding: 0.55rem;
+    padding: 0.7rem 0;
 }
 .modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }   
 }
 @media (min-width:251px) and (max-width:390px){
@@ -666,7 +689,7 @@ span p a:hover{
         font-size: 0.95rem;
     }
 
-    /* modal display */
+ /* modal display */
 
 .modal-body{
     display: flex;
@@ -684,7 +707,6 @@ span p a:hover{
     gap: 0.3rem;
     padding: 0.4rem;
     border: none;
-    /* border: 2px solid red; */
 }
 .modal-header h2{
     font-size: 1.8rem;
@@ -701,23 +723,17 @@ span p a:hover{
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    /* gap: 5rem; */
-    /* height: 100%; */
     justify-content: space-between;
-    /* border: 2px solid blue; */
 }
 .content-info{
     margin-top: 1rem;
-    padding: 1rem 0;
-    border-top: 1px dashed #b5bbe0 ;
-    border-bottom: 1px dashed #b5bbe0 ;
 }
 .modal-content .content-info p{
     font-size: 1.1rem;
     padding-top: 0.4rem;
 }
 .modal-content > p{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 0;
 }
 .modal-button{
@@ -725,13 +741,12 @@ span p a:hover{
     gap: 1.5rem;
     /* margin-bottom: -4rem; */
     flex-direction: column;
-    /* border: 2px solid red; */
 }
 .modal-button button:nth-child(2),.modal-button button:nth-child(1){
     padding: 0.9rem 0;
 }
 .modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }   
 
 }
@@ -967,7 +982,70 @@ nav .film a{
         color: var(--text-color);
         font-style: italic;
     }
+
+    /* modal display */
+.modal{
+    background: #ededf0;
 }
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.9rem;
+    height: 100vh;
+    border: none;
+}
+.modal-header{
+    gap: 0.3rem;
+    padding: 0.4rem;
+    border: none;
+}
+.modal-header h2{
+    font-size: 1.9rem;
+}
+.modal-header .modal-check{
+    font-size: 2.5rem;
+    height: 100px;
+    width: 100px;
+    background: none;
+    border: 3px solid #b5bbe0;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+}
+.content-info{
+    margin-top: 1rem;
+    padding: 2rem 0;
+}
+.modal-content .content-info p{
+    font-size: 1.15rem;
+}
+.modal-content > p{
+    font-size: 0.9rem;
+    padding: 0;
+}
+.modal-button{
+    padding: 0.6rem 0;
+    gap: 1.5rem;
+    /* margin-bottom: -1rem; */
+    flex-direction: column;
+}
+.modal-button button:nth-child(2),.modal-button button:nth-child(1){
+    padding: 0.9rem 0;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
+    font-size: 1.1rem;
+}   
+
+}
+
 @media (min-width:481px) and (max-width:767px){
     /* header */
 
