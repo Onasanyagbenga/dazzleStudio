@@ -137,7 +137,6 @@ span p a:hover{
     top: 0;
     left: 0;
     background-color: #b5bbe0;
-    /* background-color: #8080807d; */
     height: 100%;
     display: block;
 }
@@ -171,7 +170,6 @@ span p a:hover{
 }
 .modal-header .modal-check{
     font-size: 2.5rem;
-    /* background-color: green; */
     background-color: #b5bbe0;
     height: 80px;
     color: black ;
@@ -184,13 +182,13 @@ span p a:hover{
     align-items: center;
     inset: 0;
 }
-.modal-content p{
+.modal-content .content-info p{
     font-size: 1rem;
     color: black;
     padding-top: 0.4rem;
     text-align: center;
 }
-.modal-content p:last-child{
+.modal-content > p{
     text-align: center;
     font-size: 0.85rem;
     font-style: italic;
@@ -669,39 +667,64 @@ span p a:hover{
     /* modal display */
 
 .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
     border-radius: 10px;
-    padding: 0.8rem;
+    /* gap: 4rem; */
+    padding: 0.6rem;
     height: 100vh;
-    border: 2px dashed #b5bbe0;
+    border: none;
 }
 .modal-header{
     gap: 0.3rem;
     padding: 0.4rem;
+    /* border: none; */
+    /* border: 2px solid red; */
 }
 .modal-header h2{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 .modal-header .modal-check{
-    font-size: 1.5rem;
-    height: 60px;
-    width: 60px;
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
 }
-.modal-content p{
-    font-size: 0.85rem;
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    /* gap: 5rem; */
+    /* height: 100%; */
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+}
+.content-info{
+    margin-top: 1rem;
+}
+.modal-content .content-info p{
+    font-size: 1.1rem;
     padding-top: 0.4rem;
 }
-.modal-content p:last-child{
-    font-size: 0.7rem;
+.modal-content > p{
+    font-size: 0.95rem;
+    padding: 0;
 }
 .modal-button{
     padding: 0.6rem 0;
-    gap: 1rem;
+    gap: 1.5rem;
+    /* margin-bottom: -4rem; */
+    flex-direction: column;
+    /* border: 2px solid red; */
 }
 .modal-button button:nth-child(2),.modal-button button:nth-child(1){
-    padding: 0.55rem;
+    padding: 0.9rem 0;
 }
 .modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
-    font-size: 0.85rem;
+    font-size: 1.2rem;
 }   
 
 }
