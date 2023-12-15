@@ -43,7 +43,7 @@ window.onscroll = function() {
 
 // image highlights
 var img = document.getElementById('images') ;
-var slides = ['Pictures/IMG_0372.JPG','Pictures/IMG_0373.JPG','Pictures/IMG_0375.JPG','Pictures/IMG_6506.png','Pictures/IMG_7794.png'] ;
+var slides = ['Pictures/IMG_9760.png','Pictures/IMG_0373.JPG','Pictures/IMG_0375.JPG','Pictures/IMG_6506.png','Pictures/IMG_7794.png'] ;
 var start = 0 ;
 
 function slider(){
@@ -59,13 +59,9 @@ setInterval(slider,5000)
 
 // modal display
 
-const closeModal = document.getElementById('closeModalBtn') ;
 const openModal = document.getElementById('openModalBtn') ;
 const bookingModal = document.getElementById('booking-modal')
 
-closeModal.addEventListener('click', () => {
-  bookingModal.style.display = 'none' ;
-})
 // openModal.addEventListener('click', () => {
 //   openModal.classList.add('active')
 //   bookingModal.style.display = 'block' ;

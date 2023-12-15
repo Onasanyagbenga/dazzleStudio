@@ -60,420 +60,140 @@
 /*All responsiveness starts here*/
 
 @media (max-width:250px){
-    /* header */
-    .fa-brands{
-        font-size: 1rem;
-    }
-    .media-link li{
-        padding: 0.4rem;
-    }
-    .ham-container{
-        padding-left: 0.5rem;
-        display: block;
-    }
-    #hamburger{
-        width: 25px;
-        height: 20px;
-    }
-    #hamburger.active span:nth-of-type(1){
-        width: 100%;
-        transform: rotate(30deg) translateY(5px) translateX(6px);
-    }
-    #hamburger.active span:nth-of-type(2){
-        width: 100%;
-        transform: rotate(-30deg) translateY(-5px) translateX(6px);
-    }
-    nav{
-        width: 100%;
-        display: flex;
-        margin: 0;
-        /* height: 100%; */
-        height: 10vh;
-        gap: 1rem;
-        /* border: 2px solid black; */
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .nav-link{
-        position: fixed;
-        right: 100%;
-        top: 120px;
-        gap: 0;
-        /* backdrop-filter: blur(27px); */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        background-color: white;
-        width: 100%;
-        border-top: 2px solid #b5bbe0;
-        border-bottom: 2px solid #b5bbe0;
-        text-align: center;
-        transition: 0.5s;
-    }
-    .hide{
-        display: block;
-    }
-    .nav-menu{
-        flex-direction: column;
-        position: absolute;
-        top: 20px;
-        padding: 1rem;
-        justify-content: center;
-        width: 100%;
-        gap: 0.5rem;
-        /* border: 2px solid red; */
-    }
-    .nav-menu li{
-        display: flex;
-        width: 100%;
-        margin: 0.8rem 0;
-        /* justify-content: center; */
-        align-items: center;
-        justify-self: unset;
-        height: 30px;
-        /* border: 2px solid black; */
-        color: white;
-    }
-    .nav-menu li:nth-child(1) a{
-        border-bottom: 2px solid #b5bbe0;
-    }
-    .nav-link .nav-menu li a{
-        font-size: 1rem;
-    }
-    .nav-link.active{
-        right: 0;
-    }
-    .logo{
-        width: 100px;
-    }
-    nav .film{
-        display: flex;
-        padding: 0.5rem;
-        align-items: center;
-        overflow: hidden;
-        /* border: 2px solid black; */
-        justify-content: flex-end;
-        width: 20%;
-    }
-    nav .film a{
-        font-size: 1.35rem;
-        color: #b5bbe0;
-    }
-    /* header ends */
+/* header */
+.fa-brands{
+    font-size: 1rem;
+}
+.media-link li{
+    padding: 0.4rem;
+}
+.ham-container{
+    padding-left: 0.5rem;
+    display: block;
+}
+#hamburger{
+    width: 25px;
+    height: 20px;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(5px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-5px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 10vh;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 120px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: white;
+    width: 100%;
+    border-top: 2px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 30px;
+    color: white;
+}
+.nav-menu li:nth-child(1) a{
+    border-bottom: 2px solid #b5bbe0;
+}
+.nav-link .nav-menu li a{
+    font-size: 1rem;
+}
+.nav-link.active{
+    right: 0;
+}
+.logo{
+    width: 100px;
+}
+nav .film{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-end;
+    width: 20%;
+}
+nav .film a{
+    font-size: 1.35rem;
+    color: #b5bbe0;
+}
+/* header ends */
 
-    .contact .contact-body h2{
-        font-size: 2.1rem;
-        padding-bottom: 1rem;
-    }
-    .contact{
-        padding-top: 3rem;
-    }
-    .contact-body{
-        padding: 2rem 0.5rem 2rem 1rem;
-        width: 100%;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 0.75rem;
-    }
-    .contact-button{
-        gap: 1rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.5rem 0.4rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 100px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
-    .contact-button button i{
-        font-size: 0.8rem;
-    }
-    .contact-button button a{
-        font-size: 0.75rem;
-    }
+.contact .contact-body h2{
+    font-size: 2.1rem;
+    padding-bottom: 1rem;
+}
+.contact{
+    padding-top: 3rem;
+}
+.contact-body{
+    padding: 2rem 0.5rem 2rem 1rem;
+    width: 100%;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 0.75rem;
+}
+.contact-button{
+    gap: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.5rem 0.4rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
+.contact-button button i{
+    font-size: 0.8rem;
+}
+.contact-button button a{
+    font-size: 0.75rem;
+}
 }
 @media (min-width:251px) and (max-width:320px){
-    /* header */
-
-    .fa-brands{
-        font-size: 1.4rem;
-    }
-    .ham-container{
-        padding: 0.8rem;
-        display: block;
-        width: 33.3%;
-    }
-    #hamburger{
-        width: 25px;
-        height: 18px;
-    }
-    #hamburger.active span:nth-of-type(1){
-        width: 100%;
-        transform: rotate(30deg) translateY(7px) translateX(6px);
-    }
-    #hamburger.active span:nth-of-type(2){
-        width: 100%;
-        transform: rotate(-30deg) translateY(-7px) translateX(6px);
-    }
-    nav{
-        width: 100%;
-        display: flex;
-        margin: 0;
-        height: 15vh;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .logo{
-        width: 33.3%;
-    }
-    nav .film{
-        display: flex;
-        padding-left: 2.7rem;
-        align-items: center;
-        overflow: hidden;
-        /* border: 2px solid black; */
-        justify-content:center;
-        width: 33.3%;
-    }
-    nav .film a{
-        font-size: 1.65rem;
-        color: #b5bbe0;
-    }
-    .nav-link{
-        position: fixed;
-        right: 100%;
-        top: 160px;
-        gap: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: var(--off-white);
-        width: 100%;
-        border-top: 3px solid #b5bbe0;
-        border-bottom: 2px solid #b5bbe0;
-        text-align: center;
-        transition: 0.5s;
-    }
-    .hide{
-        display: block;
-    }
-    .nav-menu{
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        padding: 1rem;
-        justify-content: center;
-        width: 100%;
-        padding-left: 3rem;
-        gap: 0.5rem;
-    }
-    .nav-menu li{
-        display: flex;
-        width: 100%;
-        margin: 0.8rem 0;
-        align-items: center;
-        justify-self: unset;
-        height: 40px;
-        color: white;
-    }
-    .nav-menu li:nth-child(1) a{
-        border-bottom: 2px solid #b5bbe0;
-    }
-    .nav-link .nav-menu li a{
-        font-size: 1.3rem;
-    }
-    .nav-link.active{
-        right: 0;
-    }
-    /* header ends */
-
-    .contact{
-        padding-top: 2rem;
-        background-color: #ebebef;
-    }
-    .contact .contact-body h2{
-        font-size: 2.1rem;
-        padding-bottom: 1rem;
-    }
-    .contact{
-        padding-top: 3rem;
-    }
-    .contact-body{
-        padding: 2rem 0.5rem 2rem 1rem;
-        width: 100%;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 0.8rem;
-    }
-    .contact-button{
-        gap: 1rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.6rem 0.4rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 120px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
-    .contact-button button i{
-        font-size: 0.85rem;
-    }
-    .contact-button button a{
-        font-size: 0.8rem;
-    }
-}
-
-@media (min-width:321px) and (max-width:390px){
-    /* header */
-
-    .fa-brands{
-        font-size: 1.4rem;
-    }
-    .ham-container{
-        padding: 0.8rem;
-        display: block;
-        width: 33.3%;
-    }
-    #hamburger{
-        width: 25px;
-        height: 18px;
-    }
-    #hamburger.active span:nth-of-type(1){
-        width: 100%;
-        transform: rotate(30deg) translateY(7px) translateX(6px);
-    }
-    #hamburger.active span:nth-of-type(2){
-        width: 100%;
-        transform: rotate(-30deg) translateY(-7px) translateX(6px);
-    }
-    nav{
-        width: 100%;
-        display: flex;
-        margin: 0;
-        height: 15vh;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .logo{
-        width: 33.3%;
-    }
-    nav .film{
-        display: flex;
-        padding-left: 2.7rem;
-        align-items: center;
-        overflow: hidden;
-        /* border: 2px solid black; */
-        justify-content:center;
-        width: 33.3%;
-    }
-    nav .film a{
-        font-size: 1.65rem;
-        color: #b5bbe0;
-    }
-    .nav-link{
-        position: fixed;
-        right: 100%;
-        top: 160px;
-        gap: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: var(--off-white);
-        width: 100%;
-        border-top: 3px solid #b5bbe0;
-        border-bottom: 2px solid #b5bbe0;
-        text-align: center;
-        transition: 0.5s;
-    }
-    .hide{
-        display: block;
-    }
-    .nav-menu{
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        padding: 1rem;
-        justify-content: center;
-        width: 100%;
-        padding-left: 3rem;
-        gap: 0.5rem;
-    }
-    .nav-menu li{
-        display: flex;
-        width: 100%;
-        margin: 0.8rem 0;
-        align-items: center;
-        justify-self: unset;
-        height: 40px;
-        color: white;
-    }
-    .nav-menu li:nth-child(1) a{
-        border-bottom: 2px solid #b5bbe0;
-    }
-    .nav-link .nav-menu li a{
-        font-size: 1.3rem;
-    }
-    .nav-link.active{
-        right: 0;
-    }
-    /* header ends */
-
-    .contact{
-        padding-top: 2rem;
-        background-color: #ebebef;
-    }
-    .contact-body{
-        padding: 3rem 0.5rem 3rem 1rem;
-        width: 100%;
-    }
-    .contact .contact-body h2{
-        font-size: 2.8rem;
-        padding-bottom: 1rem;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 0.85rem;
-    }
-    .contact-button button a{
-        font-size: 0.95rem;
-    }
-    .contact-button{
-        gap: 2rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.7rem 0.8rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 140px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
-    .contact-button button i{
-        font-size: 1rem;
-    }
-}
-
-@media (min-width:391px) and (max-width:480px){
-       /* header */
+/* header */
 
 .fa-brands{
     font-size: 1.4rem;
@@ -482,7 +202,277 @@
     padding: 0.8rem;
     display: block;
     width: 33.3%;
-    /* border: 2px solid black; */
+}
+#hamburger{
+    width: 25px;
+    height: 18px;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(7px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-7px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    width: 33.3%;
+}
+nav .film{
+    display: flex;
+    padding-left: 2.7rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content:center;
+    width: 33.3%;
+}
+nav .film a{
+    font-size: 1.65rem;
+    color: #b5bbe0;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 160px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 3px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 40px;
+    color: white;
+}
+.nav-menu li:nth-child(1) a{
+    border-bottom: 2px solid #b5bbe0;
+}
+.nav-link .nav-menu li a{
+    font-size: 1.3rem;
+}
+.nav-link.active{
+    right: 0;
+}
+/* header ends */
+
+.contact{
+    padding-top: 2rem;
+    background-color: #ebebef;
+}
+.contact .contact-body h2{
+    font-size: 2.1rem;
+    padding-bottom: 1rem;
+}
+.contact{
+    padding-top: 3rem;
+}
+.contact-body{
+    padding: 2rem 0.5rem 2rem 1rem;
+    width: 100%;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 0.8rem;
+}
+.contact-button{
+    gap: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.6rem 0.4rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 120px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
+.contact-button button i{
+    font-size: 0.85rem;
+}
+.contact-button button a{
+    font-size: 0.8rem;
+}
+}
+
+@media (min-width:321px) and (max-width:390px){
+/* header */
+
+.fa-brands{
+    font-size: 1.4rem;
+}
+.ham-container{
+    padding: 0.8rem;
+    display: block;
+    width: 33.3%;
+}
+#hamburger{
+    width: 25px;
+    height: 18px;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(7px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-7px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    width: 33.3%;
+}
+nav .film{
+    display: flex;
+    padding-left: 2.7rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content:center;
+    width: 33.3%;
+}
+nav .film a{
+    font-size: 1.65rem;
+    color: #b5bbe0;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 160px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 3px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 40px;
+    color: white;
+}
+.nav-menu li:nth-child(1) a{
+    border-bottom: 2px solid #b5bbe0;
+}
+.nav-link .nav-menu li a{
+    font-size: 1.3rem;
+}
+.nav-link.active{
+    right: 0;
+}
+/* header ends */
+
+.contact{
+    padding-top: 2rem;
+    background-color: #ebebef;
+}
+.contact-body{
+    padding: 3rem 0.5rem 3rem 1rem;
+    width: 100%;
+}
+.contact .contact-body h2{
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 0.85rem;
+}
+.contact-button button a{
+    font-size: 0.95rem;
+}
+.contact-button{
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.7rem 0.8rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 140px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
+.contact-button button i{
+    font-size: 1rem;
+}
+
+}
+@media (min-width:391px) and (max-width:480px){
+/* header */
+
+.fa-brands{
+    font-size: 1.4rem;
+}
+.ham-container{
+    padding: 0.8rem;
+    display: block;
+    width: 33.3%;
 }
 #hamburger{
     width: 30px;
@@ -553,7 +543,6 @@ nav .film a{
     display: flex;
     width: 100%;
     margin: 0.8rem 0;
-    /* justify-content: center; */
     align-items: center;
     justify-self: unset;
     height: 40px;
@@ -570,282 +559,282 @@ nav .film a{
 }
 /* header ends */
 
-    .contact{
-        padding-top: 2rem;
-    }
-    .contact-body{
-        padding: 3rem 0.5rem 3rem 2rem;
-        width: 100%;
-    }
-    .contact .contact-body h2{
-        font-size: 2.5rem;
-        padding-bottom: 1rem;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 0.9rem;
-    }
-    .contact-button button a{
-        font-size: 1rem;
-    }
-    .contact-button{
-        gap: 2rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.7rem 0.8rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 140px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
-    .contact-button button i{
-        font-size: 1rem;
-    }
+.contact{
+    padding-top: 2rem;
+}
+.contact-body{
+    padding: 3rem 0.5rem 3rem 2rem;
+    width: 100%;
+}
+.contact .contact-body h2{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 0.9rem;
+}
+.contact-button button a{
+    font-size: 1rem;
+}
+.contact-button{
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.7rem 0.8rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 140px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
+.contact-button button i{
+    font-size: 1rem;
+}
 }
 @media (min-width:481px) and (max-width:767px){
 
-    /* header */
-    .ham-container{
-        padding: 0.8rem;
-        display: block;
-        width: 33.3%;
-    }
-    #hamburger{
-        width: 35px;
-        height: 30px;
-    }
-    #hamburger.active span:nth-of-type(1){
-        width: 100%;
-        transform: rotate(30deg) translateY(12px) translateX(6px);
-    }
-    #hamburger.active span:nth-of-type(2){
-        width: 100%;
-        transform: rotate(-30deg) translateY(-7px) translateX(6px);
-    }
-    nav{
-        width: 100%;
-        display: flex;
-        margin: 0;
-        height: 15vh;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .logo{
-        width: 33.3%;
-    }
-    nav .film{
-        display: flex;
-        padding-left: 2.7rem;
-        align-items: center;
-        overflow: hidden;
-        justify-content:center;
-        width: 33.3%;
-    }
-    nav .film a{
-        font-size: 2rem;
-        color: #b5bbe0;
-    }
-    .nav-link{
-        position: fixed;
-        right: 100%;
-        top: 160px;
-        gap: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: var(--off-white);
-        width: 100%;
-        border-top: 2px solid #b5bbe0;
-        border-bottom: 2px solid #b5bbe0;
-        text-align: center;
-        transition: 0.5s;
-    }
-    .hide{
-        display: block;
-    }
-    .nav-menu{
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        padding: 1rem;
-        justify-content: center;
-        width: 100%;
-        padding-left: 3rem;
-        gap: 0.5rem;
-        /* border: 2px solid red; */
-    }
-    .nav-menu li{
-        display: flex;
-        width: 100%;
-        margin: 0.8rem 0;
-        /* justify-content: center; */
-        align-items: center;
-        justify-self: unset;
-        height: 40px;
-        color: white;
-    }
-    .nav-menu li:nth-child(1) a{
-        border-bottom: 2px solid #b5bbe0;
-    }
-    .nav-link .nav-menu li a{
-        font-size: 1.4rem;
-    }
-    .nav-link.active{
-        right: 0;
-    }
-    /* header ends */
+/* header */
+.ham-container{
+    padding: 0.8rem;
+    display: block;
+    width: 33.3%;
+}
+#hamburger{
+    width: 35px;
+    height: 30px;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(12px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-7px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    width: 33.3%;
+}
+nav .film{
+    display: flex;
+    padding-left: 2.7rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content:center;
+    width: 33.3%;
+}
+nav .film a{
+    font-size: 2rem;
+    color: #b5bbe0;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 160px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 2px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 40px;
+    color: white;
+}
+.nav-menu li:nth-child(1) a{
+    border-bottom: 2px solid #b5bbe0;
+}
+.nav-link .nav-menu li a{
+    font-size: 1.4rem;
+}
+.nav-link.active{
+    right: 0;
+}
+/* header ends */
 
-    .contact{
-        padding-top: 2rem;
-    }
-    .contact-body{
-        padding: 4rem 0.5rem 4rem 2rem;
-        width: 100%;
-    }
-    .contact .contact-body h2{
-        font-size: 2.85rem;
-        padding-bottom: 1rem;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 0.95rem;
-    }
-    .contact-button button a{
-        font-size: 1rem;
-    }
-    .contact-button{
-        gap: 2rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.7rem 0.8rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 140px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
-    .contact-button button i{
-        font-size: 1rem;
-    }
+.contact{
+    padding-top: 2rem;
+}
+.contact-body{
+    padding: 4rem 0.5rem 4rem 2rem;
+    width: 100%;
+}
+.contact .contact-body h2{
+    font-size: 2.85rem;
+    padding-bottom: 1rem;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 0.95rem;
+}
+.contact-button button a{
+    font-size: 1rem;
+}
+.contact-button{
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.7rem 0.8rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 140px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
+.contact-button button i{
+    font-size: 1rem;
+}
 }
 
 @media (min-width:768px) and (max-width:991px){
-    .contact{
-        padding-top: 2rem;
-    }
-    .contact-body{
-        padding: 4rem 0.5rem 4rem 7rem;
-        width: 100%;
-    }
-    .contact .contact-body h2{
-        font-size: 3.2rem;
-        padding-bottom: 1rem;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 1rem;
-    }
-    .contact-button button a{
-        font-size: 1rem;
-    }
-    .contact-button{
-        gap: 2rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.7rem 0.8rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 150px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
-    .contact-button button i{
-        font-size: 1rem;
+
+.contact{
+    padding-top: 2rem;
+}
+.contact-body{
+    padding: 4rem 0.5rem 4rem 7rem;
+    width: 100%;
+}
+.contact .contact-body h2{
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 1rem;
+}
+.contact-button button a{
+    font-size: 1rem;
+}
+.contact-button{
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.7rem 0.8rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 150px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
+.contact-button button i{
+    font-size: 1rem;
 }
 }
 
 @media (min-width:992px) and (max-width:1199px){
-    .contact{
-        padding-top: 2rem;
-    }
-    .contact-body{
-        padding: 4rem 0.5rem 4rem 12rem;
-        width: 100%;
-    }
-    .contact .contact-body h2{
-        font-size: 3.5rem;
-        padding-bottom: 1rem;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 1rem;
-    }
-    .contact-button button a{
-        font-size: 1rem;
-    }
-    .contact-button button i{
-        font-size: 1.1rem;
-    }
-    .contact-button{
-        gap: 2rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.8rem 1rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 160px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
+
+.contact{
+    padding-top: 2rem;
+}
+.contact-body{
+    padding: 4rem 0.5rem 4rem 12rem;
+    width: 100%;
+}
+.contact .contact-body h2{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 1rem;
+}
+.contact-button button a{
+    font-size: 1rem;
+}
+.contact-button button i{
+    font-size: 1.1rem;
+}
+.contact-button{
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.8rem 1rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 160px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
 }
 @media (min-width:1200px) and (max-width:1300px){
-    .contact{
-        padding-top: 2rem;
-    }
-    .contact-body{
-        padding: 4rem 0.5rem 4rem 12rem;
-    }
-    .contact .contact-body h2{
-        font-size: 3.5rem;
-        padding-bottom: 1rem;
-    }
-    .contact-body p{
-        line-height: 20px;
-        font-size: 1rem;
-    }
-    .contact-button button a{
-        font-size: 1rem;
-    }
-    .contact-button button i{
-        font-size: 1rem;
-    }
-    .contact-button{
-        gap: 2rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .contact-button button{
-        padding: 0.8rem 0.9rem ;
-        gap: 0.5rem;
-        width: 100%;
-        max-width: 150px;
-    }
-    .contact-button button:hover{
-        transform: scale(1.03);
-    }
+.contact{
+    padding-top: 2rem;
+}
+.contact-body{
+    padding: 4rem 0.5rem 4rem 12rem;
+}
+.contact .contact-body h2{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.contact-body p{
+    line-height: 20px;
+    font-size: 1rem;
+}
+.contact-button button a{
+    font-size: 1rem;
+}
+.contact-button button i{
+    font-size: 1rem;
+}
+.contact-button{
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-button button{
+    padding: 0.8rem 0.9rem ;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 150px;
+}
+.contact-button button:hover{
+    transform: scale(1.03);
+}
 }
