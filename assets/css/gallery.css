@@ -169,8 +169,8 @@
         /* border: 2px solid black; */
     }
     #hamburger{
-        width: 30px;
-        height: 25px;
+        width: 35px;
+        height: 20px;
     }
     #hamburger.active span:nth-of-type(1){
         width: 100%;
