@@ -198,7 +198,7 @@ nav .film a{
 .nav-link{
     position: fixed;
     right: 100%;
-    top: 160px;
+    top: 150px;
     gap: 0;
     display: flex;
     justify-content: center;
@@ -273,8 +273,8 @@ nav .film a{
     width: 33.3%;
 }
 #hamburger{
-    width: 30px;
-    height: 25px;
+    width: 35px;
+    height: 20px;
 }
 #hamburger.active span:nth-of-type(1){
     width: 100%;

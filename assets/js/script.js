@@ -1,11 +1,9 @@
 // Hamburger
 const hamburger = document.getElementById('hamburger') ;
 const navLink = document.querySelector('.nav-link') ;
-// const navHead = document.querySelector('.nav-head') ;
 hamburger.addEventListener('click', () =>{
   hamburger.classList.toggle('active');
   navLink.classList.toggle('active') ;
-  // siteHeader.style.position = 'fixed'
 })
 
 document.querySelectorAll('nav-menu').forEach(n => n.
@@ -15,28 +13,33 @@ document.querySelectorAll('nav-menu').forEach(n => n.
   }))
 // Hamburger ends
 
-// if(hamburger.classList.remove('active')){
-//   siteHeader.style.position = 'fixed'
-// }
-// else{
-//   siteHeader.style.position = 'sticky'
-// }
+// this puts the header on fixed postion when hamburger is active and user trys to scroll up or down
+
+if(hamburger.classList.remove('active')){
+  siteHeader.style.position = 'fixed'
+  siteHeader.style.top = '0'; 
+}
+else{
+  siteHeader.style.position = 'sticky'
+}
+// ends
   
-//user scroll 
+//user scrolls up ,siteheader hides . scrolls down, siteheader shows .
 let prevScrollPos = window.pageYOffset;
 const siteHeader = document.getElementById('site-header') ;
+let isHamburgerActive = false ;
 
 window.onscroll = function() {
-    const currentScrollPos = window.pageYOffset;
 
-    if (prevScrollPos > currentScrollPos) {
-        // Scrolling up
-        siteHeader.style.top = '0';
-    } else {
-        // Scrolling down
-        siteHeader.style.top = '-125px'; 
-    }
-
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    // Scrolling up
+    siteHeader.style.top = '0';
+  } else {
+    // Scrolling down
+    siteHeader.style.top = '-125px';
+  }
+    
     prevScrollPos = currentScrollPos;
 };
 //user scroll ends
@@ -59,8 +62,8 @@ setInterval(slider,5000)
 
 // modal display
 
-const openModal = document.getElementById('openModalBtn') ;
-const bookingModal = document.getElementById('booking-modal')
+// const openModal = document.getElementById('openModalBtn') ;
+// const bookingModal = document.getElementById('booking-modal')
 
 // openModal.addEventListener('click', () => {
 //   openModal.classList.add('active')
@@ -90,13 +93,13 @@ const bookingModal = document.getElementById('booking-modal')
 //modal ends
 
 //faq active class
-const faqItem = document.querySelectorAll('#faq-item') ;
+// const faqItem = document.querySelectorAll('#faq-item') ;
 // const content = document.querySelector('.content')
-for(i = 0 ; i > faqItem.length; i++){
-  faqItem[i].addEventListener('click', function(){
-    this.classList.toggle('active')
-  })
-}
+// for(i = 0 ; i > faqItem.length; i++){
+//   faqItem[i].addEventListener('click', function(){
+//     this.classList.toggle('active')
+//   })
+// }
 
 // faqItem.forEach(item =>
 //   item.addEventListener('click', () => {
@@ -112,8 +115,8 @@ for(i = 0 ; i > faqItem.length; i++){
 //   content.style.display = 'block'
 // })
 
-//   document.querySelectorAll('.nav-link').forEach(link => {
-//     if(link.href === window.location.href){
-//         link.setAttribute('aria-current','page')
-//     }
-//   })
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if(link.href === window.location.href){
+        link.setAttribute('aria-current','page')
+    }
+  })
