@@ -70,7 +70,6 @@ function slider(){
   }
   img.style.transition = 'opacity 0.5s';
   img.style.opacity = 0.5;
-
   setTimeout(function () {
     // Change the image source and reset opacity after the transition
     img.innerHTML = "<img id='images' src=" + slides[start-1] + " alt='Image'>";
