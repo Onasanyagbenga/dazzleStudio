@@ -13,15 +13,21 @@ document.querySelectorAll('nav-menu').forEach(n => n.
   }))
 // Hamburger ends
 
-// this puts the header on fixed postion when hamburger is active and user trys to scroll up or down
+// see line34
+// whenever user scrolls down ofcourse the header will hide,user scrolls down header appears,
+// but if user clicks on the hamburger and scrolls up or down the header hides as well ,
+// it should be fixed and not hide in any way. how can i achieve that ?
 
-if(hamburger.classList.remove('active')){
-  siteHeader.style.position = 'fixed'
-  siteHeader.style.top = '0'; 
-}
-else{
-  siteHeader.style.position = 'sticky'
-}
+// this puts the header on fixed postion when hamburger is active and user trys to scroll up or down.
+// lol i thought i got it right here, i was deceiving myself
+
+// if(hamburger.classList.remove('active')){
+//   siteHeader.style.position = 'fixed'
+//   siteHeader.style.top = '0'; 
+// }
+// else{
+//   siteHeader.style.position = 'sticky'
+// }
 // ends
   
 //user scrolls up ,siteheader hides . scrolls down, siteheader shows .
@@ -39,14 +45,20 @@ window.onscroll = function() {
     // Scrolling down
     siteHeader.style.top = '-125px';
   }
+  // if (hamburger.classList.toggle('active')) {
+  //   siteHeader.style.top = '0';
+  //   siteHeader.style.position = 'fixed'
+  // } else {
+  //   siteHeader.style.top = '-125px';
+  // }
     
     prevScrollPos = currentScrollPos;
 };
 //user scroll ends
 
 // image highlights
-var img = document.getElementById('images') ;
-var slides = ['Pictures/IMG_9760.png','Pictures/IMG_0373.JPG','Pictures/IMG_0375.JPG','Pictures/IMG_6506.png','Pictures/IMG_7794.png'] ;
+const img = document.getElementById('images') ;
+const slides = ['/Pictures/IMG_0957.PNG','/Pictures/IMG_7794.png','/Pictures/IMG_0956.jpg','/Pictures/IMG_6506.png','/Pictures/IMG_9760.png'] ;
 var start = 0 ;
 
 function slider(){
@@ -56,7 +68,18 @@ function slider(){
   else{
     start = 1 ;
   }
-  img.innerHTML = "<img src=" + slides[start-1] + ">";
+  img.style.transition = 'opacity 0.5s';
+  img.style.opacity = 0.5;
+
+  setTimeout(function () {
+    // Change the image source and reset opacity after the transition
+    img.innerHTML = "<img id='images' src=" + slides[start-1] + " alt='Image'>";
+    img.style.transition = '1s'; // Reset transition
+    img.style.opacity = 1;
+    img.style.border = 'none';
+  }, 500);
+
+  // img.innerHTML = "<img src=" + slides[start-1] + ">";
 }
 setInterval(slider,5000)
 

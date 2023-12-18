@@ -21,6 +21,7 @@
 .gallery-content {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .gallery-content img,.gallery-content video{
     display: block;
