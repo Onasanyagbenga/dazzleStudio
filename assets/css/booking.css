@@ -589,6 +589,9 @@ nav .film a{
 }
 .input-control{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* added display and flex-direction temporarily */
 }
 .input-control label{
     font-size: 0.9rem;
