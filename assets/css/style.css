@@ -492,10 +492,11 @@ img{
 }
 .footer-body h2{
     font-size: 2.3rem;
-    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    color: black;
+    /* background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
     color: transparent ;
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
 }
 .footer-media .footer{
    gap: 3rem;
@@ -1359,7 +1360,7 @@ article .slider{
     padding: 0.9rem 0.7rem;
 }
 .faq .accordion .acc-item::after{
-    font-size: 1.2rem;
+    font-size: 1rem;
     right: 10px;
 }
 .faq .accordion .content{
