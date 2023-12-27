@@ -26,12 +26,8 @@
     border: 0.2px solid gray;
     transition: all 0.5s;
     background: rgb(240,240,240);
-    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,247,1) 70%);
-    /* background: rgb(180,186,249);
-    background: radial-gradient(circle, rgba(180,186,249,0.8954175420168067) 65%, rgba(240,240,240,0.9402354691876751) 96%); */
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
     box-shadow: 15px 20px var(--text-color);
-    /* background: rgb(181,187,247);
-    background: radial-gradient(circle, rgba(181,187,247,1) 69%, rgba(240,240,240,1) 100%); */
     /* background: rgb(241,241,241);
     background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
 }
@@ -76,7 +72,7 @@
     padding: 1rem 2rem 2rem 2rem;
     box-shadow: 15px 20px var(--text-color);
     background: rgb(240,240,240);
-    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,247,1) 70%);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
     /* background: rgb(241,241,241);
     background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
 }
@@ -101,9 +97,9 @@
     border-bottom: 1px solid gray;
 }
 .policy ul li a{
-    color: #ebebef;
+    color: black;
     transition: all 0.5s;
-    border-bottom: 2px solid #ebebef;
+    border-bottom: 2px solid var(--text-color);
 }
 .policy ul li a:hover{
     color: var(--text-color);

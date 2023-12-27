@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive;
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', serif; */
     font-family: 'Poppins', sans-serif;
     list-style-type: none;
     text-decoration: none;
@@ -99,7 +99,7 @@ nav .film i{
     position: -webkit-sticky;
     top: 0;
     z-index: 3;
-    border-bottom: 0.25px solid #0000001d;
+    border-bottom: 0.35px solid #b5bbe7;
 }
 .media-link{
     display: flex;
@@ -346,11 +346,9 @@ img{
     display: grid;
     width: 100%;
     background: rgb(240,240,240);
-    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,247,1) 70%);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
     /* background-color: #b5bbf7; */
     place-items: center;
-    /* background: rgb(241,241,241);
-    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
     box-shadow: 12px 16px var(--text-color);
 }
 .about h2{
@@ -431,8 +429,8 @@ img{
     font-size: 1rem;
     width: 100%;
     outline: none;
-    background-color: #b5bbf7;
-    /* background-color: #b5bbe0; */
+    /* background-color: #b5bbf7f0; */
+    background-color: #b5bbe0;
     color: black;
     border-radius: 5px;
     cursor: pointer;
@@ -481,10 +479,8 @@ img{
     align-items: center;
     text-align: center;
     gap: 3rem;
-    /* background: rgb(181,187,247);
-    background: radial-gradient(circle, rgba(181,187,247,0.8954175420168067) 62%, rgba(240,240,240,0.9402354691876751) 100%); */
-    background: rgb(181,187,247);
-    background: radial-gradient(circle, rgba(181,187,247,1) 69%, rgba(240,240,240,1) 100%);
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
     /* background-color: #b5bbf7; */
     /* background: #b5bbe0;
     background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
@@ -492,11 +488,11 @@ img{
 }
 .footer-body h2{
     font-size: 2.3rem;
-    color: black;
-    /* background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    /* color: black; */
+    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
     color: transparent ;
     background-clip: text;
-    -webkit-background-clip: text; */
+    -webkit-background-clip: text;
 }
 .footer-media .footer{
    gap: 3rem;
