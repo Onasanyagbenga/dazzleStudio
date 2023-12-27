@@ -30,6 +30,7 @@ document.querySelectorAll('nav-menu').forEach(n => n.
 // }
 // ends
   
+
 //user scrolls up ,siteheader hides . scrolls down, siteheader shows .
 let prevScrollPos = window.pageYOffset;
 const siteHeader = document.getElementById('site-header') ;
@@ -45,6 +46,11 @@ window.onscroll = function() {
     // Scrolling down
     siteHeader.style.top = '-125px';
   }
+
+  // while (hamburger.classList.toggle('active')) {
+  //   siteHeader.style.position = 'fixed'
+  // }
+
   // if (hamburger.classList.toggle('active')) {
   //   siteHeader.style.top = '0';
   //   siteHeader.style.position = 'fixed'
@@ -114,31 +120,27 @@ setInterval(slider,5000)
 
 //modal ends
 
-//faq active class
-// const faqItem = document.querySelectorAll('#faq-item') ;
-// const content = document.querySelector('.content')
-// for(i = 0 ; i > faqItem.length; i++){
-//   faqItem[i].addEventListener('click', function(){
-//     this.classList.toggle('active')
-//   })
-// }
+// faq section
 
-// faqItem.forEach(item =>
-//   item.addEventListener('click', () => {
-//     const isItemOpen = item.classList.contains('content');
-//     faqItem.forEach(item => item.classList.remove('content'));
-//     if(isItemOpen){
-//       item.classList.toggle('content')
-//     }
-//   } ))
+var accordion = document.getElementsByClassName('acc-item');
+var i;
 
-// faqItem.addEventListener('click', () => {
-//   faqItem.classList.add('active')
-//   content.style.display = 'block'
-// })
-
-  document.querySelectorAll('.nav-link').forEach(link => {
-    if(link.href === window.location.href){
-        link.setAttribute('aria-current','page')
+for(i = 0; i < accordion.length; i++){
+  accordion[i].addEventListener('click', function(){
+    this.classList.toggle('active');
+    var content = this.nextElementSibling ;
+    if (content.style.display ==='block'){
+      content.style.display = 'none';
     }
-  })
+    else{
+      content.style.display = 'block';
+    }
+  });
+}
+
+
+//   document.querySelectorAll('.nav-link').forEach(link => {
+//     if(link.href === window.location.href){
+//         link.setAttribute('aria-current','page')
+//     }
+//   })

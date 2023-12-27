@@ -42,7 +42,8 @@
     max-width: 150px;
 }
 .contact-button button:nth-child(2){
-    background-color: #b5bbe0;
+    /* background-color: #b5bbe0; */
+    background-color: #b5bbf7;
 }
 .contact-button button:hover{
     transform: scale(1.05);
@@ -152,7 +153,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.35rem;
-    color: #b5bbe0;
 }
 /* header ends */
 
@@ -237,7 +237,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.65rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -374,7 +373,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.65rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -508,7 +506,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.65rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -637,7 +634,6 @@ nav .film{
 }
 nav .film a{
     font-size: 2rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;

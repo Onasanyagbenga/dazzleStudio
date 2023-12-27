@@ -24,7 +24,7 @@
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
     width: 100%;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 2rem;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -211,7 +211,8 @@ span p a:hover{
 }
 .modal-button button:nth-child(2){
     width: 100%;
-    background-color: #b5bbe0;
+    background-color: #b5bbf7;
+    /* background-color: #b5bbe0; */
     border-radius: 5px;
     cursor: pointer;
     border: none;
@@ -324,7 +325,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.35rem;
-    color: #b5bbe0;
 }
 /* header ends */
 
@@ -738,7 +738,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.65rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -977,7 +976,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.65rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -1215,7 +1213,6 @@ nav .film{
 }
 nav .film a{
     font-size: 2rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;

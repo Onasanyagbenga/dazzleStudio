@@ -62,7 +62,8 @@ header{
     transition: width 400ms, background-color 300ms;
 }
 #hamburger.active span{
-    background-color: #b5bbe0;
+    /* background-color: #b5bbe0; */
+    background-color: #b5bbf7;
 }
 #hamburger.active span:nth-of-type(1){
     width: 70%;
@@ -80,11 +81,15 @@ header{
 nav .film,.hide{
     display: none;
 }
-.nav-link[aria-current ="page"]{
+nav .film i{
+    color: #b5bbf7;
+}
+
+/* .nav-link[aria-current ="page"]{
     border-bottom: 3px solid var(--hover);
     background-color: red;
     padding-bottom: 2px;
-}
+} */
 
 /* media link styling*/
 .media{
@@ -281,7 +286,7 @@ article .slider{
     width: 500px;
     height: 500px;
     border-radius: 25px;
-    border: 5px dashed #b5bbe0;
+    border: 5px dashed #b5bbf7;
     overflow: hidden;
 }
 img{
@@ -340,9 +345,12 @@ img{
     text-align: center;
     display: grid;
     width: 100%;
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,247,1) 70%);
+    /* background-color: #b5bbf7; */
     place-items: center;
-    background: rgb(241,241,241);
-    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
+    /* background: rgb(241,241,241);
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
     box-shadow: 12px 16px var(--text-color);
 }
 .about h2{
@@ -415,31 +423,44 @@ img{
     width: 100%;
     padding: 0.5rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     display: flex;
     align-items: center;
     padding: 1rem;
-    background-color: #b5bbe0;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    background-color: #b5bbf7;
+    /* background-color: #b5bbe0; */
     color: black;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
     position: relative;
 }
-.faq .accordion label::after{
+.accordion li .acc-item:hover{
+    background-color: #b5bbe7;
+    color: white;
+}
+.faq .accordion li .acc-item::after{
     content: "+";
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     right: 20px;
     transition: transform 0.5s;
 }
-input[type="radio"]{
-    display: none;
+.faq .accordion li .acc-item.active::after {
+    content: "-";
 }
 .faq .accordion .content{
     background-color: var(--text-color);
-    text-align: start;
-    padding: 0 15px;
+    /* padding: 0 15px; */
+    max-height: 200px;
+    padding: 25px;
     overflow: hidden;
-    max-height: 0;
+    display: none;
+    /* max-height: 0; */
     transition: all 0.5s;
 }
 .content p{
@@ -449,17 +470,7 @@ input[type="radio"]{
     color: #b5bbe0;
     border-bottom: 1px solid #b5bbe0;
 }
-#faq-item.active .content{
-    max-height: 600px;
 
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 600px;
-    padding: 30px 20px;
-}
-.faq .accordion input[type="radio"]:checked + label::after{
-    transform: rotate(135deg);
-}
 
 /*Footer section*/
 
@@ -470,8 +481,13 @@ input[type="radio"]{
     align-items: center;
     text-align: center;
     gap: 3rem;
-    background: #b5bbe0;
-    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%);
+    /* background: rgb(181,187,247);
+    background: radial-gradient(circle, rgba(181,187,247,0.8954175420168067) 62%, rgba(240,240,240,0.9402354691876751) 100%); */
+    background: rgb(181,187,247);
+    background: radial-gradient(circle, rgba(181,187,247,1) 69%, rgba(240,240,240,1) 100%);
+    /* background-color: #b5bbf7; */
+    /* background: #b5bbe0;
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
     padding: 5rem 0;
 }
 .footer-body h2{
@@ -614,7 +630,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.25rem;
-    color: #b5bbe0;
 }
 /* header ends */
 
@@ -684,7 +699,7 @@ article .slider{
 #images{
     width: 100%;
     height: 380px;
-    border: 3px dashed #b5bbe0;
+    border: 3px dashed #b5bbf7;
 }
 #gallery-link{
     margin-top: 0.7rem;
@@ -757,28 +772,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.2rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 0.7rem;
     padding: 0.8rem 0.5rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 0.8rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 5px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 15px;
 }
 .accordion .content p{
-    font-size: 0.65rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 0.8rem;
+    font-size: 0.6rem;
 }
 
 /*Footer responsiveness*/
@@ -915,7 +921,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.25rem;
-    color: #b5bbe0;
 }
 /* header ends */
 
@@ -985,7 +990,7 @@ article .slider{
 #images{
     width: 100%;
     height: 400px;
-    border: 3px dashed #b5bbe0;
+    border: 3px dashed #b5bbf7;
 }
 #gallery-link{
     margin-top: 0.7rem;
@@ -1062,28 +1067,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.2rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 0.8rem;
     padding: 0.8rem 0.5rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 0.8rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 5px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 15px;
 }
 .accordion .content p{
     font-size: 0.7rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 0.8rem;
 }
 
 /*Footer responsiveness*/
@@ -1168,7 +1164,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.6rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -1288,7 +1283,7 @@ article .slider{
 #images{
     width: 100%;
     height: 450px;
-    border: 3px dashed #b5bbe0;
+    border: 3px dashed #b5bbf7;
 }
 #gallery-link{
     margin-top: 0;
@@ -1359,28 +1354,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.3rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 0.9rem;
     padding: 0.9rem 0.7rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 1.2rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 15px;
 }
 .accordion .content p{
     font-size: 0.9rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1rem;
 }
 
 /*Footer responsiveness*/
@@ -1468,7 +1454,6 @@ nav .film{
 }
 nav .film a{
     font-size: 1.65rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -1582,7 +1567,7 @@ article .slider{
 #images{
     width: 100%;
     height: 450px;
-    border: 3px dashed #b5bbe0;
+    border: 3px dashed #b5bbf7;
 }
 #gallery-link{
     margin: 0;
@@ -1649,28 +1634,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.3rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 0.9rem;
     padding: 0.9rem 0.7rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 1.2rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 18px;
 }
 .accordion .content p{
     font-size: 0.9rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1rem;
 }
 
 /* footer responsiveness */
@@ -1759,7 +1735,6 @@ nav .film{
 }
 nav .film a{
     font-size: 2rem;
-    color: #b5bbe0;
 }
 .nav-link{
     position: fixed;
@@ -1871,7 +1846,7 @@ article .slider{
     margin-bottom: 2rem;
 }
 #images{
-    border: 3px dashed #b5bbe0;
+    border: 3px dashed #b5bbf7;
 }
 #gallery-link{
     margin: 0;
@@ -1938,28 +1913,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.3rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 1.05rem;
     padding: 1rem 0.7rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 1.5rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 1rem;
 }
 .accordion .content p{
     font-size: 0.9rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1.2rem;
 }
 
 /* footer responsiveness */
@@ -2123,28 +2089,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.3rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 1.1rem;
     padding: 1rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 1.5rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 1rem;
 }
 .accordion .content p{
     font-size: 1rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1.2rem;
 }
 
 /* footer responsiveness */
@@ -2308,28 +2265,19 @@ article .slider{
 .faq .accordion li{
     padding: 0.3rem;
 }
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 1.1rem;
     padding: 1rem;
 }
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 1.5rem;
     right: 10px;
 }
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 1rem;
 }
 .accordion .content p{
     font-size: 1rem;
-}
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1.2rem;
 }
 
 /* footer responsiveness */
@@ -2458,32 +2406,22 @@ article .slider{
     padding: 0.3rem;
 }
 
-.faq .accordion li label{
+.faq .accordion li .acc-item{
     font-size: 1.15rem;
     padding: 1.1rem;
 }
 
-.faq .accordion label::after{
-    content: "+";
+.faq .accordion .acc-item::after{
     font-size: 1.5rem;
     right: 10px;
 }
 
 .faq .accordion .content{
-    text-align: start;
-    padding: 0 8px;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.5s;
+    padding: 1rem;
 }
 
 .accordion .content p{
     font-size: 1.05rem;
-}
-
-.faq .accordion input[type="radio"]:checked + label + .content{
-    max-height: 300px;
-    padding: 1.2rem;
 }
 
 /* footer responsiveness */
