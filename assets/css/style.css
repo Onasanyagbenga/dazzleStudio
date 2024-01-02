@@ -103,7 +103,7 @@ header{
     text-align: center;
 }
 .media-link .fa-brands{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -457,13 +457,11 @@ img{
 }
 .faq .accordion .content{
     background-color: var(--text-color);
-    /* padding: 0 15px; */
-    max-height: 200px;
-    padding: 25px;
+    padding: 20px 15px;
     overflow: hidden;
     display: none;
-    /* max-height: 0; */
-    transition: all 0.5s;
+    /* max-height: 0px; */
+    transition: max-height 0.5s ease-out;
 }
 .content p{
     color: white;

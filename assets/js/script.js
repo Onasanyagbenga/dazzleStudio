@@ -88,37 +88,6 @@ function slider(){
 }
 setInterval(slider,5000)
 
-// modal display
-
-// const openModal = document.getElementById('openModalBtn') ;
-// const bookingModal = document.getElementById('booking-modal')
-
-// openModal.addEventListener('click', () => {
-//   openModal.classList.add('active')
-//   bookingModal.style.display = 'block' ;
-// })
-//  function showModal() {
-//   bookingModal.style.display = 'block' ;
-//  }
-
-//  function isFormValid(){
-//   document.getElementById('clientName');
-//   document.getElementById('telephone');
-//   document.getElementById('makeupApt');
-//   document.getElementById('datepicker');
-//   document.getElementById('timepicker');
-//  }
-
-// openModal.addEventListener('click', function(){
-//   if(isFormValid() === ''){
-//     alert('Please fill out all required fields.')
-//   }
-//   else{
-//     showModal() ;
-//   }
-// })
-
-//modal ends
 
 // faq section
 
@@ -128,6 +97,7 @@ var i;
 for(i = 0; i < accordion.length; i++){
   accordion[i].addEventListener('click', function(){
     this.classList.toggle('active');
+    // this.classList.remove('active')
     var content = this.nextElementSibling ;
     if (content.style.display ==='block'){
       content.style.display = 'none';
@@ -139,7 +109,7 @@ for(i = 0; i < accordion.length; i++){
 }
 
 
-// still some issue here i cant figure out
+// still some issue here i can't figure out
 var navCurrentEl = document.querySelectorAll('.nav-current');
 var current = document.querySelector('.active') ;
 
