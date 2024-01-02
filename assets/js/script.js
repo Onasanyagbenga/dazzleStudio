@@ -74,8 +74,8 @@ function slider(){
   else{
     start = 1 ;
   }
-  img.style.transition = 'opacity 0.5s';
-  img.style.opacity = 0.5;
+  img.style.transition = '0.5s';
+  img.style.opacity = '0.5';
   setTimeout(function () {
     // Change the image source and reset opacity after the transition
     img.innerHTML = "<img id='images' src=" + slides[start-1] + " alt='Image'>";
@@ -139,8 +139,13 @@ for(i = 0; i < accordion.length; i++){
 }
 
 
-//   document.querySelectorAll('.nav-link').forEach(link => {
-//     if(link.href === window.location.href){
-//         link.setAttribute('aria-current','page')
-//     }
-//   })
+// still some issue here i cant figure out
+var navCurrentEl = document.querySelectorAll('.nav-current');
+var current = document.querySelector('.active') ;
+
+navCurrentEl.forEach(navCurrentEl => {
+  navCurrentEl.addEventListener('click', () => {
+    navCurrentEl.classList.add('active') ;
+    current?.classList.remove('active') ;
+  })
+})

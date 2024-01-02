@@ -80,6 +80,9 @@ select{
     font-size: 1rem;
     cursor: pointer;
 }
+.input-control input:is([type="date"],[type="time"]){
+    text-align: center;
+}
 .input-control input::placeholder,textarea::placeholder{
     font-size: 1rem;
     color: gray;
@@ -302,9 +305,6 @@ nav{
     justify-self: unset;
     height: 30px;
     color: white;
-}
-.nav-menu li:nth-child(1) a{
-    border-bottom: 2px solid #b5bbe0;
 }
 .nav-link .nav-menu li a{
     font-size: 1rem;
@@ -533,9 +533,9 @@ nav{
     height: 30px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1rem;
 }
@@ -780,9 +780,9 @@ nav .film a{
     height: 40px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1.3rem;
 }
@@ -1018,9 +1018,9 @@ nav .film a{
     height: 40px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1.3rem;
 }
@@ -1259,9 +1259,9 @@ nav .film a{
     /* border: 2px solid black; */
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1.4rem;
 }

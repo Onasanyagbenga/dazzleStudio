@@ -105,9 +105,9 @@ nav{
     height: 30px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1rem;
 }
@@ -232,9 +232,9 @@ nav .film a{
     height: 40px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1.3rem;
 }
@@ -344,9 +344,9 @@ nav .film a{
     height: 40px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1.3rem;
 }
@@ -452,9 +452,9 @@ nav .film a{
     height: 40px;
     color: white;
 }
-.nav-menu li:nth-child(1) a{
+/* .nav-menu li:nth-child(1) a{
     border-bottom: 2px solid #b5bbe0;
-}
+} */
 .nav-link .nav-menu li a{
     font-size: 1.4rem;
 }
