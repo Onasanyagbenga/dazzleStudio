@@ -102,8 +102,8 @@ header{
     padding: 0.5rem;
     text-align: center;
 }
-.fa-brands{
-    font-size: 1.5rem;
+.media-link .fa-brands{
+    font-size: 1.8rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -503,7 +503,7 @@ img{
    gap: 1rem;
 }
 .footer .fa-brands{
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -542,8 +542,8 @@ img{
 
 @media (max-width:250px){
 /* header */
-.fa-brands{
-    font-size: 1rem;
+.media-link .fa-brands{
+    font-size: 1.2rem;
 }
 .media-link li{
     padding: 0.4rem;
@@ -615,9 +615,7 @@ nav{
     height: 30px;
     color: white;
 }
-/* .nav-menu li:nth-child(1) a{
-    border-bottom: 2px solid #b5bbe0;
-} */
+
 .nav-link .nav-menu li a{
     font-size: 1rem;
 }
@@ -806,7 +804,7 @@ article .slider{
     gap: 0.5rem;
 }
 .footer .fa-brands{
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -836,8 +834,8 @@ article .slider{
 
 @media (min-width:251px) and (max-width:326px){
 /* header */
-.fa-brands{
-    font-size: 1rem;
+.media-link .fa-brands{
+    font-size: 1.5rem;
 }
 .media-link li{
     padding: 0.4rem;
@@ -910,9 +908,6 @@ nav{
     height: 30px;
     color: white;
 }
-/* .nav-menu li:nth-child(1) a{
-    border-bottom: 2px solid #b5bbe0;
-} */
 .nav-link .nav-menu li a{
     font-size: 1rem;
 }
@@ -1106,7 +1101,7 @@ article .slider{
     gap: 0.5rem;
 }
 .footer .fa-brands{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .footer .fa-tiktok:hover{
     transform: scale(1.2);
@@ -1133,8 +1128,8 @@ article .slider{
 @media (min-width:327px) and (max-width:390px){
 
 /* header */
-.fa-brands{
-    font-size: 1.4rem;
+.media-link .fa-brands{
+    font-size: 1.6rem;
 }
 .ham-container{
     padding: 0.8rem;
@@ -1219,9 +1214,6 @@ nav .film a{
     height: 40px;
     color: white;
 }
-/* .nav-menu li:nth-child(1) a{
-    border-bottom: 2px solid #b5bbe0;
-} */
 .nav-link .nav-menu li a{
     font-size: 1.3rem;
 }
@@ -1396,7 +1388,7 @@ article .slider{
     gap: 0.3rem;
 }
 .footer .fa-brands{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -1427,8 +1419,8 @@ article .slider{
 @media (min-width:391px) and (max-width:480px){
 /* header */
 
-.fa-brands{
-    font-size: 1.4rem;
+.media-link .fa-brands{
+    font-size: 1.65rem;
 }
 .ham-container{
     padding: 0.8rem;
@@ -1677,7 +1669,7 @@ article .slider{
     gap: 0.5rem;
 }
 .footer .fa-brands{
-    font-size: 1.25rem;
+    font-size: 1.9rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -1794,12 +1786,8 @@ nav .film a{
     align-items: center;
     justify-self: unset;
     height: 40px;
-    /* border: 2px solid black; */
     color: white;
 }
-/* .nav-menu li:nth-child(1) a{
-    border-bottom: 2px solid #b5bbe0;
-} */
 .nav-link .nav-menu li a{
     font-size: 1.4rem;
 }
@@ -1959,7 +1947,7 @@ article .slider{
     gap: 0.5rem;
 }
 .footer .fa-brands{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -2135,7 +2123,7 @@ article .slider{
     gap: 0.5rem;
 }
 .footer .fa-brands{
-    font-size: 1.55rem;
+    font-size: 2.2rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -2311,7 +2299,7 @@ article .slider{
     gap: 0.9rem;
 }
 .footer .fa-brands{
-    font-size: 1.65rem;
+    font-size: 2.2rem;
     color: var(--text-color);
     transition: 0.5s;
 }
@@ -2455,7 +2443,7 @@ article .slider{
     gap: 0.9rem;
 }
 .footer .fa-brands{
-    font-size: 1.65rem;
+    font-size: 2.2rem;
     color: var(--text-color);
     transition: 0.5s;
 }
