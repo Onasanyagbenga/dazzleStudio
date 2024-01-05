@@ -558,12 +558,12 @@ textarea:focus{
     border-radius: 5px;
 }
 
-select,#datepicker,#timepicker{
+/* select,#datepicker,#timepicker{
     text-align: center;
     padding: 0.5rem;
     width: 100%;
     font-size: 0.95rem;
-}
+} */
 .input-control input::placeholder,textarea::placeholder{
     font-size: 0.95rem;
     padding-left: 0.3rem;
