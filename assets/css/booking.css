@@ -38,12 +38,12 @@
 }
 
 .form input{
-    padding: 1rem;
+    padding: 0.8rem;
     width: 100%;
     color: black;
     transition: border 0.5s;
     border: 1px solid black;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 3px;
 }
@@ -69,23 +69,27 @@ textarea:focus{
     box-shadow: 0 0 10px #80808084;
 }
 
-/* select{
+select{
     outline: none;
     border: 1px solid black;
     border-radius: 3px;
     text-align: center;
     color: black;
-    padding: 1rem 0.5rem;
+    padding: 0.8rem;
     width: 100%;
     font-size: 1rem;
     cursor: pointer;
-} */
+}
 .input-control input::placeholder,textarea::placeholder{
     font-size: 1rem;
     color: gray;
     padding-left: 0.5rem;
 }
-
+#datepicker,#timepicker{
+    width: 100%;
+    color: black;
+    padding: 0.8rem;
+}
 .form button{
     font-size: 1.2rem;
     color: white;
@@ -550,22 +554,22 @@ textarea:focus{
 }
 
 .form input{
-    padding: 0.8rem;
-    font-size: 0.95rem;
+    padding: 0.7rem;
+    font-size: 0.9rem;
 }
 .form input:focus{
     border: 1.5px solid black;
     border-radius: 5px;
 }
 
-/* select,#datepicker,#timepicker{
-    text-align: center;
+select,#datepicker,#timepicker{
+    /* text-align: center; */
     padding: 0.5rem;
     width: 100%;
     font-size: 0.95rem;
-} */
+}
 .input-control input::placeholder,textarea::placeholder{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding-left: 0.3rem;
 }
 
