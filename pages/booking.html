@@ -67,7 +67,7 @@
             </div>
             <p>Kindly fill in the form below to reserve an appointment.</p>
         </div>
-        <form action="https://formsubmit.co/Johnsondev19@outlook.com" method="post" class="form">
+        <form action="https://formsubmit.co/Johnsondev19@outlook.com" method="post" class="form" name="form">
             <input type="hidden" name="_next" value="https://eloquent-malabi-179638.netlify.app/pages/thanks">
             <input type="hidden" name="_captcha" value="false">
 
@@ -77,10 +77,10 @@
             </div>
 
             <div class="input-control">
-                <label for="Telephone">Phone Number</label>
+                <label for="telephone">Phone Number</label>
                 <input type="tel" name="telephone" id="telephone" placeholder="Type Phone number" pattern="[0-9]{11,}" required>
             </div>
-            <select name="appt-type" id="appt-type" required style="outline: none; border: 1px solid black; border-radius: 3px;
+            <select name="appt-type" id="appt-type" required style="outline: none; border: 1px solid green; border-radius: 3px;
             text-align: center; color: black; padding: 1rem 0.5rem; width: 100%; font-size: 1rem; cursor: pointer;">
                 <optgroup label="Select Appointment Type">
                     <option value="Hair Appointment" id="HairApt">Hair Appointment</option>
@@ -88,7 +88,7 @@
                 </optgroup>
             </select>
 
-            <select name="service" id="service" required style="outline: none; border: 1px solid black; border-radius: 3px;
+            <select name="service" id="service" required style="outline: none; border: 1px solid red; border-radius: 3px;
             text-align: center; color: black; padding: 1rem 0.5rem; width: 100%; font-size: 1rem; cursor: pointer;">
                 <option value="" disabled selected>Select a Service</option>
                 <optgroup label="MAKEUP" id="makeup">
@@ -115,13 +115,13 @@
             </select>
 
             <div class="input-control">
-                <label for="date">Select Date</label><br>
+                <label for="datepicker">Select Date</label><br>
                 <input type="date" name="date" id="datepicker" value="2023-12-01" placeholder="Select Date" required style="text-align: center;">
             </div>
 
             <div class="input-control">
-                <label for="time">Select Time</label><br>
-                <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required style="text-align: center; border: 2px solid red;"
+                <label for="timepicker">Select Time</label><br>
+                <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required style="text-align: center;"
                 >
             </div>
 
