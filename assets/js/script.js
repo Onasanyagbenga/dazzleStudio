@@ -13,6 +13,22 @@ document.querySelectorAll('nav-menu').forEach(n => n.
   }))
 // Hamburger ends
 
+// still some issue here i can't figure out
+
+// Active page
+var navCurrentEl = document.querySelectorAll('.nav-current');
+var current = document.querySelector('.active') ;
+
+navCurrentEl.forEach(navCurrentEl => {
+  navCurrentEl.addEventListener('click', () => {
+    navCurrentEl.classList.add('active') ;
+    current?.classList.remove('active') ;
+  })
+})
+
+// ends
+
+
 // see line34
 // whenever user scrolls down ofcourse the header will hide,user scrolls down header appears,
 // but if user clicks on the hamburger and scrolls up or down the header hides as well ,
@@ -88,6 +104,8 @@ function slider(){
 }
 setInterval(slider,5000)
 
+// ends
+
 
 // faq section
 
@@ -107,15 +125,4 @@ for(i = 0; i < accordion.length; i++){
     }
   });
 }
-
-
-// still some issue here i can't figure out
-var navCurrentEl = document.querySelectorAll('.nav-current');
-var current = document.querySelector('.active') ;
-
-navCurrentEl.forEach(navCurrentEl => {
-  navCurrentEl.addEventListener('click', () => {
-    navCurrentEl.classList.add('active') ;
-    current?.classList.remove('active') ;
-  })
-})
+// ends

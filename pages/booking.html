@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
     <!-- Include flatpickr CSS -->
-    <link rel="stylesheet" href="/assets/css/booking.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/assets/css/booking.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" type="text/css">
 </head>
 <body>
     <header id="site-header">
@@ -80,14 +80,16 @@
                 <label for="Telephone">Phone Number</label>
                 <input type="tel" name="telephone" id="telephone" placeholder="Type Phone number" pattern="[0-9]{11,}" required>
             </div>
-            <select name="appt-type" id="appt-type" required>
+            <select name="appt-type" id="appt-type" required style="outline: none; border: 1px solid black; border-radius: 3px;
+            text-align: center; color: black; padding: 1rem 0.5rem; width: 100%; font-size: 1rem; cursor: pointer;">
                 <optgroup label="Select Appointment Type">
                     <option value="Hair Appointment" id="HairApt">Hair Appointment</option>
                     <option value="Makeover Appointment" id="MakeupApt">Makeover Appointment</option>
                 </optgroup>
             </select>
 
-            <select name="service" id="service" required>
+            <select name="service" id="service" required style="outline: none; border: 1px solid black; border-radius: 3px;
+            text-align: center; color: black; padding: 1rem 0.5rem; width: 100%; font-size: 1rem; cursor: pointer;">
                 <option value="" disabled selected>Select a Service</option>
                 <optgroup label="MAKEUP" id="makeup">
                     <option value="Regular-SoftGlam">Regular Soft Glam</option>
@@ -114,12 +116,13 @@
 
             <div class="input-control">
                 <label for="date">Select Date</label><br>
-                <input type="date" name="date" id="datepicker" value="2023-12-01" placeholder="Select Date" required>
+                <input type="date" name="date" id="datepicker" value="2023-12-01" placeholder="Select Date" required style="text-align: center;">
             </div>
 
             <div class="input-control">
                 <label for="time">Select Time</label><br>
-                <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required>
+                <input type="time" name="time" id="timepicker" value="09:00" placeholder="Select Time" required style="text-align: center; border: 2px solid black;"
+                >
             </div>
 
             <div class="input-control">
@@ -145,7 +148,7 @@
                 </ul>
             </div>
             <div class="footer-info">
-                <p>&copy 2023 Dazzle Studio. Powered by <a href="https://github.com/Onasanyagbenga">JohnsonDev</a></p>
+                <p>&copy 2023 Dazzle Studio. Powered by <a href="https://github.com/Onasanyagbenga" target="_blank">JohnsonDev</a></p>
             </div>
         </div>
     </footer>
