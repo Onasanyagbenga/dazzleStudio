@@ -1,17 +1,20 @@
-name: Publah ebsite to cPanel
+name: Publish website to cPanel
 on:
   push:
     branches:
       -main
 jobs:
   FTP-Deploy-Action
-  runs-on: node.js
+  name: FTP-Deploy-Action
+  runs-on: ubuntu-latest
   steps:
-  -uses: actions/checkout@2.1.0
+  -uses: actions/checkout@v2.1.0
   with:
     fetch-depth: 2 
--name: FFTP-Deploy-Action
+-name: FTP-Deploy-Action
+uses: SamKirklanf/FTP-Deploy-Action@3.1.1
 with:
   ftp-server: ${{  secrets.FTP_SERVER}}
   ftp-username: ${{  secrets.FTP_USERNAME}}
   ftp-password: ${{  secrets.FTP_PASSWORD}}
+  
