@@ -1,3 +1,23 @@
+@keyframes scale {
+    from {
+      opacity: .1;
+      scale: 0.7;
+      rotate: 30deg;
+    }
+  }
+    
+  @media (prefers-reduced-motion: no-preference) {
+    .policy,.card{
+      animation: scale linear both;
+      animation-timeline: view();
+      animation-range: 5vh 70vh;
+    }
+  }
+
+
+
+
+
 .service-section{
     width: 100%;
     height: 100%;

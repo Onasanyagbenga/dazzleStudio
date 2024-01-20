@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 // Hamburger
 const hamburger = document.getElementById('hamburger') ;
 const navLink = document.querySelector('.nav-link') ;
@@ -13,7 +15,6 @@ document.querySelectorAll('nav-menu').forEach(n => n.
   }))
 // Hamburger ends
 
-// still some issue here i can't figure out
 
 // Active page
 var navCurrentEl = document.querySelectorAll('.nav-current');
@@ -26,26 +27,8 @@ navCurrentEl.forEach(navCurrentEl => {
   })
 })
 
-// ends
+// end
 
-
-// see line34
-// whenever user scrolls down ofcourse the header will hide,user scrolls down header appears,
-// but if user clicks on the hamburger and scrolls up or down the header hides as well ,
-// it should be fixed and not hide in any way. how can i achieve that ?
-
-// this puts the header on fixed postion when hamburger is active and user trys to scroll up or down.
-// lol i thought i got it right here, i was deceiving myself
-
-// if(hamburger.classList.remove('active')){
-//   siteHeader.style.position = 'fixed'
-//   siteHeader.style.top = '0'; 
-// }
-// else{
-//   siteHeader.style.position = 'sticky'
-// }
-// ends
-  
 
 //user scrolls up ,siteheader hides . scrolls down, siteheader shows .
 let prevScrollPos = window.pageYOffset;
@@ -63,16 +46,6 @@ window.onscroll = function() {
     siteHeader.style.top = '-125px';
   }
 
-  // while (hamburger.classList.toggle('active')) {
-  //   siteHeader.style.position = 'fixed'
-  // }
-
-  // if (hamburger.classList.toggle('active')) {
-  //   siteHeader.style.top = '0';
-  //   siteHeader.style.position = 'fixed'
-  // } else {
-  //   siteHeader.style.top = '-125px';
-  // }
     
     prevScrollPos = currentScrollPos;
 };
