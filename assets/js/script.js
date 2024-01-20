@@ -1,5 +1,3 @@
-import { motion } from "framer-motion"
-
 // Hamburger
 const hamburger = document.getElementById('hamburger') ;
 const navLink = document.querySelector('.nav-link') ;
@@ -28,6 +26,8 @@ navCurrentEl.forEach(navCurrentEl => {
 })
 
 // end
+
+
 
 
 //user scrolls up ,siteheader hides . scrolls down, siteheader shows .
