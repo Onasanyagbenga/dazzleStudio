@@ -569,12 +569,6 @@ textarea:focus{
     width: 100%;
 }
 
-.form-section:has(input:focus){
-    width: 100%;
-    border: 2px solid green;
-    /* padding: 1.3rem 1rem; */
-}
-
 select,#datepicker,#timepicker{
     text-align: center;
     padding: 0.7rem 0;
