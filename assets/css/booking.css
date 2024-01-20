@@ -554,7 +554,7 @@ textarea:focus{
 }
 
 .form input{
-    padding: 0.7rem;
+    padding: 1rem;
     font-size: 0.9rem;
 }
 .form input:focus{
@@ -563,8 +563,8 @@ textarea:focus{
 }
 
 select,#datepicker,#timepicker{
-    /* text-align: center; */
-    padding: 0.5rem;
+    text-align: center;
+    padding: 0.7rem 0;
     width: 100%;
     font-size: 0.95rem;
 }

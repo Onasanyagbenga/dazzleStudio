@@ -460,6 +460,7 @@ img{
     padding: 20px 15px;
     overflow: hidden;
     display: none;
+    border-radius: 0 0 5px 5px;
     /* max-height: 0px; */
     transition: max-height 0.5s ease-out;
 }
