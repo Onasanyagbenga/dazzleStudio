@@ -564,9 +564,9 @@ textarea:focus{
     padding: 0.8rem ;
     width: 100%;
 }
-.form:has(input:focus){
+body:has(input:focus){
     width: 100%;
-    /* border: 2px solid green; */
+    border: 2px solid green;
     /* padding: 1.3rem 1rem; */
 
 }
