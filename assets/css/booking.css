@@ -554,12 +554,13 @@ textarea:focus{
 }
 
 .form input{
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 0.9rem;
 }
 .form input:focus{
     border: 1.5px solid black;
     border-radius: 5px;
+    padding: 0.8rem;
 }
 
 select,#datepicker,#timepicker{
