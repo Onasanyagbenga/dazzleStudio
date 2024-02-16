@@ -28,8 +28,6 @@ navCurrentEl.forEach(navCurrentEl => {
 // end
 
 
-
-
 //user scrolls up ,siteheader hides . scrolls down, siteheader shows .
 let prevScrollPos = window.pageYOffset;
 const siteHeader = document.getElementById('site-header') ;

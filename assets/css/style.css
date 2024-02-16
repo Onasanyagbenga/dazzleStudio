@@ -348,6 +348,7 @@ img{
     text-align: center;
     display: grid;
     width: 100%;
+    border-radius: 8px;
     background: rgb(240,240,240);
     background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
     /* background-color: #b5bbf7; */

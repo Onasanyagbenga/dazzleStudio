@@ -1,8 +1,7 @@
-@keyframes scale {
+/* @keyframes scale {
     from {
       opacity: .1;
       scale: 0.7;
-      rotate: 30deg;
     }
   }
     
@@ -12,11 +11,8 @@
       animation-timeline: view();
       animation-range: 5vh 70vh;
     }
-  }
-
-
-
-
+  } */
+        /* rotate: 30deg; */
 
 .service-section{
     width: 100%;
@@ -43,6 +39,7 @@
     padding: 1rem 1rem 1.5rem 1rem;
     cursor: pointer;
     transform: scale();
+    border-radius: 8px;
     border: 0.2px solid gray;
     transition: all 0.5s;
     background: rgb(240,240,240);
@@ -89,6 +86,7 @@
     border: 0.5px solid gray;
     margin: 5rem 0;
     width: 100%;
+    border-radius: 8px;
     padding: 1rem 2rem 2rem 2rem;
     box-shadow: 15px 20px var(--text-color);
     background: rgb(240,240,240);
@@ -222,6 +220,7 @@
 .card{
     padding: 0.2rem 0.7rem 0.8rem;
     box-shadow: 7px 5px var(--text-color);
+    /* border-radius: 5px; */
 }
 .card h1{
     text-align: center;
