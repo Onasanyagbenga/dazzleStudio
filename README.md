@@ -22,4 +22,4 @@ Ready to schedule your next appointment? Our convenient booking section allows y
 ---Contact Us:
 Have questions or need assistance? Feel free to reach out to us via phone or email. We're always happy to assist you and provide personalized recommendations to meet your beauty goals.
 
-BOOK AN APPOINTMNET TODAY !
+BOOK AN APPOINTMENT TODAY !
