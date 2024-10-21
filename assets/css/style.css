@@ -647,7 +647,7 @@ nav .film a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
     background-size: contain;
     height: 100%;
     position: relative;
@@ -939,7 +939,7 @@ nav .film a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
     background-size: contain;
     height: 100%;
     position: relative;
@@ -1231,7 +1231,7 @@ nav .film a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
     background-size: contain;
     height: 100%;
 }
@@ -1522,7 +1522,7 @@ nav .film a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
     background-size: contain;
     height: 100%;
 }
@@ -1805,7 +1805,7 @@ nav .film a{
     justify-content: center;
     align-items: center;
     /* background-color: none; */
-    background: url('/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
     background-size: contain;
     height: 100%;
 }

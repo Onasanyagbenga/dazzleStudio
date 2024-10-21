@@ -51,7 +51,7 @@ window.onscroll = function() {
 
 // image highlights
 const img = document.getElementById('images') ;
-const slides = ['/Pictures/IMG_0957.PNG','/Pictures/IMG_7794.png','/Pictures/IMG_0956.jpg','/Pictures/IMG_6506.png','/Pictures/IMG_9760.png'] ;
+const slides = ['/gallery/Pictures/IMG_0957.PNG','/gallery/Pictures/IMG_7794.png','/gallery/Pictures/IMG_0956.jpg','/gallery/Pictures/IMG_6506.png','/gallery/Pictures/IMG_9760.png'] ;
 var start = 0 ;
 
 function slider(){
