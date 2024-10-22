@@ -1,0 +1,2473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slab', serif; */
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* cursor: pointer; */
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+:root{
+    --text-color: #000000 ;
+    --background: white;
+    --hover: #cdc0e56b;
+    --width: 150px ;
+    --off-white: #FAF9F6;
+}
+
+/* header styling*/
+header{
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+/* responsive hamburger styling */ /* hidden on larger screens */
+
+.ham-container{
+    padding: 0 1.5rem;
+    display: none;
+}
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    width: 50px;
+    border: none;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+#hamburger::after{
+    content: "";
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+#hamburger span,#hamburger::after{
+    background-color: black;
+    width: 100%;
+    border-radius: 1rem;
+    height: 3px;
+    transition: width 400ms, background-color 300ms;
+}
+#hamburger.active span{
+    /* background-color: #b5bbe0; */
+    background-color: #b5bbf7;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 70%;
+    border-radius: 1rem;
+    transform: rotate(30deg) translateY(12px) translateX(4px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 70%;
+    border-radius: 1rem;
+    transform: rotate(-30deg) translateY(-18px) translateX(4px);
+}
+#hamburger.active::after{
+    width: 0;
+}
+/* hamburger styling ends here */
+
+/* media link styling*/
+.media{
+    width: 100%;
+    background: #ebebef;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 3;
+    border-bottom: 0.35px solid #b5bbe7;
+}
+.media-link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.media-link li{
+    padding: 0.5rem;
+    text-align: center;
+}
+.media-link .fa-brands{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.fa-tiktok:hover{
+    color: #0000ff82;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.fa-instagram:hover{
+    color: #ee0909c1;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.fa-x-twitter:hover{
+    color: var(--text-color);
+    transform: scale(1.5);
+}
+.fa-youtube:hover{
+    color: red;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+/*ends here*/
+
+/* navigation bar starts*/
+nav .film,.hide{
+    display: none;
+}
+nav .film i{
+    color: #b5bbe0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    height: 20vh;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.nav-link{
+    width:100%;
+}
+.nav-link .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-link .nav-menu li{
+    padding: 1rem;
+}
+.nav-link .nav-menu li a{
+    color: var(--text-color);
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.nav-menu .active{
+    border-bottom: 2px solid #b5bbe0;
+}
+/* ends */
+
+/* hero section */
+.hero{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    background: #b5bbe0;
+    background: linear-gradient(130deg, rgba(241,241,241,1) 0%, rgba(181,187,224,1) 10%);
+}
+.hero-body{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    place-items: center;
+}
+.hero .hero-content{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 4.5rem;
+    color: #ffffffcd;
+}
+.hero p{
+    white-space: nowrap;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    animation: typing 3s steps(20) ;
+}
+@keyframes typing{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.hero-content button{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.3rem 0.75rem;
+    background-color: var(--text-color);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transform: scale();
+    transition: 0.5s ;
+}
+.hero-content button a{
+    color: white;
+    font-size: 1.2rem;
+}
+.hero-content button i{
+    font-size: 1.3rem;
+    color: white;
+}
+.hero-content button:hover{
+    background:transparent;
+    color: var(--text-color);
+    transform: scale(1.05);
+    border: 1.5px solid var(--text-color);
+}
+.hero-content button:hover a,.hero-content button:hover i{
+    color: var(--text-color);
+}
+.hero-flex{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 570px));
+}
+.hero-flex img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* hero section ends*/
+
+/*Gallery button Styling*/
+article,.about,.faq{
+    margin-top: 4rem ;
+    padding: 2rem 6rem;
+    width: 100%;  
+}
+article h2{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+article .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+#images{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    border: 5px dashed #b5bbf7;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.link-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#gallery-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    max-width: 350px;
+    width: 100%;
+    transition: 0.5s;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+#gallery-link:hover{
+    background: black;
+    transform: scale(1.05);
+}
+#gallery-link a{
+    color: black;
+    font-size: 1.2rem;
+}
+#gallery-link:hover a,#gallery-link:hover i{
+    color: white;
+}
+#gallery-link i{
+    color: black;
+    font-size: 1.1rem;
+}
+
+/* who we are section*/
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.about-content{
+    padding: 3rem;
+    text-wrap: wrap;
+    border: 0.5px solid gray;
+    text-align: center;
+    display: grid;
+    width: 100%;
+    border-radius: 8px;
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
+    /* background-color: #b5bbf7; */
+    place-items: center;
+    box-shadow: 12px 16px var(--text-color);
+}
+.about h2{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.about-content p{
+    line-height: 35px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.about-content span p{
+    text-align: center;
+    line-height: 35px;
+}
+.about-button {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem ;
+}
+.about-button span {
+    cursor: pointer;
+    padding: 1.3rem 1.5rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    transition: 0.5s;
+    outline: none;
+    transform: scale();
+    border: none;
+    background-color: var(--text-color);
+}
+.about-button span a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #f1f1f1;
+}
+.about-button span i{
+    color: white;
+    font-size: 1.2rem;
+}
+.about-button span:hover{
+    transform: scale(1.05);
+    background: transparent;
+    border: 0.5px solid var(--text-color);
+}
+.about-button span:hover a,.about-button span:hover i{
+    color: var(--text-color);
+}
+/* ends */
+
+/*Frequently asked questions*/
+
+.faq h2{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.faq .accordion{
+    width: 100%;
+}
+.faq .accordion li{
+    width: 100%;
+    padding: 0.5rem;
+}
+.faq .accordion li .acc-item{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    /* background-color: #b5bbf7f0; */
+    background-color: #b5bbe0;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.accordion li .acc-item:hover{
+    background-color: #b5bbe7;
+    color: white;
+}
+.faq .accordion li .acc-item::after{
+    content: "+";
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+.faq .accordion li .acc-item.active::after {
+    content: "-";
+}
+.faq .accordion .content{
+    background-color: var(--text-color);
+    padding: 20px 15px;
+    overflow: hidden;
+    display: none;
+    border-radius: 0 0 5px 5px;
+    /* max-height: 0px; */
+    transition: max-height 0.5s ease-out;
+}
+.content p{
+    color: white;
+}
+.content p a{
+    color: #b5bbe0;
+    border-bottom: 1px solid #b5bbe0;
+}
+/* ends */
+
+
+/*Footer section*/
+
+.footer-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
+    /* background-color: #b5bbf7; */
+    /* background: #b5bbe0;
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
+    padding: 5rem 0;
+}
+.footer-body h2{
+    font-size: 2.3rem;
+    /* color: black; */
+    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    color: transparent ;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.footer-media .footer{
+   gap: 1rem;
+}
+.footer .fa-brands{
+    font-size: 2.3rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    color: #0000ff82;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.footer .fa-instagram:hover{
+    color: #ee0909c1;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.footer .fa-x-twitter:hover{
+    color: var(--text-color);
+    transform: scale(1.5);
+}
+.footer .fa-youtube:hover{
+    color: red;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+.footer-info p{
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 1rem;
+    color: var(--text-color);
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--text-color);
+}
+/* ends */
+
+/*All media queries starts here */
+
+@media (max-width:250px){
+/* header */
+.media-link .fa-brands{
+    font-size: 1.2rem;
+}
+.media-link li{
+    padding: 0.4rem;
+}
+.ham-container{
+    padding-left: 0.5rem;
+    display: block;
+}
+#hamburger{
+    width: 25px;
+    height: 18px;
+}
+#hamburger span:is(:nth-of-type(1),:nth-of-type(2)){
+    width: 40%;
+    border-radius: 1rem;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(5px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-5px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 10vh;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 120px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 2px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 30px;
+    color: white;
+}
+
+.nav-link .nav-menu li a{
+    font-size: 1rem;
+}
+.nav-link.active{
+    right: 0;
+}
+.logo{
+    width: 100px;
+}
+nav .film{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-end;
+    width: 20%;
+}
+nav .film a{
+    font-size: 1.25rem;
+}
+/* header ends */
+
+/* hero section */
+.hero{
+    height: 40vh;
+}
+.hero-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background-size: contain;
+    height: 100%;
+    position: relative;
+}
+
+.hero .hero-content{
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.455);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 1.8rem;
+}
+.hero p{
+    font-size: 0.46rem;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    animation: typing 2s steps(20);
+}
+.hero-content button{
+    max-width: 180px;
+    gap: 0.5rem;
+    padding: 0.7rem 0.9rem;
+}
+.hero-content button a{
+    font-size: 0.75rem;
+}
+.hero-content button i{
+    font-size: 0.75rem;
+}
+.hero-flex{
+    display: none;
+}
+/* hero section ends*/
+
+/*Gallery Styling*/
+
+article,.about,.faq{
+    margin: 0;
+    padding: 1.8rem 1rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+article .slider{
+    margin-bottom: 2rem;
+}
+#images{
+    width: 100%;
+    height: 380px;
+    border: 3px dashed #b5bbf7;
+}
+#gallery-link{
+    margin-top: 0.7rem;
+    padding: 0.5rem 0;
+    max-width: 140px;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+#gallery-link a:hover{
+    color: #b5bbe0;
+    border-bottom: 1px solid #b5bbe0;
+}
+#gallery-link i{
+    font-size: 0.8rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding-top: 1rem;
+}
+.about-content{
+    padding: 1rem 0.5rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 18px;
+    font-size: 0.75rem;
+}
+.about-content span p{
+    line-height: 18px;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.8rem;
+    gap: 0.6rem;
+    max-width: 180px;
+}
+.about-button span a{
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 0.75rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding-bottom: 0.5rem;
+}
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.2rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 0.7rem;
+    padding: 0.8rem 0.5rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 0.8rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 15px;
+}
+.accordion .content p{
+    font-size: 0.6rem;
+}
+
+/*Footer responsiveness*/
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 0.9rem;
+}
+.footer-media .footer{
+    gap: 0.5rem;
+}
+.footer .fa-brands{
+    font-size: 1.25rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.2);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.2);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.2);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.2);
+}
+.footer-info p{
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.7rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+
+@media (min-width:251px) and (max-width:326px){
+/* header */
+.media-link .fa-brands{
+    font-size: 1.5rem;
+}
+.media-link li{
+    padding: 0.4rem;
+}
+.ham-container{
+    padding-left: 0.5rem;
+    display: block;
+}
+#hamburger{
+    width: 25px;
+    height: 18px;
+}
+#hamburger span:is(:nth-of-type(1),:nth-of-type(2)){
+    width: 40%;
+    border-radius: 1rem;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(5px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-5px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 10vh;
+    gap: 1rem;
+    padding: 0 0.1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 115px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 2px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 30px;
+    color: white;
+}
+.nav-link .nav-menu li a{
+    font-size: 1rem;
+}
+.nav-link.active{
+    right: 0;
+}
+.logo{
+    width: 100px;
+}
+nav .film{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-end;
+    width: 20%;
+}
+nav .film a{
+    font-size: 1.25rem;
+}
+/* header ends */
+
+/* hero section */
+.hero{
+    height: 40vh;
+}
+.hero-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background-size: contain;
+    height: 100%;
+    position: relative;
+}
+
+.hero .hero-content{
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.455);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 1.8rem;
+}
+.hero p{
+    font-size: 0.49rem;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    animation: typing 2s steps(20);
+}
+.hero-content button{
+    max-width: 190px;
+    gap: 0.5rem;
+    padding: 0.7rem 0.9rem;
+}
+.hero-content button a{
+    font-size: 0.75rem;
+}
+.hero-content button i{
+    font-size: 0.75rem;
+}
+.hero-flex{
+    display: none;
+}
+/* hero section ends*/
+
+/*Gallery Styling*/
+
+article,.about,.faq{
+    margin: 0;
+    padding: 1.8rem 1rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+article .slider{
+    margin-bottom: 2rem;
+}
+#images{
+    width: 100%;
+    height: 400px;
+    border: 3px dashed #b5bbf7;
+}
+#gallery-link{
+    margin-top: 0.7rem;
+    padding: 0.5rem 0;
+    max-width: 140px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.956);
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+#gallery-link a:hover{
+    color: #b5bbe0;
+    border-bottom: 1px solid #b5bbe0;
+}
+#gallery-link i{
+    font-size: 0.8rem;
+}
+
+/* who we are section*/
+
+.about-container{
+    padding-top: 1rem;
+}
+.about-content{
+    padding: 1rem 0.5rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 18px;
+    font-size: 0.8rem;
+}
+.about-content span p{
+    line-height: 18px;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.8rem;
+    gap: 0.6rem;
+    max-width: 180px;
+}
+.about-button span a{
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 0.75rem;
+}
+
+/*Frequently asked questions*/
+
+.accordion{
+    padding-bottom: 0.5rem;
+}
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.2rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 0.8rem;
+    padding: 0.8rem 0.5rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 0.8rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 15px;
+}
+.accordion .content p{
+    font-size: 0.7rem;
+}
+
+/*Footer responsiveness*/
+
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 1rem;
+}
+.footer-media .footer{
+    gap: 0.5rem;
+}
+.footer .fa-brands{
+    font-size: 1.5rem;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.2);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.2);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.2);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.2);
+}
+.footer-info p{
+    font-size: 0.7rem;
+}
+.footer-info p a{
+    font-size: 0.7rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+
+@media (min-width:327px) and (max-width:390px){
+
+/* header */
+.media-link .fa-brands{
+    font-size: 1.6rem;
+}
+.ham-container{
+    padding: 0.8rem;
+    display: block;
+    width: 33.3%;
+}
+#hamburger{
+    width: 35px;
+    height: 20px;
+}
+#hamburger span:is(:nth-of-type(1),:nth-of-type(2)){
+    width: 40%;
+    border-radius: 1rem;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(7px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-7px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    width: 33.3%;
+}
+nav .film{
+    display: flex;
+    padding-left: 2.7rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content:center;
+    width: 33.3%;
+}
+nav .film a{
+    font-size: 1.6rem;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 155px;
+    gap: 0;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 3px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 40px;
+    color: white;
+}
+.nav-link .nav-menu li a{
+    font-size: 1.3rem;
+}
+.nav-link.active{
+    right: 0;
+}
+/* header ends */
+
+/* hero section */
+.hero{
+    height: 60vh;
+}
+.hero-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background-size: contain;
+    height: 100%;
+}
+.hero .hero-content{
+    gap: 1.3rem;
+    background-color: rgba(128, 128, 128, 0.375);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    height: 100%;
+    padding: 1.5rem 0.5rem 2.5rem 0.5rem;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 2.45rem;
+}
+.hero p{
+    font-size: 0.75rem;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    animation: typing 2s steps(20);
+}
+.hero-content button{
+    max-width: 280px;
+    gap: 0.5rem;
+    background-color: #000000e7;
+    padding: 0.9rem 1rem;
+}
+.hero-content button a{
+    font-size: 1.1rem;
+    color: white;
+}
+.hero-content button i{
+    font-size: 1rem;
+    color: white;
+}
+.hero-flex{
+    display: none;
+}
+/* hero section ends*/
+
+/*Gallery Styling*/
+
+article,.about,.faq{
+    margin: 0;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+article .slider{
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+#images{
+    width: 100%;
+    height: 450px;
+    border: 3px dashed #b5bbf7;
+}
+#gallery-link{
+    margin-top: 0;
+    max-width: 200px;
+    gap: 0.8rem;
+    border: 1px solid black;
+    padding: 0.7rem 0;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+#gallery-link i{
+    font-size: 1rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding-top: 2rem;
+}
+.about-content{
+    padding: 1rem 0.9rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 1.4rem;
+    font-size: 0.85rem;
+}
+.about-content span p{
+    line-height: 1.4rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.8rem 0.2rem;
+    gap: 0.6rem;
+    border-radius: 4px;
+}
+.about-button span a{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 0.9rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding-bottom: 1rem;
+}
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.3rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 0.9rem;
+    padding: 0.9rem 0.7rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 1rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 15px;
+}
+.accordion .content p{
+    font-size: 0.9rem;
+}
+
+/*Footer responsiveness*/
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 1.3rem;
+}
+.footer-media .footer{
+    gap: 0.3rem;
+}
+.footer .fa-brands{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.2);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.2);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.2);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.2);
+}
+.footer-info p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+
+@media (min-width:391px) and (max-width:480px){
+/* header */
+
+.media-link .fa-brands{
+    font-size: 1.65rem;
+}
+.ham-container{
+    padding: 0.8rem;
+    display: block;
+    width: 33.3%;
+}
+#hamburger{
+    width: 35px;
+    height: 22px;
+}
+#hamburger span:is(:nth-of-type(1),:nth-of-type(2)){
+    width: 40%;
+    border-radius: 1rem;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(7px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-7px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    width: 33.3%;
+}
+nav .film{
+    display: flex;
+    padding-left: 2.7rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content:center;
+    width: 33.3%;
+}
+nav .film a{
+    font-size: 1.65rem;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 160px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 3px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    align-items: center;
+    justify-self: unset;
+    height: 40px;
+    color: white;
+}
+.nav-link .nav-menu li a{
+    font-size: 1.3rem;
+}
+.nav-link.active{
+    right: 0;
+}
+/* header ends */
+
+/* hero section */
+
+.hero{
+    height: 60vh;
+}
+.hero-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background-size: contain;
+    height: 100%;
+}
+.hero .hero-content{
+    gap: 1.3rem;
+    height: 100%;
+    height: 100%;
+    background-color: #80808058;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    padding: 1.5rem 0 2.5rem 0;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 2.7rem;
+}
+.hero p{
+    font-size: 0.8rem;
+    color: white;
+}
+.hero-content button{
+    max-width: 320px;
+    gap: 0.5rem;
+    background-color: #000000ee;
+    padding: 0.9rem 1rem;
+}
+.hero-content button a{
+    font-size: 1.15rem;
+}
+.hero-content button i{
+    font-size: 1.15rem;
+}
+.hero-flex{
+    display: none;
+}
+/* hero section ends*/
+
+/*Gallery */
+article,.about,.faq{
+    margin: 0;
+    padding: 2.5rem 1rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+article .slider{
+    margin-bottom: 2rem;
+}
+#images{
+    width: 100%;
+    height: 450px;
+    border: 3px dashed #b5bbf7;
+}
+#gallery-link{
+    margin: 0;
+    padding: 0.8rem 0;
+    max-width: 200px;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 0.95rem;
+}
+#gallery-link i{
+    font-size: 0.9rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding-top: 2rem;
+}
+.about-content{
+    padding: 1rem 1.5rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+.about-content span p{
+    line-height: 1.4rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.8rem 0.6rem;
+    gap: 0.6rem;
+}
+.about-button span a{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 1rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding-bottom: 1rem;
+}
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.3rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 0.9rem;
+    padding: 0.9rem 0.7rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 1.2rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 18px;
+}
+.accordion .content p{
+    font-size: 0.9rem;
+}
+
+/* footer responsiveness */
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 1.4rem;
+}
+.footer-media .footer{
+    gap: 0.5rem;
+}
+.footer .fa-brands{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.2);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.2);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.2);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.2);
+}
+.footer-info p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+
+@media (min-width:481px) and (max-width:767px){
+.ham-container{
+    padding: 0.8rem;
+    display: block;
+    width: 33.3%;
+    /* border: 2px solid black; */
+}
+#hamburger{
+    width: 40px;
+    height: 25px;
+}
+#hamburger span:is(:nth-of-type(1),:nth-of-type(2)){
+    width: 40%;
+    border-radius: 1rem;
+}
+#hamburger.active span:nth-of-type(1){
+    width: 100%;
+    transform: rotate(30deg) translateY(12px) translateX(6px);
+}
+#hamburger.active span:nth-of-type(2){
+    width: 100%;
+    transform: rotate(-30deg) translateY(-7px) translateX(6px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 15vh;
+    /* gap: 5rem; */
+    /* border: 2px solid black; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    /* width: 33.3%; */
+    width: 170px;
+    /* border: 2px solid black; */
+}
+nav .film{
+    display: flex;
+    padding-right: 2.7rem;
+    align-items: center;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    justify-content:flex-end;
+    width: 33.3%;
+}
+nav .film a{
+    font-size: 2rem;
+}
+.nav-link{
+    position: fixed;
+    right: 100%;
+    top: 150px;
+    gap: 0;
+    /* backdrop-filter: blur(27px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    width: 100%;
+    border-top: 3px solid #b5bbe0;
+    border-bottom: 2px solid #b5bbe0;
+    text-align: center;
+    transition: 0.5s;
+}
+.hide{
+    display: block;
+}
+.nav-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 0.5rem;
+}
+.nav-menu li{
+    display: flex;
+    width: 100%;
+    margin: 0.8rem 0;
+    /* justify-content: center; */
+    align-items: center;
+    justify-self: unset;
+    height: 40px;
+    color: white;
+}
+.nav-link .nav-menu li a{
+    font-size: 1.4rem;
+}
+.nav-link.active{
+    right: 0;
+}
+/* header ends */
+
+.hero{
+    height: 60vh;
+}
+.hero-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: none; */
+    background: url('/gallery/Pictures/Styling\ Artistry.png') no-repeat center center ;
+    background-size: contain;
+    height: 100%;
+}
+.hero .hero-content{
+    gap: 1.9rem;
+    padding: 2rem 1rem;
+    height: 100%;
+    background-color: #80808058;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 3.7rem;
+}
+.hero p{
+    font-size: 1rem;
+    color: white;
+}
+.hero-content button{
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+}
+.hero-content button a{
+    font-size: 1.2rem;
+}
+.hero-content button i{
+    font-size: 1.25rem;
+}
+.hero-flex{
+    display: none;
+}
+/* hero section ends*/
+
+/*Gallery */
+article,.about,.faq{
+    margin: 0;
+    padding: 2.5rem 1rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+article .slider{
+    /* height: 450px; */
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+#images{
+    border: 3px dashed #b5bbf7;
+}
+#gallery-link{
+    margin: 0;
+    padding: 0.7rem 0;
+    max-width: 250px;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 1.1rem;
+}
+#gallery-link i{
+    font-size: 1rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding-top: 2rem;
+}
+.about-content{
+    padding: 1rem 1.5rem;
+    text-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 1.9rem;
+    font-size: 1.05rem;
+}
+.about-content span p{
+    line-height: 1.8rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.9rem 0.6rem;
+    gap: 0.6rem;
+}
+.about-button span a{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 1rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding: 0.5rem 0 1rem 0;
+}
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.3rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 1.05rem;
+    padding: 1rem 0.7rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 1.5rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 1rem;
+}
+.accordion .content p{
+    font-size: 0.9rem;
+}
+
+/* footer responsiveness */
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 1.5rem;
+}
+.footer-media .footer{
+    gap: 0.5rem;
+}
+.footer .fa-brands{
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.2);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.2);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.2);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.2);
+}
+.footer-info p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+
+@media (min-width:768px) and (max-width:991px){
+.hero-body{
+    display: flex;
+    flex-direction: row;
+}
+.hero .hero-content{
+    gap: 1.8rem;
+    padding-top: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 3.3rem;
+}
+.hero p{
+    font-size: 0.85rem;
+}
+.hero-content button{
+    max-width: 250px;
+    gap: 0.8rem;
+    padding: 1rem 1.25rem;
+}
+.hero-content button a{
+    font-size: 0.95rem;
+}
+.hero-content button i{
+    font-size: 0.9rem;
+}
+.hero-flex{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-flex img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* hero section ends*/
+
+/*Gallery */
+article,.about,.faq{
+    margin: 0;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+article .slider{
+    /* height: 500px; */
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+#gallery-link{
+    margin: 0;
+    padding: 0.7rem 0;
+    max-width: 250px;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 1.15rem;
+}
+#gallery-link i{
+    font-size: 1rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding: 2rem 0;
+}
+.about-content{
+    padding: 1rem 1.5rem;
+    text-wrap: wrap;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+.about-content p{
+    line-height: 1.9rem;
+    font-size: 1.1rem;
+}
+.about-content span p{
+    line-height: 1.8rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 0.9rem 0.6rem;
+    gap: 0.6rem;
+}
+.about-button span a{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 1.1rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding: 1rem 0 2rem 0;
+}
+.faq h2{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+}
+.faq .accordion li{
+    padding: 0.3rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 1.5rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 1rem;
+}
+.accordion .content p{
+    font-size: 1rem;
+}
+
+/* footer responsiveness */
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 1.85rem;
+}
+.footer-media .footer{
+    gap: 0.5rem;
+}
+.footer .fa-brands{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.2);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.2);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.2);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.2);
+}
+.footer-info p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+.hero-body{
+    display: flex;
+    flex-direction: row;
+}
+.hero .hero-content{
+    gap: 1.8rem;
+    padding-top: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 4rem;
+}
+.hero p{
+    font-size: 0.9rem;
+}
+.hero-content button{
+    max-width: 300px;
+    gap: 0.8rem;
+    padding: 1rem 1.25rem;
+}
+.hero-content button a{
+    font-size: 1.1rem;
+}
+.hero-content button i{
+    font-size: 0.9rem;
+}
+.hero-flex{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-flex img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* hero section ends*/
+
+/*Gallery */
+
+article,.about,.faq{
+    margin: 0;
+    padding: 3.5rem 2rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+article .slider{
+    /* height: 400px; */
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+#gallery-link{
+    margin-top: 1rem;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 1.2rem;
+}
+#gallery-link i{
+    font-size: 1rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding: 2rem 0;
+}
+.about-content{
+    padding: 1rem 1.5rem;
+    text-wrap: wrap;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.about-content p{
+    line-height: 1.9rem;
+    font-size: 1.1rem;
+}
+.about-content span p{
+    line-height: 1.8rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 1rem 0.6rem;
+    gap: 0.6rem;
+}
+.about-button span a{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 1.2rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding: 2rem 0;
+}
+.faq h2{
+    margin-bottom: 0;
+    word-wrap: nowrap;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.faq .accordion li{
+    padding: 0.3rem;
+}
+.faq .accordion li .acc-item{
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.faq .accordion .acc-item::after{
+    font-size: 1.5rem;
+    right: 10px;
+}
+.faq .accordion .content{
+    padding: 1rem;
+}
+.accordion .content p{
+    font-size: 1rem;
+}
+
+/* footer responsiveness */
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 2.1rem;
+}
+.footer-media .footer{
+    gap: 0.9rem;
+}
+.footer .fa-brands{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.4);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.4);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.4);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.4);
+}
+.footer-info p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
+@media (min-width:1200px) and (max-width:1300px) {
+.hero h1{
+    font-size: 3.85rem;
+}
+
+/*Gallery */
+article,.about,.faq{
+    margin: 0;
+    padding: 3.5rem 5rem;
+    width: 100%;
+}
+article h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+article .slider{
+    max-height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+#gallery-link{
+    margin-top: 1rem;
+}
+#gallery-link a{
+    padding-bottom: 0.1rem;
+    font-size: 1.3rem;
+}
+#gallery-link i{
+    font-size: 1.1rem;
+}
+
+/* who we are section*/
+.about-container{
+    padding: 2rem 0;
+}
+.about-content{
+    padding: 2.5rem 1.5rem;
+    text-wrap: wrap;
+    max-height: 700px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 5px 8px var(--text-color);
+}
+.about h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.about-content p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.about-content span p{
+    line-height: 1.8rem;
+}
+.about-button {
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.about-button span {
+    padding: 1rem 0.6rem;
+    gap: 0.6rem;
+}
+.about-button span a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.about-button span i{
+    font-size: 1.2rem;
+}
+
+/*Frequently asked questions*/
+.accordion{
+    padding: 2rem 0;
+}
+
+.faq h2{
+    margin-bottom: 0;
+    word-wrap: nowrap;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.faq .accordion li{
+    padding: 0.3rem;
+}
+
+.faq .accordion li .acc-item{
+    font-size: 1.15rem;
+    padding: 1.1rem;
+}
+
+.faq .accordion .acc-item::after{
+    font-size: 1.5rem;
+    right: 10px;
+}
+
+.faq .accordion .content{
+    padding: 1rem;
+}
+
+.accordion .content p{
+    font-size: 1.05rem;
+}
+
+/* footer responsiveness */
+.footer-body{
+    gap: 1.7rem;
+    padding-top: 2rem;
+}
+.footer-body h2{
+    font-size: 2.1rem;
+}
+.footer-media .footer{
+    gap: 0.9rem;
+}
+.footer .fa-brands{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.footer .fa-tiktok:hover{
+    transform: scale(1.4);
+}
+.footer .fa-instagram:hover{
+    transform: scale(1.4);
+}
+.footer .fa-x-twitter:hover{
+    transform: scale(1.4);
+}
+.footer .fa-youtube:hover{
+    transform: scale(1.4);
+}
+.footer-info p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.footer-info p a{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+}
