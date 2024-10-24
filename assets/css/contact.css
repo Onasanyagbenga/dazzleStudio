@@ -13,7 +13,7 @@
 .contact-body{
     padding: 5rem 0 5rem 20rem;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 4.5rem;
     /* border: 2px solid red; */
 
 }
@@ -190,17 +190,17 @@
 @media (min-width:391px) and (max-width:480px){
 
 .contact{
-    padding-top: 2rem;
+    padding-top: 0.5rem;
 }
 .contact-body{
-    padding: 3rem 0.5rem 3rem 2rem;
+    padding: 3rem 0.5rem 1rem 2rem;
     width: 100%;
     margin-bottom: 0.5rem;
 
 }
 .contact .contact-body h2{
     font-size: 2.5rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 .contact-body p{
     line-height: 20px;
@@ -233,7 +233,7 @@
     padding-top: 2rem;
 }
 .contact-body{
-    padding: 4rem 0.5rem 4rem 2rem;
+    padding: 4rem 0.5rem 1rem 2rem;
     width: 100%;
     margin-bottom: 0.5rem;
 
@@ -271,17 +271,17 @@
 @media (min-width:768px) and (max-width:991px){
 
 .contact{
-    padding-top: 2rem;
+    padding-top: 0.5rem;
 }
 .contact-body{
-    padding: 4rem 0.5rem 4rem 7rem;
+    padding: 4rem 0.5rem 0.5rem 7rem;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
 
 }
 .contact .contact-body h2{
     font-size: 3.2rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 .contact-body p{
     line-height: 20px;
@@ -312,15 +312,17 @@
 @media (min-width:992px) and (max-width:1199px){
 
 .contact{
-    padding-top: 2rem;
+    padding-top: 0.5rem;
 }
 .contact-body{
-    padding: 4rem 0.5rem 4rem 12rem;
+    padding: 4rem 0.5rem 0.5rem 12rem;
     width: 100%;
+    margin-bottom: 0.5rem;
+
 }
 .contact .contact-body h2{
     font-size: 3.5rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 .contact-body p{
     line-height: 20px;
@@ -349,14 +351,15 @@
 }
 @media (min-width:1200px) and (max-width:1300px){
 .contact{
-    padding-top: 2rem;
+    padding-top: 0.5rem;
 }
 .contact-body{
-    padding: 4rem 0.5rem 4rem 12rem;
+    padding: 4rem 0.5rem 0.5rem 12rem;
+    margin-bottom: 0.5rem;
 }
 .contact .contact-body h2{
     font-size: 3.5rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 .contact-body p{
     line-height: 20px;
