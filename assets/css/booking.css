@@ -1,0 +1,1045 @@
+.form-section{
+    width: 100%;
+    padding: 3rem 8rem;
+    background-color: #ededf0;
+}
+.form-header{
+    padding-bottom: 2rem;
+}
+.form-header .header-flex{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.form-header .header-flex h2{
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+}
+.form-header p{
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-control{
+    width: 100%;
+}
+.input-control label{
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+.input-control.success input{
+    border-color: #09C372;
+}
+.input-control.error input{
+    border-color: red;
+}
+.input-control #error{
+    color: red;
+    font-size: 1rem;
+}
+.form input{
+    padding: 0.8rem;
+    width: 100%;
+    color: black;
+    /* transition: border 0.5s; */
+    border: 1px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.form input:focus{
+    border: 1.5px solid black;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #80808079;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    padding: 0.5rem;
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1rem;
+    outline: none;
+}
+textarea:focus{
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #80808084;
+}
+
+select{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    color: black;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 1rem;
+    color: gray;
+    padding-left: 0.5rem;
+}
+#datepicker,#timepicker{
+    width: 100%;
+    color: black;
+    padding: 0.8rem;
+}
+.form button{
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--text-color);
+    padding: 1rem 0.1rem;
+    width: 100%;
+    display: grid;
+    border-radius: 5px;
+    cursor: pointer;
+    place-self: center;
+    transition: 0.5s all;
+    border: 0.5px solid black;
+}
+.form button:hover{
+    border: 1.5px solid var(--text-color);
+    color: var(--text-color);
+    background: transparent;
+    transform: scale(1.05);
+}
+.form-section span p{
+    padding-top: 3rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+span p a{
+    color: #b5bbe0;
+    border-bottom: 1px solid #b5bbe0;
+    transition: 0.5s;
+}
+span p a:hover{
+    color: white;
+    border-bottom: 1.5px solid white;
+}
+
+/* modal display */
+.modal{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b5bbe0;
+    height: 100%;
+    display: block;
+}
+.modal-body{
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    max-width: 450px;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    background-color: var(--off-white);
+    transform: translate(-50%, -50%);
+    border: 3px dashed #b5bbe0;
+}
+.modal-header{
+    display: flex;
+    width: 100%;
+    padding: 0.5rem ;
+    justify-content: center;
+    gap: 0.2rem;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.modal-header h2{
+    color: var(--text-color);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.modal-header .modal-check{
+    font-size: 2.5rem;
+    height: 80px;
+    color: black ;
+    border-radius: 50%;
+    width: 80px;
+    display: flex;
+    transition: 0.8s all;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background: none;
+    border: 3px solid #b5bbe0;
+}
+.content-info{
+    padding: 1rem 0;
+    border-top: 1px dashed #b5bbe0 ;
+    border-bottom: 1px dashed #b5bbe0 ;
+}
+.modal-content .content-info p{
+    font-size: 1rem;
+    color: black;
+    padding-top: 0.4rem;
+    text-align: center;
+}
+.modal-content > p{
+    text-align: center;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+.modal-button{
+    width: 100%;
+    display: flex;
+    padding: 0.8rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2):hover a{
+    color: white;
+    font-size: 1rem;
+}
+.modal-button button:nth-child(1){
+    background-color: black;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.65rem;
+}
+.modal-button button:nth-child(2){
+    width: 100%;
+    background-color: #b5bbf7;
+    /* background-color: #b5bbe0; */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.7s;
+    text-align: center;
+    padding: 0.65rem;
+}
+.modal-button button:nth-child(2) a{
+    color: black;
+    font-size: 1rem;
+}
+.modal-button button:nth-child(2):hover{
+    background-color: black;
+}
+
+/* All booking section responsiveness starts here*/
+
+@media (max-width:250px){
+
+/* form section */
+.form-section{
+    width: 100%;
+    padding: 1rem ;
+}
+.form-header{
+    padding-bottom: 1rem;
+}
+.form-header .header-flex{
+    gap: 0.5rem;
+    margin-bottom: 0;
+    padding: 0.5rem 0;
+}
+.form-header .header-flex h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.form-header p{
+    font-size: 0.8rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding:1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-control{
+    width: 100%;
+}
+.input-control label{
+    font-size: 0.9rem;
+}
+
+.form input{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+.form input:focus{
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+select,#datepicker,#timepicker{
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 0.7rem;
+    padding-left: 0.3rem;
+}
+
+textarea{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+textarea:focus{
+    padding: 1rem 0.5rem;
+    outline: none;
+}
+.form button{
+    font-size: 1rem;
+    padding: 0.5rem 0.1rem;
+    margin-top: -20px;
+    border-radius: 3px;
+}
+.form button:hover{
+    transform: scale(1.03);
+}
+.form-section span p{
+    padding-top: 2.5rem;
+    font-size: 0.75rem;
+}
+
+/* modal display */
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem;
+    height: 100vh;
+    border: none;
+}
+.modal-header{
+    gap: 0.3rem;
+    padding: 0.4rem;
+}
+.modal-header h2{
+    font-size: 1.4rem;
+}
+.modal-header .modal-check{
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-evenly;
+}
+.content-info{
+    margin-top: 0.5rem;
+}
+.modal-content .content-info p{
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+}
+.modal-content > p{
+    font-size: 0.7rem;
+    padding: 0;
+}
+.modal-button{
+    padding: 0.6rem 0;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.modal-button button:nth-child(2),.modal-button button:nth-child(1){
+    padding: 0.7rem 0;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
+    font-size: 0.9rem;
+}   
+}
+
+@media (min-width:251px) and (max-width:320px){
+
+/* form section */
+.form-section{
+    width: 100%;
+    padding: 1rem ;
+}
+.form-header{
+    padding-bottom: 1rem;
+}
+.form-header .header-flex{
+    gap: 0.5rem;
+    margin-bottom: 0;
+    padding: 1rem 0;
+}
+.form-header .header-flex h2{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.form-header p{
+    font-size: 0.9rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding:1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-control{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* added display and flex-direction temporarily */
+}
+.input-control label{
+    font-size: 0.9rem;
+}
+
+.form input{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+.form input:focus{
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+select,#datepicker,#timepicker{
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.9rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+}
+
+textarea{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+textarea:focus{
+    padding: 1rem 0.5rem;
+    outline: none;
+}
+.form button{
+    font-size: 1rem;
+    padding: 0.5rem 0.1rem;
+    margin-top: -20px;
+    border-radius: 3px;
+}
+.form button:hover{
+    transform: scale(1.03);
+}
+.form-section span p{
+    padding-top: 2.5rem;
+    font-size: 0.75rem;
+}
+
+/* modal display */
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem;
+    height: 100vh;
+    border: none;
+}
+.modal-header{
+    gap: 0.3rem;
+    padding: 0.4rem;
+}
+.modal-header h2{
+    font-size: 1.4rem;
+}
+.modal-header .modal-check{
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-evenly;
+}
+.content-info{
+    margin-top: 0.5rem;
+}
+.modal-content .content-info p{
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+}
+.modal-content > p{
+    font-size: 0.7rem;
+    padding: 0;
+}
+.modal-button{
+    padding: 0.6rem 0;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.modal-button button:nth-child(2),.modal-button button:nth-child(1){
+    padding: 0.7rem 0;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
+    font-size: 0.9rem;
+}  
+
+}
+
+@media (min-width:321px) and (max-width:390px){
+
+/* form section */
+.form-section{
+    width: 100%;
+    padding: 1.5rem 1rem ;
+}
+.form-header{
+    padding-bottom: 1.5rem;
+}
+.form-header .header-flex{
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+}
+.form-header .header-flex h2{
+    font-size: 1.55rem;
+    text-transform: capitalize;
+}
+.header-flex i{
+    font-size: 1.3rem;
+}
+.form-header p{
+    font-size: 1rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.3rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-control{
+    width: 100%;
+}
+.input-control label{
+    font-size: 1.1rem;
+}
+
+.form input{
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+.form .input-control input:focus{
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 0.75rem ;
+    width: 100%;
+}
+
+.form .input-control:has(input:focus){
+    width: 100%;
+}
+
+select,#datepicker,#timepicker{
+    text-align: center;
+    padding: 0.7rem 0;
+    width: 100%;
+    font-size: 0.95rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 0.9rem;
+    padding-left: 0.3rem;
+}
+
+textarea{
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
+textarea:focus{
+    padding: 1rem 0.5rem;
+    outline: none;
+}
+.form button{
+    font-size: 1.1rem;
+    padding: 0.65rem 0.1rem;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.form button:hover{
+    transform: scale(1.03);
+}
+.form-section span p{
+    padding-top: 2.5rem;
+    font-size: 0.95rem;
+}
+
+ /* modal display */
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 2rem;
+    padding: 1rem;
+    height: 100vh;
+    border: none;
+}
+.modal-header{
+    gap: 0.3rem;
+    padding: 0.4rem;
+    border: none;
+}
+.modal-header h2{
+    font-size: 1.8rem;
+}
+.modal-header .modal-check{
+    font-size: 2.5rem;
+    height: 100px;
+    width: 100px;
+    background: none;
+    border: 3px solid #b5bbe0;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+}
+.content-info{
+    margin-top: 1rem;
+}
+.modal-content .content-info p{
+    font-size: 1.1rem;
+    padding-top: 0.4rem;
+}
+.modal-content > p{
+    font-size: 0.9rem;
+    padding: 0;
+}
+.modal-button{
+    padding: 0.6rem 0;
+    gap: 1.5rem;
+    /* margin-bottom: -4rem; */
+    flex-direction: column;
+}
+.modal-button button:nth-child(2),.modal-button button:nth-child(1){
+    padding: 0.9rem 0;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
+    font-size: 1.1rem;
+}   
+
+}
+@media (min-width:391px) and (max-width:480px){
+
+/* form section */
+.form-section{
+    width: 100%;
+    padding: 1.5rem 1rem ;
+}
+.form-header{
+    padding-bottom: 1.5rem;
+}
+.form-header .header-flex{
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+}
+.form-header .header-flex h2{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+.form-header p{
+    font-size: 1.1rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.3rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-control{
+    width: 100%;
+}
+.input-control label{
+    font-size: 1.1rem;
+}
+
+.form input{
+    padding: 0.8rem;
+    font-size: 0.95rem;
+}
+.form input:focus{
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+select,#datepicker,#timepicker{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.95rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 0.95rem;
+    padding-left: 0.3rem;
+}
+textarea{
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
+textarea:focus{
+    padding: 1rem 0.5rem;
+    outline: none;
+}
+.form button{
+    font-size: 1.1rem;
+    padding: 0.65rem 0.1rem;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.form button:hover{
+    transform: scale(1.03);
+}
+.form-section span p{
+    padding-top: 2.5rem;
+    font-size: 0.95rem;
+}
+
+/* modal display */
+.modal{
+    background: #ededf0;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.9rem;
+    height: 100vh;
+    border: none;
+}
+.modal-header{
+    gap: 0.3rem;
+    padding: 0.4rem;
+    border: none;
+}
+.modal-header h2{
+    font-size: 1.9rem;
+}
+.modal-header .modal-check{
+    font-size: 2.5rem;
+    height: 100px;
+    width: 100px;
+    background: none;
+    border: 3px solid #b5bbe0;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+}
+.content-info{
+    margin-top: 1rem;
+    padding: 2rem 0;
+}
+.modal-content .content-info p{
+    font-size: 1.15rem;
+}
+.modal-content > p{
+    font-size: 0.9rem;
+    padding: 0;
+}
+.modal-button{
+    padding: 0.6rem 0;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.modal-button button:nth-child(2),.modal-button button:nth-child(1){
+    padding: 0.9rem 0;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
+    font-size: 1.1rem;
+}   
+
+}
+
+@media (min-width:481px) and (max-width:767px){
+
+/* form section */
+.form-section{
+    width: 100%;
+    padding: 1.5rem 2rem ;
+}
+.form-header{
+    padding-bottom: 2rem;
+}
+.form-header .header-flex{
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+}
+.form-header .header-flex h2{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.form-header p{
+    font-size: 1.2rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.3rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-control{
+    width: 100%;
+}
+.input-control label{
+    font-size: 1.2rem;
+}
+
+.form input{
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+.form input:focus{
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+select,#datepicker,#timepicker{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 1rem;
+    padding-left: 0.3rem;
+}
+textarea{
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
+textarea:focus{
+    padding: 1rem 0.5rem;
+    outline: none;
+}
+.form button{
+    font-size: 1.1rem;
+    padding: 0.65rem 0.1rem;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.form button:hover{
+    transform: scale(1.03);
+}
+.form-section span p{
+    padding-top: 2.5rem;
+    font-size: 1rem;
+}
+
+/* modal display */
+.modal{
+    background: #ededf0;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededf0;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.2rem;
+    height: 100vh;
+    border: none;
+}
+.modal-header{
+    gap: 0.6rem;
+    padding: 0.4rem;
+    border: none;
+}
+.modal-header h2{
+    font-size: 2rem;
+}
+.modal-header .modal-check{
+    font-size: 2.5rem;
+    height: 110px;
+    width: 110px;
+    background: none;
+    border: 3px solid #b5bbe0;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+}
+.content-info{
+    margin-top: 1rem;
+    padding: 2rem 0;
+}
+.modal-content .content-info p{
+    font-size: 1.25rem;
+}
+.modal-content > p{
+    font-size: 0.9rem;
+    padding: 0;
+}
+.modal-button{
+    padding: 0.6rem 0;
+    gap: 1.5rem;
+    flex-direction: row;
+}
+.modal-button button:nth-child(2),.modal-button button:nth-child(1){
+    padding: 0.9rem 0;
+}
+.modal-button button:nth-child(1) a,.modal-button button:nth-child(2) a{
+    font-size: 1.1rem;
+}   
+}
+@media (min-width:768px) and (max-width:987px){
+.logo{
+    width: 500px;
+}
+.form-section{
+    padding: 3rem ;
+}
+.form-header{
+    padding-bottom: 2rem;
+}
+.form-header .header-flex h2{
+    font-size: 1.9rem;
+    text-transform: capitalize;
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+.input-control label{
+    font-size: 1.2rem;
+}
+select{
+    font-size: 1.1rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 1.1rem;
+}
+.form button{
+    place-self: center;
+    padding: 1rem 0;
+}
+    
+}
+@media (min-width:988px) and (max-width:1139px){
+.logo{
+    width: 500px;
+}
+.form-section{
+    padding: 3rem 4rem;
+}
+.form-header{
+    padding-bottom: 2rem;
+}
+.form-header .header-flex h2{
+    font-size: 2rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+.input-control label{
+    font-size: 1.2rem;
+}
+select{
+    font-size: 1.1rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 1.1rem;
+}
+.form button{
+    place-self: center;
+    padding: 1rem 0;
+}
+}
+
+@media (min-width:1140px) and (max-width:1300px){
+.logo{
+    width: 500px;
+}
+.form-section{
+    padding: 3rem 5rem;
+}
+.form-header{
+    padding-bottom: 2rem;
+}
+.form-header .header-flex h2{
+    font-size: 2.2rem;
+}
+.input-control label{
+    font-size: 1.3rem;
+}
+select{
+    font-size: 1.2rem;
+}
+.input-control input::placeholder,textarea::placeholder{
+    font-size: 1.1rem;
+}
+}

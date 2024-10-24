@@ -1,0 +1,605 @@
+/* @keyframes scale {
+    from {
+      opacity: .1;
+      scale: 0.7;
+    }
+  }
+    
+  @media (prefers-reduced-motion: no-preference) {
+    .policy,.card{
+      animation: scale linear both;
+      animation-timeline: view();
+      animation-range: 5vh 70vh;
+    }
+  } */
+        /* rotate: 30deg; */
+
+.service-section{
+    width: 100%;
+    height: 100%;
+    padding: 5rem 8rem 0.5rem 8rem;
+    /* background-color: var(--off-white); */
+    background-color: #ededf0;
+}
+.service-section h2{
+    font-size: 1.75rem;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+.service-content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 3rem;
+    padding: 1.5rem;
+}
+.card{
+    border: none;
+    padding: 1rem 1rem 1.5rem 1rem;
+    cursor: pointer;
+    transform: scale();
+    border-radius: 8px;
+    border: 0.2px solid gray;
+    transition: all 0.5s;
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
+    box-shadow: 15px 20px var(--text-color);
+    /* background: rgb(241,241,241);
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card h1{
+    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    color: transparent ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0.75rem 0 0 0;
+    font-size: 1.5rem;
+}
+.card ul{
+    line-height: 30px;
+    padding-top: 1rem;
+}
+.card ul li{
+    font-size: 17px;
+    color: black;
+    display: flex;
+    width: 100%;
+    padding: 0.3rem 0;
+    word-wrap: nowrap;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    justify-content: space-between;
+}
+.policy-body{
+    background-color: #ebebef;
+    /* background-color: var(--off-white); */
+    padding: 0.5rem 4rem;
+}
+.policy{
+    border: 0.5px solid gray;
+    margin: 5rem 0;
+    width: 100%;
+    border-radius: 8px;
+    padding: 1rem 2rem 2rem 2rem;
+    box-shadow: 15px 20px var(--text-color);
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 37%, rgba(181,187,224,1) 85%);
+    /* background: rgb(241,241,241);
+    background: linear-gradient(127deg, rgba(241,241,241,1) 6%, rgba(181,187,224,1) 77%); */
+}
+.policy h1{
+    text-align: center;
+    padding: 1.25rem 0 0.7rem 3rem;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0,1) 6%, rgba(181,187,224,1) 77%) ;
+    color: transparent ;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 1.6rem;
+}
+.policy ul{
+    padding: 0.2rem 1.5rem 1.5rem 2rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-bottom: 1px solid gray;
+}
+.policy ul li a{
+    color: black;
+    transition: all 0.5s;
+    border-bottom: 2px solid var(--text-color);
+}
+.policy ul li a:hover{
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+/*All responsiveness starts here*/
+
+@media (max-width:250px){
+.service-section{
+    padding: 2rem 1rem 0.5rem 1rem;
+    background-color: #ebebef;
+}
+.service-section h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+.service-content{
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 5px 5px var(--text-color);
+}
+.card h1{
+    text-align: center;
+    padding: 0.5rem 0 0 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.card ul{
+    line-height: 20px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+    word-wrap: wrap;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 0.8rem;
+}
+.policy{
+    margin: 3rem 0;
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 5px 5px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 1rem 0 0.2rem 1rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 0.8rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
+.policy ul li a{
+    color: #ebebef;
+    transition: all 0.5s;
+    border-bottom: none;
+}
+
+}
+
+@media (min-width:251px) and (max-width:390px){
+
+.service-section{
+    padding: 2rem 0.2rem 0.5rem 0.2rem;
+}
+.service-section h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+.service-content{
+    gap: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 7px 5px var(--text-color);
+    /* border-radius: 5px; */
+}
+.card h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+}
+.card ul{
+    line-height: 25px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 0.85rem;
+    padding: 0.3rem 0;
+    word-wrap: wrap;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 1rem;
+}
+.policy{
+    margin: 4rem 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 7px 5px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 0.5rem 0 ;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 0.8rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    line-height: 20px;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+.policy ul li a{
+    color: #ebebef;
+    transition: all 0.5s;
+    border-bottom: none;
+}
+}
+@media (min-width:391px) and (max-width:480px){
+
+.service-section{
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    background-color: #ebebef;
+}
+.service-section h2{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    padding-bottom: 1.5rem;
+    padding-left: 1.1rem;
+}
+.service-content{
+    gap: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 7px 5px var(--text-color);
+}
+.card h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.2rem;
+}
+.card ul{
+    line-height: 30px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 1rem;
+}
+.policy{
+    margin: 4rem 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 7px 5px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 0.5rem 0 ;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 0.8rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    line-height: 20px;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+}
+.policy ul li a{
+    color: #ebebef;
+    transition: all 0.5s;
+    border-bottom: none;
+}
+}
+
+@media (min-width:481px) and (max-width:767px){
+
+.service-section{
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    background-color: #ebebef;
+}
+.service-section h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 1.5rem;
+    padding-left: 1.2rem;
+}
+.service-content{
+    gap: 3rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    width: 100%;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 7px 5px var(--text-color);
+}
+.card h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.3rem;
+}
+.card ul{
+    line-height: 30px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 1rem;
+    padding: 0.45rem 0;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 1.2rem;
+}
+.policy{
+    margin: 4rem 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 7px 5px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 0.5rem 0 ;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 1rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    line-height: 23px;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+.policy ul li a{
+    color: #ebebef;
+    transition: all 0.5s;
+    border-bottom: none;
+}
+}
+@media (min-width:768px) and (max-width:991px){
+.service-section{
+    padding: 2rem 2rem 0.5rem 1rem;
+    background-color: #ebebef;
+}
+.service-section h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+}
+.service-content{
+    gap: 3rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    width: 100%;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 9px 7px var(--text-color);
+}
+.card h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.3rem;
+}
+.card ul{
+    line-height: 30px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 1rem;
+    padding: 0.45rem 0;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 1.4rem;
+}
+.policy{
+    margin: 4rem 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 9px 7px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 0.5rem 0 ;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 1rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    line-height: 26px;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+}
+@media (min-width:992px) and (max-width:1199px){
+.service-section{
+    /* padding: 1.5rem; */
+    padding: 2rem 2rem 0.5rem 1rem;
+    background-color: #ebebef;
+}
+.service-section h2{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: 1rem 0 1.7rem 1rem;
+}
+.service-content{
+    gap: 3rem;
+    padding: 1.9rem 3rem 0.5rem 3rem;
+    width: 100%;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 9px 7px var(--text-color);
+}
+.card h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.4rem;
+}
+.card ul{
+    line-height: 30px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 1.1rem;
+    padding: 0.45rem 0;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 1.5rem;
+}
+.policy{
+    margin: 4rem 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 9px 7px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 0.5rem 0 ;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 1rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    line-height: 28px;
+    padding: 0.65rem;
+    font-size: 1.1rem;
+}
+}
+@media (min-width:1200px) and (max-width:1289px){
+.service-section{
+    padding: 2rem 2rem 0.5rem 1rem;
+    background-color: #ebebef;
+}
+.service-section h2{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: 1rem 0 1.7rem 1rem;
+}
+.service-content{
+    gap: 3rem;
+    padding: 1.9rem 3rem 0.5rem 3rem;
+    width: 100%;
+}
+.card{
+    padding: 0.2rem 0.7rem 0.8rem;
+    box-shadow: 9px 7px var(--text-color);
+}
+.card h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.4rem;
+}
+.card ul{
+    line-height: 30px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+.card ul li{
+    font-size: 1.1rem;
+    padding: 0.45rem 0;
+    align-items: first baseline;
+    border-bottom: 1px solid gray;
+}
+.policy-body{
+    background-color: #ebebef;
+    padding: 0.5rem 1.5rem;
+}
+.policy{
+    margin: 4rem 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-shadow: 9px 7px var(--text-color);
+}
+.policy h1{
+    text-align: center;
+    padding: 0.5rem 0 ;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+.policy ul{
+    padding: 0.2rem 0.5rem 1rem 1rem;
+    width: 100%;
+}
+.policy ul li{
+    list-style-type: disc;
+    line-height: 28px;
+    padding: 0.65rem;
+    font-size: 1.1rem;
+}
+}
